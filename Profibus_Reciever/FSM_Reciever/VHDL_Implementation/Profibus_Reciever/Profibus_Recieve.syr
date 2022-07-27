@@ -1,0 +1,480 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.68 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.69 secs
+ 
+--> Reading design: Profibus_Recieve.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Profibus_Recieve.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Profibus_Recieve"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : Profibus_Recieve
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Reciever\FSM_Reciever\VHDL_Implementation\Profibus_Reciever\Profibus_Constants.vhd" into library work
+Parsing package <Profibus_Constants>.
+Parsing package body <Profibus_Constants>.
+Parsing VHDL file "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Reciever\FSM_Reciever\VHDL_Implementation\Profibus_Reciever\Profibus_Recieve.vhd" into library work
+Parsing entity <Profibus_Recieve>.
+Parsing architecture <Behavioral> of entity <profibus_recieve>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Profibus_Recieve> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Reciever\FSM_Reciever\VHDL_Implementation\Profibus_Reciever\Profibus_Recieve.vhd" Line 131. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Reciever\FSM_Reciever\VHDL_Implementation\Profibus_Reciever\Profibus_Recieve.vhd" Line 62: Assignment to counter ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Profibus_Recieve>.
+    Related source file is "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Reciever\FSM_Reciever\VHDL_Implementation\Profibus_Reciever\Profibus_Recieve.vhd".
+    Found 32-bit register for signal <timer>.
+    Found 8-bit register for signal <dataout_S<3>>.
+    Found 8-bit register for signal <dataout_S<2>>.
+    Found 8-bit register for signal <dataout_S<1>>.
+    Found 5-bit register for signal <state>.
+    Found 1-bit register for signal <detect>.
+    Found 8-bit register for signal <type_o>.
+INFO:Xst:1799 - State sd2 is never reached in FSM <state>.
+INFO:Xst:1799 - State le is never reached in FSM <state>.
+INFO:Xst:1799 - State ler is never reached in FSM <state>.
+INFO:Xst:1799 - State da2 is never reached in FSM <state>.
+INFO:Xst:1799 - State sa2 is never reached in FSM <state>.
+INFO:Xst:1799 - State fc2 is never reached in FSM <state>.
+INFO:Xst:1799 - State pdu2 is never reached in FSM <state>.
+INFO:Xst:1799 - State fcs2 is never reached in FSM <state>.
+INFO:Xst:1799 - State sd3 is never reached in FSM <state>.
+INFO:Xst:1799 - State da3 is never reached in FSM <state>.
+INFO:Xst:1799 - State sa3 is never reached in FSM <state>.
+INFO:Xst:1799 - State fc3 is never reached in FSM <state>.
+INFO:Xst:1799 - State pdu3 is never reached in FSM <state>.
+INFO:Xst:1799 - State fcs3 is never reached in FSM <state>.
+INFO:Xst:1799 - State sd4 is never reached in FSM <state>.
+INFO:Xst:1799 - State da4 is never reached in FSM <state>.
+INFO:Xst:1799 - State sc is never reached in FSM <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 23                                             |
+    | Transitions        | 20                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <timer[31]_GND_5_o_add_0_OUT> created at line 1241.
+    Found 8-bit adder for signal <n2103> created at line 100.
+    Found 8-bit adder for signal <dataout_S[1][7]_dataout_S[3][7]_add_5_OUT> created at line 100.
+    Found 32-bit comparator greater for signal <n0001> created at line 73
+    Found 8-bit comparator equal for signal <dataout_S[1][7]_datain[7]_equal_7_o> created at line 101
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  57 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <Profibus_Recieve> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 1
+ 8-bit adder                                           : 2
+# Registers                                            : 5
+ 1-bit register                                        : 1
+ 32-bit register                                       : 1
+ 8-bit register                                        : 3
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 1
+ 8-bit comparator equal                                : 1
+# Multiplexers                                         : 4
+ 32-bit 2-to-1 multiplexer                             : 4
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 1
+ 8-bit adder                                           : 2
+# Registers                                            : 57
+ Flip-Flops                                            : 57
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 1
+ 8-bit comparator equal                                : 1
+# Multiplexers                                         : 4
+ 32-bit 2-to-1 multiplexer                             : 4
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:3]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 000
+ sd1   | 001
+ da1   | 010
+ sa1   | 011
+ fc1   | 100
+ fcs1  | 101
+ sd2   | unreached
+ le    | unreached
+ ler   | unreached
+ da2   | unreached
+ sa2   | unreached
+ fc2   | unreached
+ pdu2  | unreached
+ fcs2  | unreached
+ sd3   | unreached
+ da3   | unreached
+ sa3   | unreached
+ fc3   | unreached
+ pdu3  | unreached
+ fcs3  | unreached
+ sd4   | unreached
+ da4   | unreached
+ sc    | unreached
+-------------------
+
+Optimizing unit <Profibus_Recieve> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Profibus_Recieve, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 60
+ Flip-Flops                                            : 60
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Profibus_Recieve.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 211
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 31
+#      LUT2                        : 1
+#      LUT3                        : 8
+#      LUT4                        : 20
+#      LUT5                        : 42
+#      LUT6                        : 18
+#      MUXCY                       : 46
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 40
+# FlipFlops/Latches                : 60
+#      FDC                         : 43
+#      FDCE                        : 16
+#      FDE                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 19
+#      IBUF                        : 10
+#      OBUF                        : 9
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              60  out of  54576     0%  
+ Number of Slice LUTs:                  121  out of  27288     0%  
+    Number used as Logic:               121  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    126
+   Number with an unused Flip Flop:      66  out of    126    52%  
+   Number with an unused LUT:             5  out of    126     3%  
+   Number of fully used LUT-FF pairs:    55  out of    126    43%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                         275
+ Number of bonded IOBs:                  20  out of    218     9%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 60    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.828ns (Maximum Frequency: 207.113MHz)
+   Minimum input arrival time before clock: 5.766ns
+   Maximum output required time after clock: 3.634ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.828ns (frequency: 207.113MHz)
+  Total number of paths / destination ports: 3267 / 69
+-------------------------------------------------------------------------
+Delay:               4.828ns (Levels of Logic = 10)
+  Source:            timer_0 (FF)
+  Destination:       state_FSM_FFd3 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: timer_0 to state_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.961  timer_0 (timer_0)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_n0001_lut<0> (Mcompar_n0001_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_n0001_cy<0> (Mcompar_n0001_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_n0001_cy<1> (Mcompar_n0001_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_n0001_cy<2> (Mcompar_n0001_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_n0001_cy<3> (Mcompar_n0001_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_n0001_cy<4> (Mcompar_n0001_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_n0001_cy<5> (Mcompar_n0001_cy<5>)
+     MUXCY:CI->O          57   0.019   1.594  Mcompar_n0001_cy<6> (Mcompar_n0001_cy<6>)
+     LUT4:I3->O            1   0.205   0.827  state_FSM_FFd3-In323_SW2 (N10)
+     LUT6:I2->O            1   0.203   0.000  state_FSM_FFd3-In (state_FSM_FFd3-In)
+     FDC:D                     0.102          state_FSM_FFd3
+    ----------------------------------------
+    Total                      4.828ns (1.446ns logic, 3.382ns route)
+                                       (29.9% logic, 70.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 214 / 127
+-------------------------------------------------------------------------
+Offset:              5.766ns (Levels of Logic = 5)
+  Source:            datain<6> (PAD)
+  Destination:       state_FSM_FFd3 (FF)
+  Destination Clock: clk rising
+
+  Data Path: datain<6> to state_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.222   1.167  datain_6_IBUF (datain_6_IBUF)
+     LUT6:I0->O            3   0.203   0.879  state_FSM_FFd3-In311 (state_FSM_FFd3-In31)
+     LUT5:I2->O            3   0.205   0.755  state_FSM_FFd3-In_SW0_SW0 (N4)
+     LUT4:I2->O            1   0.203   0.827  state_FSM_FFd3-In323_SW2 (N10)
+     LUT6:I2->O            1   0.203   0.000  state_FSM_FFd3-In (state_FSM_FFd3-In)
+     FDC:D                     0.102          state_FSM_FFd3
+    ----------------------------------------
+    Total                      5.766ns (2.138ns logic, 3.628ns route)
+                                       (37.1% logic, 62.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            detect (FF)
+  Destination:       detect (PAD)
+  Source Clock:      clk rising
+
+  Data Path: detect to detect
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.447   0.616  detect (detect_OBUF)
+     OBUF:I->O                 2.571          detect_OBUF (detect)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.828|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.74 secs
+ 
+--> 
+
+Total memory usage is 4502000 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
+
