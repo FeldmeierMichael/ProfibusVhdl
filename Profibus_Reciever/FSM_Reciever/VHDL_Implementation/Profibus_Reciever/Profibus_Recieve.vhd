@@ -43,7 +43,7 @@ entity Profibus_Recieve is
 			  
 end Profibus_Recieve;
 architecture Behavioral of Profibus_Recieve is
-type state_t is(idle,sd1,da1,sa1,fc1,fcs1,sd2,le,ler,da2,sa2,fc2,pdu2,fcs2,sd3,da3,sa3,fc3,pdu3,fcs3,sd4,da4,sc);
+type state_t is(idle,sd1,da1,sa1,fc1,fcs1,sd2,le,ler,sd2_2,da2,sa2,fc2,pdu2,fcs2,sd3,da3,sa3,fc3,pdu3,fcs3,sd4,da4,sc);
 signal state:state_t:=idle;
 signal timer: unsigned(31 downto 0):=(others=>'0');
 signal counter:unsigned(7 downto 0):=x"00";
@@ -117,6 +117,7 @@ begin
 					when sd2 =>
 					when le  =>
 					when ler =>
+					when sd2_2=>
 					when da2 =>
 					when sa2 =>
 					when fc2 =>
