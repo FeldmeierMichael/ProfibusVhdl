@@ -5,58 +5,62 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Reciever\FSM_Reciever\VHDL_Implementation\Profibus_Reciever\Profibus_Recieve.vhd" Line 62: Assignment to <arg fmt="%s" index="1">counter</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Reciever\FSM_Reciever\VHDL_Implementation\Profibus_Reciever\Profibus_Recieve.vhd" Line 61: Assignment to <arg fmt="%s" index="1">counter</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">sd2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">sd2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">le</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">le</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">ler</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">ler</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">da2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">da2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">sa2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">sa2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">fc2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">fc2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">pdu2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">pdu2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">fcs2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">fcs2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">sd3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">sd3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">da3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">da3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">sa3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">sa3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">fc3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">fc3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">pdu3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">pdu3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">fcs3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">fcs3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">sd4</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">sd4</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">da4</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">da4</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">sc</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">sc</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1336" delta="new" > (*) More than 100% of Device resources are used
 </msg>
 
 </messages>
+

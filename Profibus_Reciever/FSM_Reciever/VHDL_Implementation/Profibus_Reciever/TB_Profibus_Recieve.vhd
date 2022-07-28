@@ -45,7 +45,7 @@ ARCHITECTURE behavior OF TB_Profibus_Recieve IS
          rs485detect : IN  std_logic;
          reset : IN  std_logic;
          datain : IN  std_logic_vector(7 downto 0);
-         type_o : OUT  std_logic;
+         type_o : OUT  std_logic_vector(7 downto 0);
          detect : OUT  std_logic;
          dataout : OUT  std_logic_vector(254 downto 0)
         );
@@ -59,12 +59,15 @@ ARCHITECTURE behavior OF TB_Profibus_Recieve IS
    signal datain : std_logic_vector(7 downto 0) := (others => '0');
 
  	--Outputs
-   signal type_o : std_logic;
+   signal type_o : std_logic_vector(7 downto 0);
    signal detect : std_logic;
    signal dataout : std_logic_vector(254 downto 0);
-
+	
+	--Test Signals/Types
+   type sd1array is array(0 to 5) of std_logic_vector(7 downto 0);
+	signal sd1test: sd1array :=(x"10",x"01",x"02",x"02",x"05",x"16");
    -- Clock period definitions
-   constant clk_period : time := 1 ms;
+   constant clk_period : time := 100 ns;
  
 BEGIN
  
@@ -90,12 +93,17 @@ BEGIN
  
 
    -- Stimulus process
-   stim_proc: process
+   SD1: process
    begin		
-      
-
+      for k in 0 to 5   loop
+			wait for 50 ns;
+			rs485detect<='1';
+			datain<=sd1test(k);
+			wait for 50 ns;
+			rs485detect<='0';
+		end loop;
      
-
+		assert false severity failure;
       wait;
    end process;
 

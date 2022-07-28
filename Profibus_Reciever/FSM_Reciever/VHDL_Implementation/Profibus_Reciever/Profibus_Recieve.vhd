@@ -37,13 +37,12 @@ entity Profibus_Recieve is
            rs485detect : in  STD_LOGIC:='0';
            reset : in  STD_LOGIC:='0';
            datain : in  STD_LOGIC_VECTOR (7 downto 0);
-           type_o : out  STD_LOGIC_Vector(7 downto 0);
-           detect : out  STD_LOGIC;
-           dataout : out  STD_LOGIC_VECTOR (254 downto 0));
+           type_o : out  STD_LOGIC_Vector(7 downto 0):=(others=>'0');
+           detect : out  STD_LOGIC:='0';
+           dataout : out  data_buffer:=(others=>x"00"));
+			  
 end Profibus_Recieve;
 architecture Behavioral of Profibus_Recieve is
-type data_buffer is array(254 downto 0) OF std_logic_vector(7 downto 0);
-signal dataout_S: data_buffer:=(others=>x"00");
 type state_t is(idle,sd1,da1,sa1,fc1,fcs1,sd2,le,ler,da2,sa2,fc2,pdu2,fcs2,sd3,da3,sa3,fc3,pdu3,fcs3,sd4,da4,sc);
 signal state:state_t:=idle;
 signal timer: unsigned(31 downto 0):=(others=>'0');
@@ -65,8 +64,9 @@ begin
 		if reset='1' then
 			state<=idle;			
 			counter<=x"00";
-			timer<=x"00000000";	
-			dataout_S<=(others=>x"00");
+			timer<=x"00000000";
+			fcs:=x"00";			
+			dataout<=(others=>x"00");
 		elsif	 rising_edge(clk) then
 				timer<=timer+1;
 			if rs485detect='1' then
@@ -77,34 +77,37 @@ begin
 					when idle=> 
 									timer<=(others=>'0');									
 									counter<=(others=>'0');									
-									dataout_S(0)<=datain;
+									dataout(0)<=datain;
+									fcs:=x"00";
 									if datain=sd1_c then
 										state<=sd1;
 									end if;
 					when sd1 =>
-									dataout_S(1)<=datain;
+									dataout(1)<=datain;									
 									timer<=(others=>'0');								
 									detect<='0';
 									state<=da1;
+									fcs:=fcs+unsigned(datain);	
 					when da1 =>
-									dataout_S(2)<=datain;
+									dataout(2)<=datain;
 									timer<=(others=>'0');								
-									state<=sa1;									
+									state<=sa1;	
+									fcs:=fcs+unsigned(datain);									
 					when sa1 =>
-									dataout_S(3)<=datain;
+									dataout(3)<=datain;
 									timer<=(others=>'0');								
-									state<=fc1;										
+									state<=fc1;	
+									fcs:=fcs+unsigned(datain);										
 					when fc1 =>
-									dataout_S(4)<=datain;
+									dataout(4)<=datain;
 									timer<=(others=>'0');								
-									fcs:=unsigned(dataout_S(1))+unsigned(dataout_S(2))+unsigned(dataout_S(3));
 									if datain=std_logic_vector(fcs) then
 										state<=fcs1;
 									else
 										state<=idle;
 									end if;
 					when fcs1=>
-									dataout_S(5)<=datain;
+									dataout(5)<=datain;
 									timer<=(others=>'0');	
 									state<=idle;									
 									if dataIn=ed_c then 
@@ -134,5 +137,8 @@ begin
 			end if;
 		end if;
 	end process;
+	
+
+	
 end Behavioral;
 

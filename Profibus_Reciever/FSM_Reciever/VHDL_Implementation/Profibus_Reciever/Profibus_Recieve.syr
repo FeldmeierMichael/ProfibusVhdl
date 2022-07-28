@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.68 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.69 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: Profibus_Recieve.prj
 
@@ -117,8 +117,8 @@ Parsing architecture <Behavioral> of entity <profibus_recieve>.
 =========================================================================
 
 Elaborating entity <Profibus_Recieve> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Reciever\FSM_Reciever\VHDL_Implementation\Profibus_Reciever\Profibus_Recieve.vhd" Line 131. Case statement is complete. others clause is never selected
-WARNING:HDLCompiler:1127 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Reciever\FSM_Reciever\VHDL_Implementation\Profibus_Reciever\Profibus_Recieve.vhd" Line 62: Assignment to counter ignored, since the identifier is never used
+INFO:HDLCompiler:679 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Reciever\FSM_Reciever\VHDL_Implementation\Profibus_Reciever\Profibus_Recieve.vhd" Line 134. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Reciever\FSM_Reciever\VHDL_Implementation\Profibus_Reciever\Profibus_Recieve.vhd" Line 61: Assignment to counter ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -127,9 +127,13 @@ WARNING:HDLCompiler:1127 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\P
 Synthesizing Unit <Profibus_Recieve>.
     Related source file is "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Reciever\FSM_Reciever\VHDL_Implementation\Profibus_Reciever\Profibus_Recieve.vhd".
     Found 32-bit register for signal <timer>.
-    Found 8-bit register for signal <dataout_S<3>>.
-    Found 8-bit register for signal <dataout_S<2>>.
-    Found 8-bit register for signal <dataout_S<1>>.
+    Found 8-bit register for signal <fcs>.
+    Found 8-bit register for signal <dataout<5>>.
+    Found 8-bit register for signal <dataout<4>>.
+    Found 8-bit register for signal <dataout<3>>.
+    Found 8-bit register for signal <dataout<2>>.
+    Found 8-bit register for signal <dataout<1>>.
+    Found 8-bit register for signal <dataout<0>>.
     Found 5-bit register for signal <state>.
     Found 1-bit register for signal <detect>.
     Found 8-bit register for signal <type_o>.
@@ -165,15 +169,14 @@ INFO:Xst:1799 - State sc is never reached in FSM <state>.
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 32-bit adder for signal <timer[31]_GND_5_o_add_0_OUT> created at line 1241.
-    Found 8-bit adder for signal <n2103> created at line 100.
-    Found 8-bit adder for signal <dataout_S[1][7]_dataout_S[3][7]_add_5_OUT> created at line 100.
+    Found 8-bit adder for signal <fcs[7]_datain[7]_add_6_OUT> created at line 100.
     Found 32-bit comparator greater for signal <n0001> created at line 73
-    Found 8-bit comparator equal for signal <dataout_S[1][7]_datain[7]_equal_7_o> created at line 101
+    Found 8-bit comparator equal for signal <fcs[7]_datain[7]_equal_8_o> created at line 104
     Summary:
-	inferred   3 Adder/Subtractor(s).
-	inferred  57 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  89 D-type flip-flop(s).
 	inferred   2 Comparator(s).
-	inferred   4 Multiplexer(s).
+	inferred   6 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <Profibus_Recieve> synthesized.
 
@@ -181,18 +184,19 @@ Unit <Profibus_Recieve> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 3
+# Adders/Subtractors                                   : 2
  32-bit adder                                          : 1
- 8-bit adder                                           : 2
-# Registers                                            : 5
+ 8-bit adder                                           : 1
+# Registers                                            : 9
  1-bit register                                        : 1
  32-bit register                                       : 1
- 8-bit register                                        : 3
+ 8-bit register                                        : 7
 # Comparators                                          : 2
  32-bit comparator greater                             : 1
  8-bit comparator equal                                : 1
-# Multiplexers                                         : 4
+# Multiplexers                                         : 6
  32-bit 2-to-1 multiplexer                             : 4
+ 8-bit 2-to-1 multiplexer                              : 2
 # FSMs                                                 : 1
 
 =========================================================================
@@ -206,16 +210,17 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 3
+# Adders/Subtractors                                   : 2
  32-bit adder                                          : 1
- 8-bit adder                                           : 2
-# Registers                                            : 57
- Flip-Flops                                            : 57
+ 8-bit adder                                           : 1
+# Registers                                            : 89
+ Flip-Flops                                            : 89
 # Comparators                                          : 2
  32-bit comparator greater                             : 1
  8-bit comparator equal                                : 1
-# Multiplexers                                         : 4
+# Multiplexers                                         : 6
  32-bit 2-to-1 multiplexer                             : 4
+ 8-bit 2-to-1 multiplexer                              : 2
 # FSMs                                                 : 1
 
 =========================================================================
@@ -258,6 +263,7 @@ Optimizing unit <Profibus_Recieve> ...
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block Profibus_Recieve, actual ratio is 0.
+FlipFlop state_FSM_FFd1 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -265,8 +271,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 60
- Flip-Flops                                            : 60
+# Registers                                            : 93
+ Flip-Flops                                            : 93
 
 =========================================================================
 
@@ -289,28 +295,26 @@ Top Level Output File Name         : Profibus_Recieve.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 211
+# BELS                             : 245
 #      GND                         : 1
 #      INV                         : 1
 #      LUT1                        : 31
-#      LUT2                        : 1
-#      LUT3                        : 8
-#      LUT4                        : 20
-#      LUT5                        : 42
-#      LUT6                        : 18
-#      MUXCY                       : 46
-#      MUXF7                       : 2
+#      LUT2                        : 12
+#      LUT3                        : 1
+#      LUT4                        : 48
+#      LUT5                        : 41
+#      LUT6                        : 22
+#      MUXCY                       : 47
 #      VCC                         : 1
 #      XORCY                       : 40
-# FlipFlops/Latches                : 60
-#      FDC                         : 43
-#      FDCE                        : 16
-#      FDE                         : 1
+# FlipFlops/Latches                : 93
+#      FD                          : 1
+#      FDC                         : 92
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 19
+# IO Buffers                       : 2059
 #      IBUF                        : 10
-#      OBUF                        : 9
+#      OBUF                        : 2049
 
 Device utilization summary:
 ---------------------------
@@ -319,23 +323,25 @@ Selected Device : 6slx45csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              60  out of  54576     0%  
- Number of Slice LUTs:                  121  out of  27288     0%  
-    Number used as Logic:               121  out of  27288     0%  
+ Number of Slice Registers:              93  out of  54576     0%  
+ Number of Slice LUTs:                  156  out of  27288     0%  
+    Number used as Logic:               156  out of  27288     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    126
-   Number with an unused Flip Flop:      66  out of    126    52%  
-   Number with an unused LUT:             5  out of    126     3%  
-   Number of fully used LUT-FF pairs:    55  out of    126    43%  
-   Number of unique control sets:         4
+ Number of LUT Flip Flop pairs used:    157
+   Number with an unused Flip Flop:      64  out of    157    40%  
+   Number with an unused LUT:             1  out of    157     0%  
+   Number of fully used LUT-FF pairs:    92  out of    157    58%  
+   Number of unique control sets:         2
 
 IO Utilization: 
- Number of IOs:                         275
- Number of bonded IOBs:                  20  out of    218     9%  
+ Number of IOs:                        2060
+ Number of bonded IOBs:                2060  out of    218   944% (*) 
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
 
 ---------------------------
 Partition Resource Summary:
@@ -358,7 +364,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 60    |
+clk                                | BUFGP                  | 93    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -369,9 +375,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 4.828ns (Maximum Frequency: 207.113MHz)
-   Minimum input arrival time before clock: 5.766ns
-   Maximum output required time after clock: 3.634ns
+   Minimum period: 4.029ns (Maximum Frequency: 248.183MHz)
+   Minimum input arrival time before clock: 5.260ns
+   Maximum output required time after clock: 3.668ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -380,16 +386,16 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 4.828ns (frequency: 207.113MHz)
-  Total number of paths / destination ports: 3267 / 69
+  Clock period: 4.029ns (frequency: 248.183MHz)
+  Total number of paths / destination ports: 3900 / 93
 -------------------------------------------------------------------------
-Delay:               4.828ns (Levels of Logic = 10)
+Delay:               4.029ns (Levels of Logic = 9)
   Source:            timer_0 (FF)
-  Destination:       state_FSM_FFd3 (FF)
+  Destination:       timer_0 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: timer_0 to state_FSM_FFd3
+  Data Path: timer_0 to timer_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -401,42 +407,40 @@ Delay:               4.828ns (Levels of Logic = 10)
      MUXCY:CI->O           1   0.019   0.000  Mcompar_n0001_cy<3> (Mcompar_n0001_cy<3>)
      MUXCY:CI->O           1   0.019   0.000  Mcompar_n0001_cy<4> (Mcompar_n0001_cy<4>)
      MUXCY:CI->O           1   0.019   0.000  Mcompar_n0001_cy<5> (Mcompar_n0001_cy<5>)
-     MUXCY:CI->O          57   0.019   1.594  Mcompar_n0001_cy<6> (Mcompar_n0001_cy<6>)
-     LUT4:I3->O            1   0.205   0.827  state_FSM_FFd3-In323_SW2 (N10)
-     LUT6:I2->O            1   0.203   0.000  state_FSM_FFd3-In (state_FSM_FFd3-In)
-     FDC:D                     0.102          state_FSM_FFd3
+     MUXCY:CI->O          92   0.019   1.825  Mcompar_n0001_cy<6> (Mcompar_n0001_cy<6>)
+     LUT5:I4->O            1   0.205   0.000  Mmux_timer[31]_state[4]_mux_35_OUT321 (timer[31]_state[4]_mux_35_OUT<9>)
+     FDC:D                     0.102          timer_9
     ----------------------------------------
-    Total                      4.828ns (1.446ns logic, 3.382ns route)
-                                       (29.9% logic, 70.1% route)
+    Total                      4.029ns (1.243ns logic, 2.786ns route)
+                                       (30.8% logic, 69.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 214 / 127
+  Total number of paths / destination ports: 312 / 185
 -------------------------------------------------------------------------
-Offset:              5.766ns (Levels of Logic = 5)
-  Source:            datain<6> (PAD)
-  Destination:       state_FSM_FFd3 (FF)
+Offset:              5.260ns (Levels of Logic = 4)
+  Source:            reset (PAD)
+  Destination:       detect (FF)
   Destination Clock: clk rising
 
-  Data Path: datain<6> to state_FSM_FFd3
+  Data Path: reset to detect
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             8   1.222   1.167  datain_6_IBUF (datain_6_IBUF)
-     LUT6:I0->O            3   0.203   0.879  state_FSM_FFd3-In311 (state_FSM_FFd3-In31)
-     LUT5:I2->O            3   0.205   0.755  state_FSM_FFd3-In_SW0_SW0 (N4)
-     LUT4:I2->O            1   0.203   0.827  state_FSM_FFd3-In323_SW2 (N10)
-     LUT6:I2->O            1   0.203   0.000  state_FSM_FFd3-In (state_FSM_FFd3-In)
-     FDC:D                     0.102          state_FSM_FFd3
+     IBUF:I->O            93   1.222   2.060  reset_IBUF (reset_IBUF)
+     LUT4:I1->O            1   0.205   0.580  _n2497_inv_SW0 (N2)
+     LUT6:I5->O            1   0.205   0.684  detect_dpot (detect_dpot)
+     LUT3:I1->O            1   0.203   0.000  detect_rstpot (detect_rstpot)
+     FD:D                      0.102          detect
     ----------------------------------------
-    Total                      5.766ns (2.138ns logic, 3.628ns route)
-                                       (37.1% logic, 62.9% route)
+    Total                      5.260ns (1.937ns logic, 3.323ns route)
+                                       (36.8% logic, 63.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 1 / 1
+  Total number of paths / destination ports: 49 / 49
 -------------------------------------------------------------------------
-Offset:              3.634ns (Levels of Logic = 1)
+Offset:              3.668ns (Levels of Logic = 1)
   Source:            detect (FF)
   Destination:       detect (PAD)
   Source Clock:      clk rising
@@ -445,11 +449,11 @@ Offset:              3.634ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              2   0.447   0.616  detect (detect_OBUF)
+     FD:C->Q               3   0.447   0.650  detect (detect_OBUF)
      OBUF:I->O                 2.571          detect_OBUF (detect)
     ----------------------------------------
-    Total                      3.634ns (3.018ns logic, 0.616ns route)
-                                       (83.0% logic, 17.0% route)
+    Total                      3.668ns (3.018ns logic, 0.650ns route)
+                                       (82.3% logic, 17.7% route)
 
 =========================================================================
 
@@ -461,20 +465,20 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    4.828|         |         |         |
+clk            |    4.029|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.74 secs
+Total REAL time to Xst completion: 28.00 secs
+Total CPU time to Xst completion: 27.49 secs
  
 --> 
 
-Total memory usage is 4502000 kilobytes
+Total memory usage is 4599152 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
 Number of infos    :   17 (   0 filtered)
 

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever/Profibus_Recieve.vhd" Line 42: &lt;<arg fmt="%s" index="1">data_buffer</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="854" delta="unknown" >"C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever/Profibus_Recieve.vhd" Line 35: Unit &lt;<arg fmt="%s" index="1">profibus_recieve</arg>&gt; ignored due to previous errors.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="374" delta="unknown" >"C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever/Profibus_Recieve.vhd" Line 45: Entity &lt;<arg fmt="%s" index="1">profibus_recieve</arg>&gt; is not yet compiled.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="24" delta="unknown" >"C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever/Profibus_Recieve.vhd" Line 46: <arg fmt="%s" index="1">&quot;**&quot;</arg> expects <arg fmt="%d" index="2">2</arg> arguments
+</msg>
+
+<msg type="error" file="HDLCompiler" num="845" delta="unknown" >"C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever/Profibus_Recieve.vhd" Line 47: Type of aggregate cannot be determined without context ; <arg fmt="%d" index="1">0</arg> visible types match here
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever/Profibus_Recieve.vhd" Line 50: &lt;<arg fmt="%s" index="1">unsigned</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever/Profibus_Recieve.vhd" Line 51: &lt;<arg fmt="%s" index="1">unsigned</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="32" delta="unknown" >"C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever/Profibus_Recieve.vhd" Line 52: &lt;<arg fmt="%s" index="1">dataout_s</arg>&gt; is already declared in this region.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever/Profibus_Recieve.vhd" Line 52: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever/Profibus_Recieve.vhd" Line 65: &lt;<arg fmt="%s" index="1">unsigned</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever/Profibus_Recieve.vhd" Line 69: &lt;<arg fmt="%s" index="1">counter</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever/Profibus_Recieve.vhd" Line 70: &lt;<arg fmt="%s" index="1">timer</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="845" delta="unknown" >"C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever/Profibus_Recieve.vhd" Line 71: Type of aggregate cannot be determined without context ; <arg fmt="%d" index="1">0</arg> visible types match here
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever/Profibus_Recieve.vhd" Line 73: &lt;<arg fmt="%s" index="1">timer</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever/Profibus_Recieve.vhd" Line 80: &lt;<arg fmt="%s" index="1">timer</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever/Profibus_Recieve.vhd" Line 81: &lt;<arg fmt="%s" index="1">counter</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="541" delta="unknown" >"C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever/Profibus_Recieve.vhd" Line 82: Type <arg fmt="%s" index="1">data_buffer</arg> is not an array type and cannot be indexed.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever/Profibus_Recieve.vhd" Line 83: &lt;<arg fmt="%s" index="1">datain</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="541" delta="unknown" >"C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever/Profibus_Recieve.vhd" Line 87: Type <arg fmt="%s" index="1">data_buffer</arg> is not an array type and cannot be indexed.
+</msg>
+
+</messages>
+
