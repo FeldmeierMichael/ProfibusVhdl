@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.77 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.77 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Reading design: Profibus_Recieve.prj
 
@@ -117,7 +117,7 @@ Parsing architecture <Behavioral> of entity <profibus_recieve>.
 =========================================================================
 
 Elaborating entity <Profibus_Recieve> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Reciever\FSM_Reciever\VHDL_Implementation\Profibus_Reciever\Profibus_Recieve.vhd" Line 200. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Reciever\FSM_Reciever\VHDL_Implementation\Profibus_Reciever\Profibus_Recieve.vhd" Line 204. Case statement is complete. others clause is never selected
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -125,8 +125,6 @@ INFO:HDLCompiler:679 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profi
 
 Synthesizing Unit <Profibus_Recieve>.
     Related source file is "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Reciever\FSM_Reciever\VHDL_Implementation\Profibus_Reciever\Profibus_Recieve.vhd".
-WARNING:Xst:2935 - Signal 'PDU_o<23:0>', unconnected in block 'Profibus_Recieve', is tied to its initial value (000000000000000000000000).
-WARNING:Xst:2935 - Signal 'PDU_Count', unconnected in block 'Profibus_Recieve', is tied to its initial value (00000000).
     Found 8-bit register for signal <counter>.
     Found 8-bit register for signal <fcs>.
     Found 32-bit register for signal <timer>.
@@ -139,14 +137,8 @@ WARNING:Xst:2935 - Signal 'PDU_Count', unconnected in block 'Profibus_Recieve', 
     Found 8-bit register for signal <type_o>.
     Found 8-bit register for signal <le_s>.
     Found 8-bit register for signal <LE_o>.
-    Found 1-bit register for signal <PDU_o<31>>.
-    Found 1-bit register for signal <PDU_o<30>>.
-    Found 1-bit register for signal <PDU_o<29>>.
-    Found 1-bit register for signal <PDU_o<28>>.
-    Found 1-bit register for signal <PDU_o<27>>.
-    Found 1-bit register for signal <PDU_o<26>>.
-    Found 1-bit register for signal <PDU_o<25>>.
-    Found 1-bit register for signal <PDU_o<24>>.
+    Found 8-bit register for signal <PDU_o>.
+    Found 8-bit register for signal <PDU_Count>.
 INFO:Xst:1799 - State da3 is never reached in FSM <state>.
 INFO:Xst:1799 - State sa3 is never reached in FSM <state>.
 INFO:Xst:1799 - State fc3 is never reached in FSM <state>.
@@ -168,16 +160,16 @@ INFO:Xst:1799 - State da4 is never reached in FSM <state>.
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 32-bit adder for signal <timer[31]_GND_5_o_add_0_OUT> created at line 1241.
-    Found 8-bit adder for signal <counter[7]_GND_5_o_add_28_OUT> created at line 1241.
-    Found 8-bit adder for signal <fcs[7]_datain[7]_add_31_OUT> created at line 177.
-    Found 8-bit subtractor for signal <GND_5_o_GND_5_o_sub_30_OUT<7:0>> created at line 1308.
+    Found 8-bit adder for signal <counter[7]_GND_5_o_add_29_OUT> created at line 1241.
+    Found 8-bit adder for signal <fcs[7]_datain[7]_add_32_OUT> created at line 181.
+    Found 8-bit subtractor for signal <GND_5_o_GND_5_o_sub_31_OUT<7:0>> created at line 1308.
     Found 32-bit comparator greater for signal <n0001> created at line 81
     Found 8-bit comparator equal for signal <le_s[7]_datain[7]_equal_21_o> created at line 140
-    Found 8-bit comparator greater for signal <counter[7]_GND_5_o_LessThan_31_o> created at line 176
-    Found 8-bit comparator equal for signal <fcs[7]_datain[7]_equal_33_o> created at line 180
+    Found 8-bit comparator greater for signal <counter[7]_GND_5_o_LessThan_32_o> created at line 180
+    Found 8-bit comparator equal for signal <fcs[7]_datain[7]_equal_34_o> created at line 184
     Summary:
 	inferred   4 Adder/Subtractor(s).
-	inferred 113 D-type flip-flop(s).
+	inferred 121 D-type flip-flop(s).
 	inferred   4 Comparator(s).
 	inferred  10 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
@@ -191,10 +183,10 @@ Macro Statistics
  32-bit adder                                          : 1
  8-bit adder                                           : 2
  8-bit subtractor                                      : 1
-# Registers                                            : 19
- 1-bit register                                        : 9
+# Registers                                            : 13
+ 1-bit register                                        : 1
  32-bit register                                       : 1
- 8-bit register                                        : 9
+ 8-bit register                                        : 11
 # Comparators                                          : 4
  32-bit comparator greater                             : 1
  8-bit comparator equal                                : 2
@@ -226,8 +218,8 @@ Macro Statistics
  32-bit adder                                          : 1
  8-bit adder                                           : 2
  8-bit subtractor                                      : 1
-# Registers                                            : 113
- Flip-Flops                                            : 113
+# Registers                                            : 121
+ Flip-Flops                                            : 121
 # Comparators                                          : 4
  32-bit comparator greater                             : 1
  8-bit comparator equal                                : 2
@@ -300,8 +292,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 103
- Flip-Flops                                            : 103
+# Registers                                            : 111
+ Flip-Flops                                            : 111
 
 =========================================================================
 
@@ -324,28 +316,29 @@ Top Level Output File Name         : Profibus_Recieve.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 326
+# BELS                             : 360
 #      GND                         : 1
-#      INV                         : 2
+#      INV                         : 1
 #      LUT1                        : 32
 #      LUT2                        : 46
-#      LUT3                        : 11
-#      LUT4                        : 18
-#      LUT5                        : 83
-#      LUT6                        : 45
+#      LUT3                        : 20
+#      LUT4                        : 19
+#      LUT5                        : 90
+#      LUT6                        : 60
 #      MUXCY                       : 47
+#      MUXF7                       : 3
 #      VCC                         : 1
 #      XORCY                       : 40
-# FlipFlops/Latches                : 103
+# FlipFlops/Latches                : 111
 #      FD                          : 42
 #      FDC                         : 45
 #      FDCE                        : 8
-#      FDE                         : 8
+#      FDE                         : 16
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 99
+# IO Buffers                       : 75
 #      IBUF                        : 10
-#      OBUF                        : 89
+#      OBUF                        : 65
 
 Device utilization summary:
 ---------------------------
@@ -354,20 +347,20 @@ Selected Device : 6slx45csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             103  out of  54576     0%  
- Number of Slice LUTs:                  237  out of  27288     0%  
-    Number used as Logic:               237  out of  27288     0%  
+ Number of Slice Registers:             111  out of  54576     0%  
+ Number of Slice LUTs:                  268  out of  27288     0%  
+    Number used as Logic:               268  out of  27288     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    238
-   Number with an unused Flip Flop:     135  out of    238    56%  
-   Number with an unused LUT:             1  out of    238     0%  
-   Number of fully used LUT-FF pairs:   102  out of    238    42%  
+ Number of LUT Flip Flop pairs used:    269
+   Number with an unused Flip Flop:     158  out of    269    58%  
+   Number with an unused LUT:             1  out of    269     0%  
+   Number of fully used LUT-FF pairs:   110  out of    269    40%  
    Number of unique control sets:         4
 
 IO Utilization: 
- Number of IOs:                         100
- Number of bonded IOBs:                 100  out of    218    45%  
+ Number of IOs:                          76
+ Number of bonded IOBs:                  76  out of    218    34%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -393,7 +386,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 103   |
+clk                                | BUFGP                  | 111   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -404,9 +397,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 4.827ns (Maximum Frequency: 207.187MHz)
-   Minimum input arrival time before clock: 9.085ns
-   Maximum output required time after clock: 3.820ns
+   Minimum period: 5.029ns (Maximum Frequency: 198.852MHz)
+   Minimum input arrival time before clock: 9.110ns
+   Maximum output required time after clock: 3.847ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -415,16 +408,16 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 4.827ns (frequency: 207.187MHz)
-  Total number of paths / destination ports: 5655 / 119
+  Clock period: 5.029ns (frequency: 198.852MHz)
+  Total number of paths / destination ports: 7029 / 135
 -------------------------------------------------------------------------
-Delay:               4.827ns (Levels of Logic = 9)
+Delay:               5.029ns (Levels of Logic = 9)
   Source:            timer_0 (FF)
-  Destination:       fcs_0 (FF)
+  Destination:       PDU_o_0 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: timer_0 to fcs_0
+  Data Path: timer_0 to PDU_o_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -437,17 +430,17 @@ Delay:               4.827ns (Levels of Logic = 9)
      MUXCY:CI->O           1   0.019   0.000  Mcompar_n0001_cy<4> (Mcompar_n0001_cy<4>)
      MUXCY:CI->O           1   0.019   0.000  Mcompar_n0001_cy<5> (Mcompar_n0001_cy<5>)
      MUXCY:CI->O          58   0.019   1.601  Mcompar_n0001_cy<6> (Mcompar_n0001_cy<6>)
-     LUT4:I3->O            8   0.205   0.802  _n0635_inv11 (_n0635_inv1)
+     LUT4:I3->O           16   0.205   1.004  _n0588_inv11 (_n0588_inv1)
      FDE:CE                    0.322          FCS_o_0
     ----------------------------------------
-    Total                      4.827ns (1.463ns logic, 3.364ns route)
-                                       (30.3% logic, 69.7% route)
+    Total                      5.029ns (1.463ns logic, 3.566ns route)
+                                       (29.1% logic, 70.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 674 / 164
+  Total number of paths / destination ports: 698 / 188
 -------------------------------------------------------------------------
-Offset:              9.085ns (Levels of Logic = 8)
+Offset:              9.110ns (Levels of Logic = 8)
   Source:            datain<4> (PAD)
   Destination:       state_FSM_FFd5 (FF)
   Destination Clock: clk rising
@@ -456,37 +449,37 @@ Offset:              9.085ns (Levels of Logic = 8)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            12   1.222   1.137  datain_4_IBUF (datain_4_IBUF)
-     LUT3:I0->O            3   0.205   0.995  GND_5_o_datain[7]_equal_38_o<7>111 (GND_5_o_datain[7]_equal_38_o<7>11)
+     IBUF:I->O            13   1.222   1.161  datain_4_IBUF (datain_4_IBUF)
+     LUT3:I0->O            3   0.205   0.995  GND_5_o_datain[7]_equal_3_o<7>111 (GND_5_o_datain[7]_equal_3_o<7>11)
      LUT6:I1->O            4   0.203   1.048  PWR_5_o_datain[7]_equal_6_o<7>1 (PWR_5_o_datain[7]_equal_6_o)
      LUT6:I0->O            1   0.203   0.684  state_FSM_FFd5-In4 (state_FSM_FFd5-In4)
-     LUT2:I0->O            2   0.203   0.981  state_FSM_FFd5-In7_SW0_SW0 (N45)
-     LUT6:I0->O            1   0.203   0.808  state_FSM_FFd5-In7_SW0 (N33)
+     LUT2:I0->O            2   0.203   0.981  state_FSM_FFd5-In7_SW0_SW0 (N107)
+     LUT6:I0->O            1   0.203   0.808  state_FSM_FFd5-In7_SW0 (N95)
      LUT6:I3->O            1   0.205   0.684  state_FSM_FFd5-In7 (state_FSM_FFd5-In7)
      LUT6:I4->O            1   0.203   0.000  state_FSM_FFd5-In10 (state_FSM_FFd5-In)
      FDC:D                     0.102          state_FSM_FFd5
     ----------------------------------------
-    Total                      9.085ns (2.749ns logic, 6.336ns route)
-                                       (30.3% logic, 69.7% route)
+    Total                      9.110ns (2.749ns logic, 6.361ns route)
+                                       (30.2% logic, 69.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 50 / 50
+  Total number of paths / destination ports: 58 / 58
 -------------------------------------------------------------------------
-Offset:              3.820ns (Levels of Logic = 1)
-  Source:            le_s_3 (FF)
-  Destination:       LE_o<3> (PAD)
+Offset:              3.847ns (Levels of Logic = 1)
+  Source:            le_s_1 (FF)
+  Destination:       LE_o<1> (PAD)
   Source Clock:      clk rising
 
-  Data Path: le_s_3 to LE_o<3>
+  Data Path: le_s_1 to LE_o<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               8   0.447   0.802  le_s_3 (le_s_3)
-     OBUF:I->O                 2.571          LE_o_3_OBUF (LE_o<3>)
+     FD:C->Q               9   0.447   0.829  le_s_1 (le_s_1)
+     OBUF:I->O                 2.571          LE_o_1_OBUF (LE_o<1>)
     ----------------------------------------
-    Total                      3.820ns (3.018ns logic, 0.802ns route)
-                                       (79.0% logic, 21.0% route)
+    Total                      3.847ns (3.018ns logic, 0.829ns route)
+                                       (78.5% logic, 21.5% route)
 
 =========================================================================
 
@@ -498,20 +491,20 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    4.827|         |         |         |
+clk            |    5.029|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.79 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.52 secs
  
 --> 
 
 Total memory usage is 4502000 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   16 (   0 filtered)
+Number of warnings :   14 (   0 filtered)
 Number of infos    :   14 (   0 filtered)
 

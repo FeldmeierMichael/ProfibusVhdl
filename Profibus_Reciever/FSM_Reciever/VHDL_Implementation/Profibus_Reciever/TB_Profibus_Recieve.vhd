@@ -52,7 +52,7 @@ ARCHITECTURE behavior OF TB_Profibus_Recieve IS
 		FC_o : OUT std_logic_vector(7 downto 0);
 		LE_o : OUT std_logic_vector(7 downto 0);
 		FCS_o : OUT std_logic_vector(7 downto 0);
-		PDU_o : OUT std_logic_vector(31 downto 0);
+		PDU_o : OUT std_logic_vector(7 downto 0);
 		PDU_Count : OUT std_logic_vector(7 downto 0)
 		);
 	END COMPONENT;
@@ -72,7 +72,7 @@ ARCHITECTURE behavior OF TB_Profibus_Recieve IS
 	signal FC_o: std_logic_vector(7 downto 0):=x"00";
 	signal LE_o: std_logic_vector(7 downto 0):=x"00";
 	signal FCS_o: std_logic_vector(7 downto 0):=x"00";
-	signal PDU_o: std_logic_vector(31 downto 0):=x"00000000";
+	signal PDU_o: std_logic_vector(7 downto 0):=x"00";
 	signal PDU_Count: std_logic_vector(7 downto 0):=x"00";
 	
 	--Test Signals/Types

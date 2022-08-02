@@ -44,7 +44,7 @@ entity Profibus_Recieve is
 			  FC_o: out std_logic_vector(7 downto 0):=x"00";
 			  LE_o: out std_logic_vector(7 downto 0):=x"00";
 			  FCS_o:out std_logic_vector(7 downto 0):=x"00";
-			  PDU_o:out std_logic_vector(31 downto 0):=x"00000000";
+			  PDU_o:out std_logic_vector(7 downto 0):=x"00";
 			  PDU_Count:out std_logic_vector(7 downto 0):=x"00"
 			  );
 			  
@@ -55,7 +55,7 @@ signal state:state_t:=idle;
 signal timer: unsigned(31 downto 0):=(others=>'0');
 signal counter:unsigned(7 downto 0):=x"00";
 signal le_s:std_logic_vector(7 downto 0):=x"00";
-signal buffer_s:data_buffer:=(others=>x"00000000");
+
 begin
 --	process(clk,reset)
 --	variable fcs:unsigned(7 downto 0):=x"00";
@@ -166,17 +166,21 @@ begin
 									state<=fc2;									
 					when fc2 =>
 									fcs:=fcs+unsigned(datain);
-									timer<=(others=>'0');
-									pdu_o(31 downto 24)<=datain;
-									--buffer_s(0)(31 downto 25)<=datain;
+									timer<=(others=>'0');									
+									pdu_o<=datain;									
 									state<=pdu2;
+									counter<=counter+1;
+									PDU_Count<=std_logic_vector(counter);
+									
 					when pdu2=>
 									timer<=(others=>'0');
 									counter<=counter+1;
-									if counter< unsigned(le_s)-4 then
+									PDU_Count<=std_logic_vector(counter);
+									--PDU_Count<=unsigned(counter)/8;
+									if counter< unsigned(le_s)-3 then
 										fcs:=fcs+unsigned(datain);
-										fcs_o<=std_logic_vector(fcs);
-										--buffer_s(counter/4)()<=datain;
+										fcs_o<=std_logic_vector(fcs);										
+										pdu_o<=datain;									
 									elsif datain=std_logic_vector(fcs)  then
 										state<=fcs2;								
 									end if;

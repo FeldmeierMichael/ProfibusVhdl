@@ -121,9 +121,9 @@ LAB0:    t1 = (t0 + 4800U);
 LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(121, ng0);
-    t2 = (t0 + 11192);
+    t2 = (t0 + 11168);
     *((int *)t2) = 0;
-    t3 = (t0 + 11196);
+    t3 = (t0 + 11172);
     *((int *)t3) = 5;
     t4 = 0;
     t5 = 5;
@@ -147,16 +147,16 @@ LAB5:    xsi_set_current_line(122, ng0);
 LAB10:    *((char **)t1) = &&LAB11;
     goto LAB1;
 
-LAB6:    t2 = (t0 + 11192);
+LAB6:    t2 = (t0 + 11168);
     t4 = *((int *)t2);
-    t3 = (t0 + 11196);
+    t3 = (t0 + 11172);
     t5 = *((int *)t3);
     if (t4 == t5)
         goto LAB7;
 
 LAB16:    t10 = (t4 + 1);
     t4 = t10;
-    t7 = (t0 + 11192);
+    t7 = (t0 + 11168);
     *((int *)t7) = t4;
     goto LAB4;
 
@@ -171,7 +171,7 @@ LAB8:    xsi_set_current_line(123, ng0);
     xsi_set_current_line(124, ng0);
     t2 = (t0 + 3112U);
     t3 = *((char **)t2);
-    t2 = (t0 + 11192);
+    t2 = (t0 + 11168);
     t10 = *((int *)t2);
     t11 = (t10 - 0);
     t12 = (t11 * 1);
@@ -213,9 +213,9 @@ LAB13:    goto LAB12;
 LAB15:    goto LAB13;
 
 LAB17:    xsi_set_current_line(130, ng0);
-    t2 = (t0 + 11200);
+    t2 = (t0 + 11176);
     *((int *)t2) = 0;
-    t3 = (t0 + 11204);
+    t3 = (t0 + 11180);
     *((int *)t3) = 10;
     t4 = 0;
     t5 = 10;
@@ -243,16 +243,16 @@ LAB22:    xsi_set_current_line(131, ng0);
 LAB27:    *((char **)t1) = &&LAB28;
     goto LAB1;
 
-LAB23:    t2 = (t0 + 11200);
+LAB23:    t2 = (t0 + 11176);
     t4 = *((int *)t2);
-    t3 = (t0 + 11204);
+    t3 = (t0 + 11180);
     t5 = *((int *)t3);
     if (t4 == t5)
         goto LAB24;
 
 LAB33:    t10 = (t4 + 1);
     t4 = t10;
-    t7 = (t0 + 11200);
+    t7 = (t0 + 11176);
     *((int *)t7) = t4;
     goto LAB21;
 
@@ -267,7 +267,7 @@ LAB25:    xsi_set_current_line(132, ng0);
     xsi_set_current_line(133, ng0);
     t2 = (t0 + 3272U);
     t3 = *((char **)t2);
-    t2 = (t0 + 11200);
+    t2 = (t0 + 11176);
     t10 = *((int *)t2);
     t11 = (t10 - 0);
     t12 = (t11 * 1);
@@ -321,7 +321,7 @@ LAB35:    goto LAB34;
 
 LAB37:    goto LAB35;
 
-LAB38:    t2 = (t0 + 11208);
+LAB38:    t2 = (t0 + 11184);
     xsi_report(t2, 19U, (unsigned char)3);
     goto LAB39;
 
