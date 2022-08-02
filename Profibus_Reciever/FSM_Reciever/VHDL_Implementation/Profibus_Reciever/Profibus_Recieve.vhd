@@ -45,7 +45,8 @@ entity Profibus_Recieve is
 			  LE_o: out std_logic_vector(7 downto 0):=x"00";
 			  FCS_o:out std_logic_vector(7 downto 0):=x"00";
 			  PDU_o:out std_logic_vector(7 downto 0):=x"00";
-			  PDU_Count:out std_logic_vector(7 downto 0):=x"00"
+			  PDU_Count:out std_logic_vector(7 downto 0):=x"00";
+			  PDU_RAM_Enable:out std_logic:='0'
 			  );
 			  
 end Profibus_Recieve;
@@ -57,15 +58,6 @@ signal counter:unsigned(7 downto 0):=x"00";
 signal le_s:std_logic_vector(7 downto 0):=x"00";
 
 begin
---	process(clk,reset)
---	variable fcs:unsigned(7 downto 0):=x"00";
---	begin
---		if reset='1' then
---					
---		elsif rising_edge(clk) then
---			timer<=timer+1;		
---		end if;
---	end process;
 	
 	process(rs485detect,reset,clk)
 	variable fcs:unsigned(7 downto 0):=x"00";
@@ -74,13 +66,18 @@ begin
 			state<=idle;			
 			counter<=x"00";
 			timer<=x"00000000";
-			fcs:=x"00";			
+			fcs:=x"00";		
+			PDU_RAM_Enable<='0';			
 		elsif	 rising_edge(clk) then
 				timer<=timer+1;
-			if rs485detect='1' then
-			if timer>= diff_c then
-				state<=idle;
-			else				
+				if timer>= diff_c then
+					state<=idle;
+					if state= sc then
+						detect<='1';
+						type_o<=x"04";	
+					end if;
+				end if;
+			if rs485detect='1' then						
 				case state is
 					when idle=> 
 									timer<=(others=>'0');									
@@ -88,19 +85,23 @@ begin
 									fcs:=x"00";
 									if datain=sd1_c then
 										state<=sd1;
+										detect<='0';
 									elsif datain=sd2_c then
 										state<=sd2;
+										detect<='0';
 									elsif datain=sd3_c then
 										state<=sd3;
+										detect<='0';
 									elsif datain=sd4_c then
 										state<=sd4;
+										detect<='0';
 									elsif datain=sc_c then
 										state<=sc;
+										detect<='0';
 									end if;
 					when sd1 =>
 									DA_o<=datain;									
 									timer<=(others=>'0');								
-									detect<='0';
 									state<=da1;
 									fcs:=fcs+unsigned(datain);	
 					when da1 =>
@@ -132,8 +133,7 @@ begin
 									fcs:=(others=>'0');
 									le_s<=datain;
 									LE_o<=datain;									
-									timer<=(others=>'0');								
-									detect<='0';
+									timer<=(others=>'0');							
 									state<=le;									
 					when le  =>
 									timer<=(others=>'0');
@@ -171,6 +171,7 @@ begin
 									state<=pdu2;
 									counter<=counter+1;
 									PDU_Count<=std_logic_vector(counter);
+									PDU_RAM_Enable<='1';
 									
 					when pdu2=>
 									timer<=(others=>'0');
@@ -182,31 +183,84 @@ begin
 										fcs_o<=std_logic_vector(fcs);										
 										pdu_o<=datain;									
 									elsif datain=std_logic_vector(fcs)  then
-										state<=fcs2;								
+										state<=fcs2;		
+										counter<=x"00";
+										PDU_RAM_Enable<='0';
 									end if;
 					when fcs2=>
 									timer<=(others=>'0');
 									counter<=(others=>'0');
+									state<=idle;
 									if dataIn=ed_c then 
 										detect<='1';
-										type_o<=x"01";
-										state<=idle;
+										type_o<=x"01";										
 									end if;
-					when sd3 =>
+					when sd3 => 
+									fcs:=fcs+unsigned(datain);
+									DA_o<=datain;
+									timer<=(others=>'0');
+									state<=da3;									
 					when da3 =>
+									fcs:=fcs+unsigned(datain);
+									SA_o<=datain;
+									timer<=(others=>'0');
+									state<=sa3;
 					when sa3 =>
-					when fc3 =>
+									fcs:=fcs+unsigned(datain);
+									FC_o<=datain;
+									timer<=(others=>'0');
+									state<=fc3;									
+					when fc3 => 
+									fcs:=fcs+unsigned(datain);
+									timer<=(others=>'0');									
+									pdu_o<=datain;									
+									state<=pdu3;
+									counter<=counter+1;
+									PDU_Count<=std_logic_vector(counter);
+									PDU_RAM_Enable<='1';
+									
 					when pdu3=>
+									timer<=(others=>'0');
+									counter<=counter+1;
+									PDU_Count<=std_logic_vector(counter);
+									--PDU_Count<=unsigned(counter)/8;
+									if counter< 8 then
+										fcs:=fcs+unsigned(datain);
+										fcs_o<=std_logic_vector(fcs);										
+										pdu_o<=datain;									
+									elsif datain=std_logic_vector(fcs)  then
+										state<=fcs3;		
+										counter<=x"00";
+										PDU_RAM_Enable<='0';
+									end if;
 					when fcs3=>
+									timer<=(others=>'0');
+									counter<=(others=>'0');
+									state<=idle;
+									if dataIn=ed_c then 
+										detect<='1';
+										type_o<=x"02";										
+									end if;
 					when sd4 =>
+									DA_o<=datain;
+									timer<=(others=>'0');
+									state<=da4;
+									detect<='0';
 					when da4 =>
-					when sc  =>
+									timer<=(others=>'0');
+									detect<='1';
+									type_o<=x"03";
+									state<=idle;
+					when sc  => 
+									timer<=(others=>'0');
+									detect<='1';
+									type_o<=x"04";	
+									state<=idle;									
 					when others=>
 				end case;
 			end if;				
 			end if;
-		end if;
-	end process;
+			end process;
 	
 
 	

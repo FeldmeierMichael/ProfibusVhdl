@@ -53,7 +53,8 @@ ARCHITECTURE behavior OF TB_Profibus_Recieve IS
 		LE_o : OUT std_logic_vector(7 downto 0);
 		FCS_o : OUT std_logic_vector(7 downto 0);
 		PDU_o : OUT std_logic_vector(7 downto 0);
-		PDU_Count : OUT std_logic_vector(7 downto 0)
+		PDU_Count : OUT std_logic_vector(7 downto 0);
+		PDU_RAM_Enable:out std_logic:='0'
 		);
 	END COMPONENT;
     
@@ -74,13 +75,22 @@ ARCHITECTURE behavior OF TB_Profibus_Recieve IS
 	signal FCS_o: std_logic_vector(7 downto 0):=x"00";
 	signal PDU_o: std_logic_vector(7 downto 0):=x"00";
 	signal PDU_Count: std_logic_vector(7 downto 0):=x"00";
+	signal PDU_RAM_Enable:std_logic:='0';
 	
 	--Test Signals/Types
    type sd1array is array(0 to 5) of std_logic_vector(7 downto 0);
 	type sd2array is array(0 to 10) of std_logic_vector(7 downto 0);
+	type sd3array is array(0 to 13) of std_logic_vector(7 downto 0);
+	type sd4array is array(0 to 2) of std_logic_vector(7 downto 0);
+	type sd5array is array(0 to 0) of std_logic_vector(7 downto 0);
+
 	
 	signal sd1test: sd1array :=(x"10",x"01",x"02",x"02",x"05",x"16");
 	signal sd2test: sd2array :=(x"68",x"05",not x"05",x"68",x"01",x"02",x"01",x"01",x"01",x"06",x"16");
+	signal sd3test: sd3array :=(x"a2",x"01",x"02",x"01",x"01",x"01",x"01",x"01",x"01",x"01",x"01",x"01",x"0C",x"16");
+	signal sd4test: sd4array :=(x"DC",x"01",x"02");
+	signal sd5test: std_logic_vector(7 downto 0) :=x"e5";
+	
 	
    -- Clock period definitions
    constant clk_period : time := 100 ns;
@@ -101,7 +111,9 @@ BEGIN
 		LE_o => LE_o,
 		FCS_o => FCS_o,
 		PDU_o => PDU_o,
-		PDU_Count => PDU_Count
+		PDU_Count => PDU_Count,
+		PDU_RAM_Enable =>	PDU_RAM_Enable 
+
 	);
 
    -- Clock process definitions
@@ -134,9 +146,31 @@ BEGIN
 			wait for 50 ns;
 			rs485detect<='0';
 		end loop;
-		
+		--SD3 Testbench		
 		wait for 100 ns;
-		
+		for k in 0 to 13   loop
+			wait for 50 ns;
+			rs485detect<='1';
+			datain<=sd3test(k);
+			wait for 50 ns;
+			rs485detect<='0';
+		end loop;
+		--SD4 Testbench
+		wait for 100ns;
+		for k in 0 to 2   loop
+			wait for 50 ns;
+			rs485detect<='1';
+			datain<=sd4test(k);
+			wait for 50 ns;
+			rs485detect<='0';
+		end loop;
+		--SD5 Telegram
+		wait for 50 ns;
+			rs485detect<='1';
+			datain<=sd5test;
+			wait for 50 ns;
+			rs485detect<='0';
+		wait for 500 ns;
      
 		assert false severity failure;
       wait;
