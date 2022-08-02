@@ -40,16 +40,22 @@ ARCHITECTURE behavior OF TB_Profibus_Recieve IS
     -- Component Declaration for the Unit Under Test (UUT)
  
     COMPONENT Profibus_Recieve
-    PORT(
-         clk : IN  std_logic;
-         rs485detect : IN  std_logic;
-         reset : IN  std_logic;
-         datain : IN  std_logic_vector(7 downto 0);
-         type_o : OUT  std_logic_vector(7 downto 0);
-         detect : OUT  std_logic;
-         dataout : OUT  std_logic_vector(254 downto 0)
-        );
-    END COMPONENT;
+	PORT(
+		clk : IN std_logic;
+		rs485detect : IN std_logic;
+		reset : IN std_logic;
+		datain : IN std_logic_vector(7 downto 0);          
+		detect : OUT std_logic;
+		type_o : OUT std_logic_vector(7 downto 0);
+		DA_o : OUT std_logic_vector(7 downto 0);
+		SA_o : OUT std_logic_vector(7 downto 0);
+		FC_o : OUT std_logic_vector(7 downto 0);
+		LE_o : OUT std_logic_vector(7 downto 0);
+		FCS_o : OUT std_logic_vector(7 downto 0);
+		PDU_o : OUT std_logic_vector(31 downto 0);
+		PDU_Count : OUT std_logic_vector(7 downto 0)
+		);
+	END COMPONENT;
     
 
    --Inputs
@@ -61,26 +67,42 @@ ARCHITECTURE behavior OF TB_Profibus_Recieve IS
  	--Outputs
    signal type_o : std_logic_vector(7 downto 0);
    signal detect : std_logic;
-   signal dataout : std_logic_vector(254 downto 0);
+   signal  DA_o: std_logic_vector(7 downto 0):=x"00";
+	signal SA_o: std_logic_vector(7 downto 0):=x"00";
+	signal FC_o: std_logic_vector(7 downto 0):=x"00";
+	signal LE_o: std_logic_vector(7 downto 0):=x"00";
+	signal FCS_o: std_logic_vector(7 downto 0):=x"00";
+	signal PDU_o: std_logic_vector(31 downto 0):=x"00000000";
+	signal PDU_Count: std_logic_vector(7 downto 0):=x"00";
 	
 	--Test Signals/Types
    type sd1array is array(0 to 5) of std_logic_vector(7 downto 0);
+	type sd2array is array(0 to 10) of std_logic_vector(7 downto 0);
+	
 	signal sd1test: sd1array :=(x"10",x"01",x"02",x"02",x"05",x"16");
+	signal sd2test: sd2array :=(x"68",x"05",not x"05",x"68",x"01",x"02",x"01",x"01",x"01",x"06",x"16");
+	
    -- Clock period definitions
    constant clk_period : time := 100 ns;
  
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: Profibus_Recieve PORT MAP (
-          clk => clk,
-          rs485detect => rs485detect,
-          reset => reset,
-          datain => datain,
-          type_o => type_o,
-          detect => detect,
-          dataout => dataout
-        );
+   Inst_Profibus_Recieve: Profibus_Recieve PORT MAP(
+		clk => clk,
+		rs485detect => rs485detect,
+		reset => reset,
+		datain => datain,
+		detect => detect,
+		type_o => type_o,
+		DA_o => DA_o,
+		SA_o => SA_o,
+		FC_o => FC_o,
+		LE_o => LE_o,
+		FCS_o => FCS_o,
+		PDU_o => PDU_o,
+		PDU_Count => PDU_Count
+	);
 
    -- Clock process definitions
    clk_process :process
@@ -95,6 +117,7 @@ BEGIN
    -- Stimulus process
    SD1: process
    begin		
+		--SD1 Testbench
       for k in 0 to 5   loop
 			wait for 50 ns;
 			rs485detect<='1';
@@ -102,6 +125,18 @@ BEGIN
 			wait for 50 ns;
 			rs485detect<='0';
 		end loop;
+		--SD2 Testbench
+		wait  for 100 ns;
+		for k in 0 to 10   loop
+			wait for 50 ns;
+			rs485detect<='1';
+			datain<=sd2test(k);
+			wait for 50 ns;
+			rs485detect<='0';
+		end loop;
+		
+		wait for 100 ns;
+		
      
 		assert false severity failure;
       wait;

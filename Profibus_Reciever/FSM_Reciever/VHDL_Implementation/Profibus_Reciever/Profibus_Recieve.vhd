@@ -37,9 +37,16 @@ entity Profibus_Recieve is
            rs485detect : in  STD_LOGIC:='0';
            reset : in  STD_LOGIC:='0';
            datain : in  STD_LOGIC_VECTOR (7 downto 0);
-           type_o : out  STD_LOGIC_Vector(7 downto 0):=(others=>'0');
-           detect : out  STD_LOGIC:='0';
-           dataout : out  data_buffer:=(others=>x"00"));
+           detect: out std_logic:='0';
+			  type_o: out std_logic_vector(7 downto 0):=x"00";
+			  DA_o: out std_logic_vector(7 downto 0):=x"00";
+			  SA_o: out std_logic_vector(7 downto 0):=x"00";
+			  FC_o: out std_logic_vector(7 downto 0):=x"00";
+			  LE_o: out std_logic_vector(7 downto 0):=x"00";
+			  FCS_o:out std_logic_vector(7 downto 0):=x"00";
+			  PDU_o:out std_logic_vector(31 downto 0):=x"00000000";
+			  PDU_Count:out std_logic_vector(7 downto 0):=x"00"
+			  );
 			  
 end Profibus_Recieve;
 architecture Behavioral of Profibus_Recieve is
@@ -47,6 +54,8 @@ type state_t is(idle,sd1,da1,sa1,fc1,fcs1,sd2,le,ler,sd2_2,da2,sa2,fc2,pdu2,fcs2
 signal state:state_t:=idle;
 signal timer: unsigned(31 downto 0):=(others=>'0');
 signal counter:unsigned(7 downto 0):=x"00";
+signal le_s:std_logic_vector(7 downto 0):=x"00";
+signal buffer_s:data_buffer:=(others=>x"00000000");
 begin
 --	process(clk,reset)
 --	variable fcs:unsigned(7 downto 0):=x"00";
@@ -66,7 +75,6 @@ begin
 			counter<=x"00";
 			timer<=x"00000000";
 			fcs:=x"00";			
-			dataout<=(others=>x"00");
 		elsif	 rising_edge(clk) then
 				timer<=timer+1;
 			if rs485detect='1' then
@@ -76,38 +84,44 @@ begin
 				case state is
 					when idle=> 
 									timer<=(others=>'0');									
-									counter<=(others=>'0');									
-									dataout(0)<=datain;
+									counter<=(others=>'0');								
 									fcs:=x"00";
 									if datain=sd1_c then
 										state<=sd1;
+									elsif datain=sd2_c then
+										state<=sd2;
+									elsif datain=sd3_c then
+										state<=sd3;
+									elsif datain=sd4_c then
+										state<=sd4;
+									elsif datain=sc_c then
+										state<=sc;
 									end if;
 					when sd1 =>
-									dataout(1)<=datain;									
+									DA_o<=datain;									
 									timer<=(others=>'0');								
 									detect<='0';
 									state<=da1;
 									fcs:=fcs+unsigned(datain);	
 					when da1 =>
-									dataout(2)<=datain;
+									sa_o<=datain;
 									timer<=(others=>'0');								
 									state<=sa1;	
 									fcs:=fcs+unsigned(datain);									
 					when sa1 =>
-									dataout(3)<=datain;
+									fc_o<=datain;
 									timer<=(others=>'0');								
 									state<=fc1;	
 									fcs:=fcs+unsigned(datain);										
 					when fc1 =>
-									dataout(4)<=datain;
+									fcs_o<=datain;
 									timer<=(others=>'0');								
 									if datain=std_logic_vector(fcs) then
 										state<=fcs1;
 									else
 										state<=idle;
 									end if;
-					when fcs1=>
-									dataout(5)<=datain;
+					when fcs1=>									
 									timer<=(others=>'0');	
 									state<=idle;									
 									if dataIn=ed_c then 
@@ -115,14 +129,65 @@ begin
 										type_o<=x"00";
 									end if;								
 					when sd2 =>
+									fcs:=(others=>'0');
+									le_s<=datain;
+									LE_o<=datain;									
+									timer<=(others=>'0');								
+									detect<='0';
+									state<=le;									
 					when le  =>
+									timer<=(others=>'0');
+									if datain=not(le_s) then
+										state<=ler;
+									else
+										state<=idle;
+									end if;
 					when ler =>
+									timer<=(others=>'0');
+									if datain=sd2_c then
+										state<=sd2_2;
+									else
+										state<=idle;
+									end if;
 					when sd2_2=>
+									fcs:=fcs+unsigned(datain);
+									timer<=(others=>'0');
+									da_o<=datain;
+									state<=da2;
 					when da2 =>
+									fcs:=fcs+unsigned(datain);
+									timer<=(others=>'0');
+									sa_o<=datain;
+									state<=sa2;
 					when sa2 =>
+									fcs:=fcs+unsigned(datain);
+									timer<=(others=>'0');
+									fc_o<=datain;
+									state<=fc2;									
 					when fc2 =>
+									fcs:=fcs+unsigned(datain);
+									timer<=(others=>'0');
+									pdu_o(31 downto 24)<=datain;
+									--buffer_s(0)(31 downto 25)<=datain;
+									state<=pdu2;
 					when pdu2=>
+									timer<=(others=>'0');
+									counter<=counter+1;
+									if counter< unsigned(le_s)-4 then
+										fcs:=fcs+unsigned(datain);
+										fcs_o<=std_logic_vector(fcs);
+										--buffer_s(counter/4)()<=datain;
+									elsif datain=std_logic_vector(fcs)  then
+										state<=fcs2;								
+									end if;
 					when fcs2=>
+									timer<=(others=>'0');
+									counter<=(others=>'0');
+									if dataIn=ed_c then 
+										detect<='1';
+										type_o<=x"01";
+										state<=idle;
+									end if;
 					when sd3 =>
 					when da3 =>
 					when sa3 =>

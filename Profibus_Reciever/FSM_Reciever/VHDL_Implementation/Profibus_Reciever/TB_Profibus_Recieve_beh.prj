@@ -1,0 +1,3 @@
+vhdl work "Profibus_Constants.vhd"
+vhdl work "Profibus_Recieve.vhd"
+vhdl work "TB_Profibus_Recieve.vhd"

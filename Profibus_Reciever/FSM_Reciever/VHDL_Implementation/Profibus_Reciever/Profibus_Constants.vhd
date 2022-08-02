@@ -20,7 +20,7 @@ constant sd4_c:std_logic_vector(7 downto 0):=x"DC" ;
 constant ed_c:std_logic_vector(7 downto 0):=x"16" ;
 constant sc_c:std_logic_vector(7 downto 0):=x"E5" ;
 constant diff_c:unsigned(31 downto 0):=x"FFFFFFFF" ;
-type data_buffer is array(254 downto 0) OF std_logic_vector(7 downto 0);
+type data_buffer is array(0 to 64) OF std_logic_vector(31 downto 0);
 
 end Profibus_Constants;
 
