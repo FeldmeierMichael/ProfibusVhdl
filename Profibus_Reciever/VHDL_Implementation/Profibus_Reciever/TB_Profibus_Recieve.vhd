@@ -170,8 +170,7 @@ BEGIN
 			datain<=sd5test;
 			wait for 50 ns;
 			rs485detect<='0';
-		wait for 500 ns;
-     
+		wait for 500 ns;     
 		assert false severity failure;
       wait;
    end process;
