@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-08-07T14:18:19</DateModified>
+  <DateModified>2022-08-07T15:05:25</DateModified>
   <ModuleName>Profibus_UART</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/iseconfig/Profibus_UART.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART</ImplementationReportsDirectory>
+  <SavedFilePath>C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/VHDL_Implementation/Profibus_UART/Profibus_Uart/iseconfig/Profibus_UART.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/VHDL_Implementation/Profibus_UART/Profibus_Uart\</ImplementationReportsDirectory>
   <DateInitialized>2022-08-07T14:18:19</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

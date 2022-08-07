@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/VHDL_Implementation/Profibus_UART/Profibus_Uart/Profibus_UART.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/VHDL_Implementation/Profibus_UART/Profibus_Uart/Read_Write.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/VHDL_Implementation/Profibus_UART/Profibus_Uart/neg_flanke_puls.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/VHDL_Implementation/Profibus_UART/Profibus_Uart/remote_sources/_/_/_/_/_/_/Users/z003xazw/Downloads/uart.vhd&quot; into library work</arg>
+</msg>
+
+</messages>
+

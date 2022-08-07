@@ -2,14 +2,14 @@ Command line:
    TB_Profibus_UART_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  50982
+     -socket  51051
 
-Sun Aug 07 14:58:26 2022
+Sun Aug 07 15:05:52 2022
 
 
- Elaboration Time: 0.03125 sec
+ Elaboration Time: 0.046875 sec
 
- Current Memory Usage: 5150.19 Meg
+ Current Memory Usage: 5150.18 Meg
 
  Total Signals          : 63
  Total Nets             : 108
@@ -27,9 +27,9 @@ In process TB_Profibus_UART.vhd:stim_proc
  
 
 
- Total Simulation Time: 0.328125 sec
+ Total Simulation Time: 0.4375 sec
 
- Current Memory Usage: 5150.19 Meg
+ Current Memory Usage: 5150.18 Meg
 
-Sun Aug 07 14:58:51 2022
+Sun Aug 07 15:06:08 2022
 
