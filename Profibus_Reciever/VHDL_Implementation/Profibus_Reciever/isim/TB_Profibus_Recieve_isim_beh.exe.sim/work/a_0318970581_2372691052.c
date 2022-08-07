@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever/TB_Profibus_Recieve.vhd";
+static const char *ng0 = "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/VHDL_Implementation/Profibus_Reciever/TB_Profibus_Recieve.vhd";
 
 
 
@@ -121,9 +121,9 @@ LAB0:    t1 = (t0 + 5440U);
 LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(133, ng0);
-    t2 = (t0 + 13876);
+    t2 = (t0 + 13552);
     *((int *)t2) = 0;
-    t3 = (t0 + 13880);
+    t3 = (t0 + 13556);
     *((int *)t3) = 5;
     t4 = 0;
     t5 = 5;
@@ -147,16 +147,16 @@ LAB5:    xsi_set_current_line(134, ng0);
 LAB10:    *((char **)t1) = &&LAB11;
     goto LAB1;
 
-LAB6:    t2 = (t0 + 13876);
+LAB6:    t2 = (t0 + 13552);
     t4 = *((int *)t2);
-    t3 = (t0 + 13880);
+    t3 = (t0 + 13556);
     t5 = *((int *)t3);
     if (t4 == t5)
         goto LAB7;
 
 LAB16:    t10 = (t4 + 1);
     t4 = t10;
-    t7 = (t0 + 13876);
+    t7 = (t0 + 13552);
     *((int *)t7) = t4;
     goto LAB4;
 
@@ -171,7 +171,7 @@ LAB8:    xsi_set_current_line(135, ng0);
     xsi_set_current_line(136, ng0);
     t2 = (t0 + 3272U);
     t3 = *((char **)t2);
-    t2 = (t0 + 13876);
+    t2 = (t0 + 13552);
     t10 = *((int *)t2);
     t11 = (t10 - 0);
     t12 = (t11 * 1);
@@ -213,9 +213,9 @@ LAB13:    goto LAB12;
 LAB15:    goto LAB13;
 
 LAB17:    xsi_set_current_line(142, ng0);
-    t2 = (t0 + 13884);
+    t2 = (t0 + 13560);
     *((int *)t2) = 0;
-    t3 = (t0 + 13888);
+    t3 = (t0 + 13564);
     *((int *)t3) = 10;
     t4 = 0;
     t5 = 10;
@@ -243,16 +243,16 @@ LAB22:    xsi_set_current_line(143, ng0);
 LAB27:    *((char **)t1) = &&LAB28;
     goto LAB1;
 
-LAB23:    t2 = (t0 + 13884);
+LAB23:    t2 = (t0 + 13560);
     t4 = *((int *)t2);
-    t3 = (t0 + 13888);
+    t3 = (t0 + 13564);
     t5 = *((int *)t3);
     if (t4 == t5)
         goto LAB24;
 
 LAB33:    t10 = (t4 + 1);
     t4 = t10;
-    t7 = (t0 + 13884);
+    t7 = (t0 + 13560);
     *((int *)t7) = t4;
     goto LAB21;
 
@@ -267,7 +267,7 @@ LAB25:    xsi_set_current_line(144, ng0);
     xsi_set_current_line(145, ng0);
     t2 = (t0 + 3432U);
     t3 = *((char **)t2);
-    t2 = (t0 + 13884);
+    t2 = (t0 + 13560);
     t10 = *((int *)t2);
     t11 = (t10 - 0);
     t12 = (t11 * 1);
@@ -309,9 +309,9 @@ LAB30:    goto LAB29;
 LAB32:    goto LAB30;
 
 LAB34:    xsi_set_current_line(151, ng0);
-    t2 = (t0 + 13892);
+    t2 = (t0 + 13568);
     *((int *)t2) = 0;
-    t3 = (t0 + 13896);
+    t3 = (t0 + 13572);
     *((int *)t3) = 13;
     t4 = 0;
     t5 = 13;
@@ -339,16 +339,16 @@ LAB39:    xsi_set_current_line(152, ng0);
 LAB44:    *((char **)t1) = &&LAB45;
     goto LAB1;
 
-LAB40:    t2 = (t0 + 13892);
+LAB40:    t2 = (t0 + 13568);
     t4 = *((int *)t2);
-    t3 = (t0 + 13896);
+    t3 = (t0 + 13572);
     t5 = *((int *)t3);
     if (t4 == t5)
         goto LAB41;
 
 LAB50:    t10 = (t4 + 1);
     t4 = t10;
-    t7 = (t0 + 13892);
+    t7 = (t0 + 13568);
     *((int *)t7) = t4;
     goto LAB38;
 
@@ -363,7 +363,7 @@ LAB42:    xsi_set_current_line(153, ng0);
     xsi_set_current_line(154, ng0);
     t2 = (t0 + 3592U);
     t3 = *((char **)t2);
-    t2 = (t0 + 13892);
+    t2 = (t0 + 13568);
     t10 = *((int *)t2);
     t11 = (t10 - 0);
     t12 = (t11 * 1);
@@ -405,9 +405,9 @@ LAB47:    goto LAB46;
 LAB49:    goto LAB47;
 
 LAB51:    xsi_set_current_line(160, ng0);
-    t2 = (t0 + 13900);
+    t2 = (t0 + 13576);
     *((int *)t2) = 0;
-    t3 = (t0 + 13904);
+    t3 = (t0 + 13580);
     *((int *)t3) = 2;
     t4 = 0;
     t5 = 2;
@@ -435,16 +435,16 @@ LAB56:    xsi_set_current_line(161, ng0);
 LAB61:    *((char **)t1) = &&LAB62;
     goto LAB1;
 
-LAB57:    t2 = (t0 + 13900);
+LAB57:    t2 = (t0 + 13576);
     t4 = *((int *)t2);
-    t3 = (t0 + 13904);
+    t3 = (t0 + 13580);
     t5 = *((int *)t3);
     if (t4 == t5)
         goto LAB58;
 
 LAB67:    t10 = (t4 + 1);
     t4 = t10;
-    t7 = (t0 + 13900);
+    t7 = (t0 + 13576);
     *((int *)t7) = t4;
     goto LAB55;
 
@@ -459,7 +459,7 @@ LAB59:    xsi_set_current_line(162, ng0);
     xsi_set_current_line(163, ng0);
     t2 = (t0 + 3752U);
     t3 = *((char **)t2);
-    t2 = (t0 + 13900);
+    t2 = (t0 + 13576);
     t10 = *((int *)t2);
     t11 = (t10 - 0);
     t12 = (t11 * 1);
@@ -550,11 +550,11 @@ LAB73:    goto LAB72;
 
 LAB75:    goto LAB73;
 
-LAB76:    xsi_set_current_line(175, ng0);
+LAB76:    xsi_set_current_line(174, ng0);
     if ((unsigned char)0 == 0)
         goto LAB80;
 
-LAB81:    xsi_set_current_line(176, ng0);
+LAB81:    xsi_set_current_line(175, ng0);
 
 LAB84:    *((char **)t1) = &&LAB85;
     goto LAB1;
@@ -563,7 +563,7 @@ LAB77:    goto LAB76;
 
 LAB79:    goto LAB77;
 
-LAB80:    t2 = (t0 + 13908);
+LAB80:    t2 = (t0 + 13584);
     xsi_report(t2, 19U, (unsigned char)3);
     goto LAB81;
 

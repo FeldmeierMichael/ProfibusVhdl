@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Reciever\FSM_Reciever\VHDL_Implementation\Profibus_Reciever\TB_Profibus_Recieve_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever/TB_Profibus_Recieve_isim_beh.wdb 
+Running: C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Reciever\VHDL_Implementation\Profibus_Reciever\TB_Profibus_Recieve_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/VHDL_Implementation/Profibus_Reciever/TB_Profibus_Recieve_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -9,16 +9,6 @@ Time resolution is 1 ps
 # onerror resume
 # wave add /
 # run 10000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-
-** Failure:Assertion violation
-User(VHDL) Code Called Simulation Stop
-In process TB_Profibus_Recieve.vhd:SD1 
- 
-INFO: Simulator is stopped.
-# restart
-# run all
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 

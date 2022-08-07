@@ -2,14 +2,14 @@ Command line:
    TB_Profibus_Recieve_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  57600
+     -socket  51306
 
-Tue Aug 02 15:18:26 2022
+Sun Aug 07 15:55:55 2022
 
 
- Elaboration Time: 0.046875 sec
+ Elaboration Time: 0.03125 sec
 
- Current Memory Usage: 5150.32 Meg
+ Current Memory Usage: 5150.9 Meg
 
  Total Signals          : 37
  Total Nets             : 406
@@ -26,17 +26,10 @@ User(VHDL) Code Called Simulation Stop
 In process TB_Profibus_Recieve.vhd:SD1 
  
 
-Total Line Count : 184
 
-** Failure:Assertion violation
-User(VHDL) Code Called Simulation Stop
-In process TB_Profibus_Recieve.vhd:SD1 
- 
+ Total Simulation Time: 0.78125 sec
 
+ Current Memory Usage: 4993.61 Meg
 
- Total Simulation Time: 0.484375 sec
-
- Current Memory Usage: 4678.46 Meg
-
-Tue Aug 02 15:21:20 2022
+Sun Aug 07 15:56:59 2022
 
