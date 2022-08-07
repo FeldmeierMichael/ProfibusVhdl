@@ -46,6 +46,7 @@ entity Profibus_Recieve is
 			  FCS_o:out std_logic_vector(7 downto 0):=x"00";
 			  PDU_o:out std_logic_vector(7 downto 0):=x"00";
 			  PDU_Count:out std_logic_vector(7 downto 0):=x"00";
+			  idle:out std_logic:='1';
 			  PDU_RAM_Enable:out std_logic:='0'
 			  );
 			  
@@ -67,7 +68,8 @@ begin
 			counter<=x"00";
 			timer<=x"00000000";
 			fcs:=x"00";		
-			PDU_RAM_Enable<='0';			
+			PDU_RAM_Enable<='0';	
+			idle<='1';			
 		elsif	 rising_edge(clk) then
 				timer<=timer+1;
 				if timer>= diff_c then
@@ -79,25 +81,30 @@ begin
 				end if;
 			if rs485detect='1' then						
 				case state is
-					when idle=> 
+					when idle=> idle<='1';
 									timer<=(others=>'0');									
 									counter<=(others=>'0');								
 									fcs:=x"00";
 									if datain=sd1_c then
 										state<=sd1;
 										detect<='0';
+										idle<='0';
 									elsif datain=sd2_c then
 										state<=sd2;
 										detect<='0';
+										idle<='0';
 									elsif datain=sd3_c then
 										state<=sd3;
 										detect<='0';
+										idle<='0';
 									elsif datain=sd4_c then
 										state<=sd4;
 										detect<='0';
+										idle<='0';
 									elsif datain=sc_c then
 										state<=sc;
 										detect<='0';
+										idle<='0';
 									end if;
 					when sd1 =>
 									DA_o<=datain;									

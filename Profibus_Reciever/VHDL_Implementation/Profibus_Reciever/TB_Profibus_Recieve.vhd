@@ -54,6 +54,7 @@ ARCHITECTURE behavior OF TB_Profibus_Recieve IS
 		FCS_o : OUT std_logic_vector(7 downto 0);
 		PDU_o : OUT std_logic_vector(7 downto 0);
 		PDU_Count : OUT std_logic_vector(7 downto 0);
+		idle:out std_logic;
 		PDU_RAM_Enable:out std_logic:='0'
 		);
 	END COMPONENT;
@@ -76,6 +77,7 @@ ARCHITECTURE behavior OF TB_Profibus_Recieve IS
 	signal PDU_o: std_logic_vector(7 downto 0):=x"00";
 	signal PDU_Count: std_logic_vector(7 downto 0):=x"00";
 	signal PDU_RAM_Enable:std_logic:='0';
+	signal idle:std_logic:='1';
 	
 	--Test Signals/Types
    type sd1array is array(0 to 5) of std_logic_vector(7 downto 0);
@@ -112,8 +114,8 @@ BEGIN
 		FCS_o => FCS_o,
 		PDU_o => PDU_o,
 		PDU_Count => PDU_Count,
-		PDU_RAM_Enable =>	PDU_RAM_Enable 
-
+		PDU_RAM_Enable =>	PDU_RAM_Enable, 
+		idle=>idle
 	);
 
    -- Clock process definitions
