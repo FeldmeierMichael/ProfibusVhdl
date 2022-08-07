@@ -41,6 +41,7 @@ entity Profibus_UART is
            RX : in  STD_LOGIC;
            TX : out  STD_LOGIC;
            Read_en : out  STD_LOGIC;
+			  tx_busy : out std_logic;
            Write_en : out  STD_LOGIC);
 end Profibus_UART;
 
@@ -94,6 +95,7 @@ COMPONENT Read_Write
 
 	
 begin
+tx_busy<=tx_busy_s;
 Inst_neg_flanke_puls: neg_flanke_puls PORT MAP(
 		clk => clk,
 		in_i => rx_busy_s,

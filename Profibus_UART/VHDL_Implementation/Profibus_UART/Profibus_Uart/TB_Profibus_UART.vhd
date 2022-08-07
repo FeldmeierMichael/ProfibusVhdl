@@ -49,6 +49,7 @@ ARCHITECTURE behavior OF TB_Profibus_UART IS
          RX : IN  std_logic;
          TX : OUT  std_logic;
          Read_en : OUT  std_logic;
+			tx_busy : out std_logic;
          Write_en : OUT  std_logic
         );
     END COMPONENT;

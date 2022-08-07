@@ -1,4 +1,4 @@
-vhdl work "../../../../../../Users/z003xazw/Downloads/uart.vhd"
+vhdl work "remote_sources/_/_/_/_/_/_/Users/z003xazw/Downloads/uart.vhd"
 vhdl work "Read_Write.vhd"
 vhdl work "neg_flanke_puls.vhd"
 vhdl work "Profibus_UART.vhd"

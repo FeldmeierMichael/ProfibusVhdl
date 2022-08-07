@@ -1,0 +1,28 @@
+Command line:
+   TB_Profibus_Transmitter_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56148
+
+Sun Aug 07 21:26:59 2022
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5154.53 Meg
+
+ Total Signals          : 35
+ Total Nets             : 2137
+ Total Signal Drivers   : 16
+ Total Blocks           : 5
+ Total Primitive Blocks : 4
+ Total Processes        : 5
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 2701
+Total Line Count : 214
+
+** Failure:Assertion violation
+User(VHDL) Code Called Simulation Stop
+In process TB_Profibus_Transmitter.vhd:stim_proc 
+ 
+

@@ -1,0 +1,722 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.68 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.68 secs
+ 
+--> Reading design: Profibus_Transmitter.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Profibus_Transmitter.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Profibus_Transmitter"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : Profibus_Transmitter
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Transmitter\VHDL_Implementation\Profibus_Transmitter\Profibus_Constants.vhd" into library work
+Parsing package <Profibus_Constants>.
+Parsing package body <Profibus_Constants>.
+Parsing VHDL file "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Transmitter\VHDL_Implementation\Profibus_Transmitter\Profibus_Transmitter.vhd" into library work
+Parsing entity <Profibus_Transmitter>.
+Parsing architecture <Behavioral> of entity <profibus_transmitter>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Profibus_Transmitter> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Transmitter\VHDL_Implementation\Profibus_Transmitter\Profibus_Transmitter.vhd" Line 302. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Profibus_Transmitter>.
+    Related source file is "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Transmitter\VHDL_Implementation\Profibus_Transmitter\Profibus_Transmitter.vhd".
+    Found 8-bit register for signal <counter>.
+    Found 8-bit register for signal <fcs>.
+    Found 8-bit register for signal <RAM1<0>>.
+    Found 8-bit register for signal <RAM1<1>>.
+    Found 8-bit register for signal <RAM1<2>>.
+    Found 8-bit register for signal <RAM1<3>>.
+    Found 8-bit register for signal <RAM1<4>>.
+    Found 8-bit register for signal <RAM1<5>>.
+    Found 8-bit register for signal <RAM1<6>>.
+    Found 8-bit register for signal <RAM1<7>>.
+    Found 8-bit register for signal <RAM1<8>>.
+    Found 8-bit register for signal <RAM1<9>>.
+    Found 8-bit register for signal <RAM1<10>>.
+    Found 8-bit register for signal <RAM1<11>>.
+    Found 8-bit register for signal <RAM1<12>>.
+    Found 8-bit register for signal <RAM1<13>>.
+    Found 8-bit register for signal <RAM1<14>>.
+    Found 8-bit register for signal <RAM1<15>>.
+    Found 8-bit register for signal <RAM1<16>>.
+    Found 8-bit register for signal <RAM1<17>>.
+    Found 8-bit register for signal <RAM1<18>>.
+    Found 8-bit register for signal <RAM1<19>>.
+    Found 8-bit register for signal <RAM1<20>>.
+    Found 8-bit register for signal <RAM1<21>>.
+    Found 8-bit register for signal <RAM1<22>>.
+    Found 8-bit register for signal <RAM1<23>>.
+    Found 8-bit register for signal <RAM1<24>>.
+    Found 8-bit register for signal <RAM1<25>>.
+    Found 8-bit register for signal <RAM1<26>>.
+    Found 8-bit register for signal <RAM1<27>>.
+    Found 8-bit register for signal <RAM1<28>>.
+    Found 8-bit register for signal <RAM1<29>>.
+    Found 8-bit register for signal <RAM1<30>>.
+    Found 8-bit register for signal <RAM1<31>>.
+    Found 8-bit register for signal <RAM1<32>>.
+    Found 8-bit register for signal <RAM1<33>>.
+    Found 8-bit register for signal <RAM1<34>>.
+    Found 8-bit register for signal <RAM1<35>>.
+    Found 8-bit register for signal <RAM1<36>>.
+    Found 8-bit register for signal <RAM1<37>>.
+    Found 8-bit register for signal <RAM1<38>>.
+    Found 8-bit register for signal <RAM1<39>>.
+    Found 8-bit register for signal <RAM1<40>>.
+    Found 8-bit register for signal <RAM1<41>>.
+    Found 8-bit register for signal <RAM1<42>>.
+    Found 8-bit register for signal <RAM1<43>>.
+    Found 8-bit register for signal <RAM1<44>>.
+    Found 8-bit register for signal <RAM1<45>>.
+    Found 8-bit register for signal <RAM1<46>>.
+    Found 8-bit register for signal <RAM1<47>>.
+    Found 8-bit register for signal <RAM1<48>>.
+    Found 8-bit register for signal <RAM1<49>>.
+    Found 8-bit register for signal <RAM1<50>>.
+    Found 8-bit register for signal <RAM1<51>>.
+    Found 8-bit register for signal <RAM1<52>>.
+    Found 8-bit register for signal <RAM1<53>>.
+    Found 8-bit register for signal <RAM1<54>>.
+    Found 8-bit register for signal <RAM1<55>>.
+    Found 8-bit register for signal <RAM1<56>>.
+    Found 8-bit register for signal <RAM1<57>>.
+    Found 8-bit register for signal <RAM1<58>>.
+    Found 8-bit register for signal <RAM1<59>>.
+    Found 8-bit register for signal <RAM1<60>>.
+    Found 8-bit register for signal <RAM1<61>>.
+    Found 8-bit register for signal <RAM1<62>>.
+    Found 8-bit register for signal <RAM1<63>>.
+    Found 8-bit register for signal <RAM1<64>>.
+    Found 8-bit register for signal <RAM1<65>>.
+    Found 8-bit register for signal <RAM1<66>>.
+    Found 8-bit register for signal <RAM1<67>>.
+    Found 8-bit register for signal <RAM1<68>>.
+    Found 8-bit register for signal <RAM1<69>>.
+    Found 8-bit register for signal <RAM1<70>>.
+    Found 8-bit register for signal <RAM1<71>>.
+    Found 8-bit register for signal <RAM1<72>>.
+    Found 8-bit register for signal <RAM1<73>>.
+    Found 8-bit register for signal <RAM1<74>>.
+    Found 8-bit register for signal <RAM1<75>>.
+    Found 8-bit register for signal <RAM1<76>>.
+    Found 8-bit register for signal <RAM1<77>>.
+    Found 8-bit register for signal <RAM1<78>>.
+    Found 8-bit register for signal <RAM1<79>>.
+    Found 8-bit register for signal <RAM1<80>>.
+    Found 8-bit register for signal <RAM1<81>>.
+    Found 8-bit register for signal <RAM1<82>>.
+    Found 8-bit register for signal <RAM1<83>>.
+    Found 8-bit register for signal <RAM1<84>>.
+    Found 8-bit register for signal <RAM1<85>>.
+    Found 8-bit register for signal <RAM1<86>>.
+    Found 8-bit register for signal <RAM1<87>>.
+    Found 8-bit register for signal <RAM1<88>>.
+    Found 8-bit register for signal <RAM1<89>>.
+    Found 8-bit register for signal <RAM1<90>>.
+    Found 8-bit register for signal <RAM1<91>>.
+    Found 8-bit register for signal <RAM1<92>>.
+    Found 8-bit register for signal <RAM1<93>>.
+    Found 8-bit register for signal <RAM1<94>>.
+    Found 8-bit register for signal <RAM1<95>>.
+    Found 8-bit register for signal <RAM1<96>>.
+    Found 8-bit register for signal <RAM1<97>>.
+    Found 8-bit register for signal <RAM1<98>>.
+    Found 8-bit register for signal <RAM1<99>>.
+    Found 8-bit register for signal <RAM1<100>>.
+    Found 8-bit register for signal <RAM1<101>>.
+    Found 8-bit register for signal <RAM1<102>>.
+    Found 8-bit register for signal <RAM1<103>>.
+    Found 8-bit register for signal <RAM1<104>>.
+    Found 8-bit register for signal <RAM1<105>>.
+    Found 8-bit register for signal <RAM1<106>>.
+    Found 8-bit register for signal <RAM1<107>>.
+    Found 8-bit register for signal <RAM1<108>>.
+    Found 8-bit register for signal <RAM1<109>>.
+    Found 8-bit register for signal <RAM1<110>>.
+    Found 8-bit register for signal <RAM1<111>>.
+    Found 8-bit register for signal <RAM1<112>>.
+    Found 8-bit register for signal <RAM1<113>>.
+    Found 8-bit register for signal <RAM1<114>>.
+    Found 8-bit register for signal <RAM1<115>>.
+    Found 8-bit register for signal <RAM1<116>>.
+    Found 8-bit register for signal <RAM1<117>>.
+    Found 8-bit register for signal <RAM1<118>>.
+    Found 8-bit register for signal <RAM1<119>>.
+    Found 8-bit register for signal <RAM1<120>>.
+    Found 8-bit register for signal <RAM1<121>>.
+    Found 8-bit register for signal <RAM1<122>>.
+    Found 8-bit register for signal <RAM1<123>>.
+    Found 8-bit register for signal <RAM1<124>>.
+    Found 8-bit register for signal <RAM1<125>>.
+    Found 8-bit register for signal <RAM1<126>>.
+    Found 8-bit register for signal <RAM1<127>>.
+    Found 8-bit register for signal <RAM1<128>>.
+    Found 8-bit register for signal <RAM1<129>>.
+    Found 8-bit register for signal <RAM1<130>>.
+    Found 8-bit register for signal <RAM1<131>>.
+    Found 8-bit register for signal <RAM1<132>>.
+    Found 8-bit register for signal <RAM1<133>>.
+    Found 8-bit register for signal <RAM1<134>>.
+    Found 8-bit register for signal <RAM1<135>>.
+    Found 8-bit register for signal <RAM1<136>>.
+    Found 8-bit register for signal <RAM1<137>>.
+    Found 8-bit register for signal <RAM1<138>>.
+    Found 8-bit register for signal <RAM1<139>>.
+    Found 8-bit register for signal <RAM1<140>>.
+    Found 8-bit register for signal <RAM1<141>>.
+    Found 8-bit register for signal <RAM1<142>>.
+    Found 8-bit register for signal <RAM1<143>>.
+    Found 8-bit register for signal <RAM1<144>>.
+    Found 8-bit register for signal <RAM1<145>>.
+    Found 8-bit register for signal <RAM1<146>>.
+    Found 8-bit register for signal <RAM1<147>>.
+    Found 8-bit register for signal <RAM1<148>>.
+    Found 8-bit register for signal <RAM1<149>>.
+    Found 8-bit register for signal <RAM1<150>>.
+    Found 8-bit register for signal <RAM1<151>>.
+    Found 8-bit register for signal <RAM1<152>>.
+    Found 8-bit register for signal <RAM1<153>>.
+    Found 8-bit register for signal <RAM1<154>>.
+    Found 8-bit register for signal <RAM1<155>>.
+    Found 8-bit register for signal <RAM1<156>>.
+    Found 8-bit register for signal <RAM1<157>>.
+    Found 8-bit register for signal <RAM1<158>>.
+    Found 8-bit register for signal <RAM1<159>>.
+    Found 8-bit register for signal <RAM1<160>>.
+    Found 8-bit register for signal <RAM1<161>>.
+    Found 8-bit register for signal <RAM1<162>>.
+    Found 8-bit register for signal <RAM1<163>>.
+    Found 8-bit register for signal <RAM1<164>>.
+    Found 8-bit register for signal <RAM1<165>>.
+    Found 8-bit register for signal <RAM1<166>>.
+    Found 8-bit register for signal <RAM1<167>>.
+    Found 8-bit register for signal <RAM1<168>>.
+    Found 8-bit register for signal <RAM1<169>>.
+    Found 8-bit register for signal <RAM1<170>>.
+    Found 8-bit register for signal <RAM1<171>>.
+    Found 8-bit register for signal <RAM1<172>>.
+    Found 8-bit register for signal <RAM1<173>>.
+    Found 8-bit register for signal <RAM1<174>>.
+    Found 8-bit register for signal <RAM1<175>>.
+    Found 8-bit register for signal <RAM1<176>>.
+    Found 8-bit register for signal <RAM1<177>>.
+    Found 8-bit register for signal <RAM1<178>>.
+    Found 8-bit register for signal <RAM1<179>>.
+    Found 8-bit register for signal <RAM1<180>>.
+    Found 8-bit register for signal <RAM1<181>>.
+    Found 8-bit register for signal <RAM1<182>>.
+    Found 8-bit register for signal <RAM1<183>>.
+    Found 8-bit register for signal <RAM1<184>>.
+    Found 8-bit register for signal <RAM1<185>>.
+    Found 8-bit register for signal <RAM1<186>>.
+    Found 8-bit register for signal <RAM1<187>>.
+    Found 8-bit register for signal <RAM1<188>>.
+    Found 8-bit register for signal <RAM1<189>>.
+    Found 8-bit register for signal <RAM1<190>>.
+    Found 8-bit register for signal <RAM1<191>>.
+    Found 8-bit register for signal <RAM1<192>>.
+    Found 8-bit register for signal <RAM1<193>>.
+    Found 8-bit register for signal <RAM1<194>>.
+    Found 8-bit register for signal <RAM1<195>>.
+    Found 8-bit register for signal <RAM1<196>>.
+    Found 8-bit register for signal <RAM1<197>>.
+    Found 8-bit register for signal <RAM1<198>>.
+    Found 8-bit register for signal <RAM1<199>>.
+    Found 8-bit register for signal <RAM1<200>>.
+    Found 8-bit register for signal <RAM1<201>>.
+    Found 8-bit register for signal <RAM1<202>>.
+    Found 8-bit register for signal <RAM1<203>>.
+    Found 8-bit register for signal <RAM1<204>>.
+    Found 8-bit register for signal <RAM1<205>>.
+    Found 8-bit register for signal <RAM1<206>>.
+    Found 8-bit register for signal <RAM1<207>>.
+    Found 8-bit register for signal <RAM1<208>>.
+    Found 8-bit register for signal <RAM1<209>>.
+    Found 8-bit register for signal <RAM1<210>>.
+    Found 8-bit register for signal <RAM1<211>>.
+    Found 8-bit register for signal <RAM1<212>>.
+    Found 8-bit register for signal <RAM1<213>>.
+    Found 8-bit register for signal <RAM1<214>>.
+    Found 8-bit register for signal <RAM1<215>>.
+    Found 8-bit register for signal <RAM1<216>>.
+    Found 8-bit register for signal <RAM1<217>>.
+    Found 8-bit register for signal <RAM1<218>>.
+    Found 8-bit register for signal <RAM1<219>>.
+    Found 8-bit register for signal <RAM1<220>>.
+    Found 8-bit register for signal <RAM1<221>>.
+    Found 8-bit register for signal <RAM1<222>>.
+    Found 8-bit register for signal <RAM1<223>>.
+    Found 8-bit register for signal <RAM1<224>>.
+    Found 8-bit register for signal <RAM1<225>>.
+    Found 8-bit register for signal <RAM1<226>>.
+    Found 8-bit register for signal <RAM1<227>>.
+    Found 8-bit register for signal <RAM1<228>>.
+    Found 8-bit register for signal <RAM1<229>>.
+    Found 8-bit register for signal <RAM1<230>>.
+    Found 8-bit register for signal <RAM1<231>>.
+    Found 8-bit register for signal <RAM1<232>>.
+    Found 8-bit register for signal <RAM1<233>>.
+    Found 8-bit register for signal <RAM1<234>>.
+    Found 8-bit register for signal <RAM1<235>>.
+    Found 8-bit register for signal <RAM1<236>>.
+    Found 8-bit register for signal <RAM1<237>>.
+    Found 8-bit register for signal <RAM1<238>>.
+    Found 8-bit register for signal <RAM1<239>>.
+    Found 8-bit register for signal <RAM1<240>>.
+    Found 8-bit register for signal <RAM1<241>>.
+    Found 8-bit register for signal <RAM1<242>>.
+    Found 8-bit register for signal <RAM1<243>>.
+    Found 8-bit register for signal <RAM1<244>>.
+    Found 8-bit register for signal <RAM1<245>>.
+    Found 8-bit register for signal <RAM1<246>>.
+    Found 8-bit register for signal <RAM1<247>>.
+    Found 8-bit register for signal <RAM1<248>>.
+    Found 8-bit register for signal <RAM1<249>>.
+    Found 8-bit register for signal <RAM1<250>>.
+    Found 8-bit register for signal <RAM1<251>>.
+    Found 8-bit register for signal <RAM1<252>>.
+    Found 8-bit register for signal <RAM1<253>>.
+    Found 8-bit register for signal <RAM1<254>>.
+    Found 8-bit register for signal <RAM1<255>>.
+    Found 5-bit register for signal <state>.
+    Found 1-bit register for signal <tx_busy_old>.
+    Found 8-bit register for signal <dataout>.
+    Found 1-bit register for signal <telegram_busy>.
+    Found 1-bit register for signal <send>.
+    Found 8-bit register for signal <le_s>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 24                                             |
+    | Transitions        | 78                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit adder for signal <fcs[7]_DA[7]_add_76_OUT> created at line 228.
+    Found 8-bit adder for signal <fcs[7]_SA[7]_add_80_OUT> created at line 238.
+    Found 8-bit adder for signal <fcs[7]_FC[7]_add_84_OUT> created at line 247.
+    Found 8-bit adder for signal <counter[7]_GND_5_o_add_96_OUT> created at line 1241.
+    Found 8-bit adder for signal <fcs[7]_counter[7]_add_99_OUT> created at line 268.
+    Found 8-bit subtractor for signal <GND_5_o_GND_5_o_sub_62_OUT<7:0>> created at line 1308.
+INFO:Xst:3019 - HDL ADVISOR - 2048 flip-flops were inferred for signal <RAM1>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Found 8-bit 256-to-1 multiplexer for signal <n1999> created at line 269.
+    Found 8-bit comparator greater for signal <counter[7]_GND_5_o_LessThan_63_o> created at line 207
+    Found 8-bit comparator greater for signal <counter[7]_GND_5_o_LessThan_98_o> created at line 266
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred 2083 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  50 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <Profibus_Transmitter> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 8-bit adder                                           : 5
+ 8-bit subtractor                                      : 1
+# Registers                                            : 263
+ 1-bit register                                        : 3
+ 8-bit register                                        : 260
+# Comparators                                          : 2
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 50
+ 1-bit 2-to-1 multiplexer                              : 4
+ 8-bit 2-to-1 multiplexer                              : 45
+ 8-bit 256-to-1 multiplexer                            : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 8-bit adder                                           : 5
+ 8-bit subtractor                                      : 1
+# Registers                                            : 2083
+ Flip-Flops                                            : 2083
+# Comparators                                          : 2
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 50
+ 1-bit 2-to-1 multiplexer                              : 4
+ 8-bit 2-to-1 multiplexer                              : 45
+ 8-bit 256-to-1 multiplexer                            : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:5]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 00000
+ sd1   | 00001
+ da1   | 00010
+ sa1   | 00011
+ fc1   | 00100
+ fcs1  | 00101
+ sd2   | 00110
+ le    | 00111
+ ler   | 01000
+ sd2_2 | 01001
+ da2   | 01010
+ sa2   | 01011
+ fc2   | 01100
+ pdu2  | 01101
+ fcs2  | 01110
+ sd3   | 01111
+ da3   | 10000
+ sa3   | 10001
+ fc3   | 10010
+ pdu3  | 10011
+ fcs3  | 10100
+ sd4   | 10101
+ da4   | 10110
+ sc    | 10111
+-------------------
+
+Optimizing unit <Profibus_Transmitter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Profibus_Transmitter, actual ratio is 13.
+FlipFlop counter_0 has been replicated 28 time(s)
+FlipFlop counter_1 has been replicated 26 time(s)
+FlipFlop counter_2 has been replicated 13 time(s)
+FlipFlop counter_3 has been replicated 6 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 2161
+ Flip-Flops                                            : 2161
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Profibus_Transmitter.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1492
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 38
+#      LUT3                        : 32
+#      LUT4                        : 14
+#      LUT5                        : 292
+#      LUT6                        : 636
+#      MUXCY                       : 28
+#      MUXF7                       : 282
+#      MUXF8                       : 136
+#      XORCY                       : 32
+# FlipFlops/Latches                : 2161
+#      FDC                         : 5
+#      FDCE                        : 2137
+#      FDE                         : 19
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 70
+#      IBUF                        : 60
+#      OBUF                        : 10
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            2161  out of  54576     3%  
+ Number of Slice LUTs:                 1013  out of  27288     3%  
+    Number used as Logic:              1013  out of  27288     3%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2472
+   Number with an unused Flip Flop:     311  out of   2472    12%  
+   Number with an unused LUT:          1459  out of   2472    59%  
+   Number of fully used LUT-FF pairs:   702  out of   2472    28%  
+   Number of unique control sets:       263
+
+IO Utilization: 
+ Number of IOs:                          71
+ Number of bonded IOBs:                  71  out of    218    32%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 2161  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.917ns (Maximum Frequency: 169.005MHz)
+   Minimum input arrival time before clock: 6.626ns
+   Maximum output required time after clock: 3.634ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.917ns (frequency: 169.005MHz)
+  Total number of paths / destination ports: 31265 / 209
+-------------------------------------------------------------------------
+Delay:               5.917ns (Levels of Logic = 5)
+  Source:            le_s_4 (FF)
+  Destination:       fcs_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: le_s_4 to fcs_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.447   0.995  le_s_4 (le_s_4)
+     LUT6:I1->O            4   0.203   0.684  Msub_GND_5_o_GND_5_o_sub_62_OUT<7:0>_cy<5>11 (Msub_GND_5_o_GND_5_o_sub_62_OUT<7:0>_cy<5>)
+     LUT6:I5->O            1   0.205   0.000  counter[7]_GND_5_o_LessThan_63_o25_SW0_SW0_G (N69)
+     MUXF7:I1->O           1   0.140   0.684  counter[7]_GND_5_o_LessThan_63_o25_SW0_SW0 (N61)
+     LUT5:I3->O           17   0.203   1.028  counter[7]_GND_5_o_LessThan_63_o25 (counter[7]_GND_5_o_LessThan_63_o)
+     LUT6:I5->O            8   0.205   0.802  _n2191_inv3 (_n2191_inv)
+     FDCE:CE                   0.322          fcs_0
+    ----------------------------------------
+    Total                      5.917ns (1.725ns logic, 4.192ns route)
+                                       (29.2% logic, 70.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 23065 / 6378
+-------------------------------------------------------------------------
+Offset:              6.626ns (Levels of Logic = 3)
+  Source:            PDU_count<6> (PAD)
+  Destination:       RAM1_67_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: PDU_count<6> to RAM1_67_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            67   1.222   1.888  PDU_count_6_IBUF (PDU_count_6_IBUF)
+     LUT3:I0->O           64   0.205   1.984  _n2451_inv11 (_n2451_inv1)
+     LUT5:I0->O            8   0.203   0.802  _n2687_inv1 (_n2687_inv)
+     FDCE:CE                   0.322          RAM1_123_0
+    ----------------------------------------
+    Total                      6.626ns (1.952ns logic, 4.674ns route)
+                                       (29.5% logic, 70.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            send (FF)
+  Destination:       send (PAD)
+  Source Clock:      clk rising
+
+  Data Path: send to send
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.447   0.616  send (send_OBUF)
+     OBUF:I->O                 2.571          send_OBUF (send)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.917|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 15.15 secs
+ 
+--> 
+
+Total memory usage is 4521676 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

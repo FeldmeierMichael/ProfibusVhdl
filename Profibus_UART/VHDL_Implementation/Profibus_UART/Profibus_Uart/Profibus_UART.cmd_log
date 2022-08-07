@@ -2,3 +2,4 @@ xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profi
 xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/Profibus_UART.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/Profibus_UART.syr" 
 xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/Profibus_UART.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/Profibus_UART.syr" 
 xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/Profibus_UART.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/Profibus_UART.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/VHDL_Implementation/Profibus_UART/Profibus_Uart/Profibus_UART.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/VHDL_Implementation/Profibus_UART/Profibus_Uart/Profibus_UART.syr" 

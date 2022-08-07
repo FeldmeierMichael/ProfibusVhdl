@@ -91,13 +91,13 @@
          <ClosedNode>/TB_Profibus_Recieve - behavior C:|UserData|z003xazw|Documents|GitHub|ProfibusVhdl|Profibus_Reciever|FSM_Reciever|VHDL_Implementation|Profibus_Reciever|TB_Profibus_Recieve.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>TB_Profibus_Recieve - behavior (C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/VHDL_Implementation/Profibus_Reciever/TB_Profibus_Recieve.vhd)</SelectedItem>
+         <SelectedItem>Inst_Profibus_Recieve - Profibus_Recieve - Behavioral (C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/VHDL_Implementation/Profibus_Reciever/Profibus_Recieve.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ea000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ea0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>TB_Profibus_Recieve - behavior (C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/VHDL_Implementation/Profibus_Reciever/TB_Profibus_Recieve.vhd)</CurrentItem>
+      <CurrentItem>Inst_Profibus_Recieve - Profibus_Recieve - Behavioral (C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/VHDL_Implementation/Profibus_Reciever/Profibus_Recieve.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>

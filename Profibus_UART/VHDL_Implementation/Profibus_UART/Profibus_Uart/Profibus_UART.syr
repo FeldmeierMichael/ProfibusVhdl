@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.70 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.24 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.70 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.24 secs
  
 --> Reading design: Profibus_UART.prj
 
@@ -105,19 +105,19 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\z003xazw\Downloads\uart.vhd" into library work
+Parsing VHDL file "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\VHDL_Implementation\Profibus_UART\Profibus_Uart\remote_sources\_\_\_\_\_\_\Users\z003xazw\Downloads\uart.vhd" into library work
 Parsing entity <uart>.
 Parsing architecture <logic> of entity <uart>.
-Parsing VHDL file "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\Read_Write.vhd" into library work
+Parsing VHDL file "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\VHDL_Implementation\Profibus_UART\Profibus_Uart\Read_Write.vhd" into library work
 Parsing entity <Read_Write>.
 Parsing architecture <Behavioral> of entity <read_write>.
-Parsing VHDL file "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\neg_flanke_puls.vhd" into library work
+Parsing VHDL file "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\VHDL_Implementation\Profibus_UART\Profibus_Uart\neg_flanke_puls.vhd" into library work
 Parsing entity <neg_flanke_puls>.
 Parsing architecture <Behavioral> of entity <neg_flanke_puls>.
-Parsing VHDL file "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\Profibus_UART.vhd" into library work
+Parsing VHDL file "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\VHDL_Implementation\Profibus_UART\Profibus_Uart\Profibus_UART.vhd" into library work
 Parsing entity <Profibus_UART>.
 Parsing architecture <Behavioral> of entity <profibus_uart>.
-WARNING:HDLCompiler:946 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\Profibus_UART.vhd" Line 124: Actual for formal port reset_n is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\VHDL_Implementation\Profibus_UART\Profibus_Uart\Profibus_UART.vhd" Line 126: Actual for formal port reset_n is neither a static name nor a globally static expression
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -126,27 +126,27 @@ WARNING:HDLCompiler:946 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Pr
 Elaborating entity <Profibus_UART> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <neg_flanke_puls> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\neg_flanke_puls.vhd" Line 55. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\VHDL_Implementation\Profibus_UART\Profibus_Uart\neg_flanke_puls.vhd" Line 55. Case statement is complete. others clause is never selected
 
 Elaborating entity <Read_Write> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\Read_Write.vhd" Line 57. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\VHDL_Implementation\Profibus_UART\Profibus_Uart\Read_Write.vhd" Line 57. Case statement is complete. others clause is never selected
 
 Elaborating entity <uart> (architecture <logic>) with generics from library <work>.
-WARNING:HDLCompiler:92 - "C:\Users\z003xazw\Downloads\uart.vhd" Line 106: os_pulse should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\VHDL_Implementation\Profibus_UART\Profibus_Uart\remote_sources\_\_\_\_\_\_\Users\z003xazw\Downloads\uart.vhd" Line 106: os_pulse should be on the sensitivity list of the process
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <Profibus_UART>.
-    Related source file is "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\Profibus_UART.vhd".
-INFO:Xst:3210 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\Profibus_UART.vhd" line 115: Output port <rx_error> of the instance <Inst_uart> is unconnected or connected to loadless signal.
+    Related source file is "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\VHDL_Implementation\Profibus_UART\Profibus_Uart\Profibus_UART.vhd".
+INFO:Xst:3210 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\VHDL_Implementation\Profibus_UART\Profibus_Uart\Profibus_UART.vhd" line 117: Output port <rx_error> of the instance <Inst_uart> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <Profibus_UART> synthesized.
 
 Synthesizing Unit <neg_flanke_puls>.
-    Related source file is "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\neg_flanke_puls.vhd".
+    Related source file is "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\VHDL_Implementation\Profibus_UART\Profibus_Uart\neg_flanke_puls.vhd".
     Found 1-bit register for signal <out_o>.
     Found 1-bit register for signal <i_old>.
     Found 1-bit register for signal <state>.
@@ -156,7 +156,7 @@ Synthesizing Unit <neg_flanke_puls>.
 Unit <neg_flanke_puls> synthesized.
 
 Synthesizing Unit <Read_Write>.
-    Related source file is "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\Read_Write.vhd".
+    Related source file is "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\VHDL_Implementation\Profibus_UART\Profibus_Uart\Read_Write.vhd".
     Found 1-bit register for signal <Read_en>.
     Found 1-bit register for signal <Write_en>.
     Found 1-bit register for signal <tx_busy_old>.
@@ -166,7 +166,7 @@ Synthesizing Unit <Read_Write>.
 Unit <Read_Write> synthesized.
 
 Synthesizing Unit <uart>.
-    Related source file is "C:\Users\z003xazw\Downloads\uart.vhd".
+    Related source file is "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\VHDL_Implementation\Profibus_UART\Profibus_Uart\remote_sources\_\_\_\_\_\_\Users\z003xazw\Downloads\uart.vhd".
         clk_freq = 100000000
         baud_rate = 19200
         os_rate = 16
@@ -349,9 +349,9 @@ Primitive and Black Box Usage:
 #      FDP                         : 3
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 24
+# IO Buffers                       : 25
 #      IBUF                        : 12
-#      OBUF                        : 12
+#      OBUF                        : 13
 
 Device utilization summary:
 ---------------------------
@@ -372,8 +372,8 @@ Slice Logic Distribution:
    Number of unique control sets:         8
 
 IO Utilization: 
- Number of IOs:                          25
- Number of bonded IOBs:                  25  out of    218    11%  
+ Number of IOs:                          26
+ Number of bonded IOBs:                  26  out of    218    11%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -478,7 +478,7 @@ Offset:              5.274ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 12 / 12
+  Total number of paths / destination ports: 13 / 13
 -------------------------------------------------------------------------
 Offset:              4.453ns (Levels of Logic = 2)
   Source:            Inst_Read_Write/Read_en (FF)
@@ -513,7 +513,7 @@ clk            |    4.172|         |         |         |
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.89 secs
+Total CPU time to Xst completion: 7.54 secs
  
 --> 
 

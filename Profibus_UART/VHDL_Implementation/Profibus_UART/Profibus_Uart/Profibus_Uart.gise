@@ -81,6 +81,10 @@
     <transform xil_pn:end_ts="1659877101" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1659877101">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Profibus_UART.vhd"/>
       <outfile xil_pn:name="Read_Write.vhd"/>
       <outfile xil_pn:name="TB_Profibus_UART.vhd"/>
@@ -103,6 +107,11 @@
     <transform xil_pn:end_ts="1659877101" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1659877101">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Profibus_UART.vhd"/>
       <outfile xil_pn:name="Read_Write.vhd"/>
       <outfile xil_pn:name="TB_Profibus_UART.vhd"/>
@@ -113,7 +122,11 @@
     <transform xil_pn:end_ts="1659877105" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:start_ts="1659877101">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TB_Profibus_UART_beh.prj"/>
       <outfile xil_pn:name="TB_Profibus_UART_isim_beh.exe"/>
@@ -125,6 +138,8 @@
     <transform xil_pn:end_ts="1659877550" xil_pn:in_ck="626907057405147353" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="9161481347764750620" xil_pn:start_ts="1659877550">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TB_Profibus_UART_isim_beh.wdb"/>
@@ -159,7 +174,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1659875428" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:start_ts="1659875418">
+    <transform xil_pn:end_ts="1659883399" xil_pn:in_ck="-3047811120795932473" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="8885512022837922704" xil_pn:start_ts="1659883388">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
