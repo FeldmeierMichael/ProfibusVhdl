@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-08-03T08:33:45</DateModified>
+  <DateModified>2022-08-07T11:45:25</DateModified>
   <ModuleName>Profibus_Recieve</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever/iseconfig/Profibus_Recieve.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/FSM_Reciever/VHDL_Implementation/Profibus_Reciever\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/VHDL_Implementation/Profibus_Reciever/iseconfig/Profibus_Recieve.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Reciever/VHDL_Implementation/Profibus_Reciever\</ImplementationReportsDirectory>
   <DateInitialized>2022-07-26T12:28:52</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

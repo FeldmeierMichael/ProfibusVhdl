@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/Read_Write.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/Read_Write.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/Read_Write.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/Read_Write.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/Read_Write.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/Read_Write.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/Read_Write.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/Read_Write.syr" 
+vhdtdtfi -prj Profibus_UART -o C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/Read_Write.vhi -module Read_Write -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Read_Write.vhd 

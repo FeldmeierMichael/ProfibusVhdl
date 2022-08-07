@@ -1,0 +1,5 @@
+vhdl isim_temp "../../../../../../Users/z003xazw/Downloads/uart.vhd"
+vhdl isim_temp "Read_Write.vhd"
+vhdl isim_temp "neg_flanke_puls.vhd"
+vhdl isim_temp "Profibus_UART.vhd"
+vhdl isim_temp "TB_Profibus_UART.vhd"

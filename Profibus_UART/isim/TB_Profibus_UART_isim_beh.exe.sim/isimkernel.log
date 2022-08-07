@@ -1,0 +1,35 @@
+Command line:
+   TB_Profibus_UART_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50982
+
+Sun Aug 07 14:58:26 2022
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5150.19 Meg
+
+ Total Signals          : 63
+ Total Nets             : 108
+ Total Signal Drivers   : 44
+ Total Blocks           : 22
+ Total Primitive Blocks : 19
+ Total Processes        : 28
+ Total Traceable Variables  : 31
+ Total Scalar Nets and Variables : 491
+Total Line Count : 118
+
+** Failure:Assertion violation
+User(VHDL) Code Called Simulation Stop
+In process TB_Profibus_UART.vhd:stim_proc 
+ 
+
+
+ Total Simulation Time: 0.328125 sec
+
+ Current Memory Usage: 5150.19 Meg
+
+Sun Aug 07 14:58:51 2022
+

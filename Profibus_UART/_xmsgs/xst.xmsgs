@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="946" delta="new" >"C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\Profibus_UART.vhd" Line 124: Actual for formal port <arg fmt="%s" index="1">reset_n</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"C:\Users\z003xazw\Downloads\uart.vhd" Line 106: <arg fmt="%s" index="1">os_pulse</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_UART\Profibus_UART.vhd</arg>&quot; line <arg fmt="%s" index="2">115</arg>: Output port &lt;<arg fmt="%s" index="3">rx_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_uart</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">rx_buffer_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Inst_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_uart/rx_buffer_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Profibus_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_uart/rx_error</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Profibus_UART</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_uart/rx_busy</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_UART</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_uart/rx_state&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="3203" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_Read_Write/Read_en</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_UART</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_Read_Write/Write_en&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_neg_flanke_puls/state</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_UART</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Inst_neg_flanke_puls/out_o&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_neg_flanke_puls/out_o</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_UART</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_neg_flanke_puls/state&gt; </arg>
+</msg>
+
+</messages>
+

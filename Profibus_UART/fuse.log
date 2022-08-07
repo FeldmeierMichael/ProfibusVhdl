@@ -1,0 +1,26 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/TB_Profibus_UART_isim_beh.exe -prj C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/TB_Profibus_UART_beh.prj work.TB_Profibus_UART 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/../../../../../../Users/z003xazw/Downloads/uart.vhd" into library work
+Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/Read_Write.vhd" into library work
+Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/neg_flanke_puls.vhd" into library work
+Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/Profibus_UART.vhd" into library work
+WARNING:HDLCompiler:946 - "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/Profibus_UART.vhd" Line 124: Actual for formal port reset_n is neither a static name nor a globally static expression
+Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/TB_Profibus_UART.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity neg_flanke_puls [neg_flanke_puls_default]
+Compiling architecture behavioral of entity Read_Write [read_write_default]
+Compiling architecture logic of entity uart [\uart(100000000,19200,16,8,1,'0'...]
+Compiling architecture behavioral of entity Profibus_UART [profibus_uart_default]
+Compiling architecture behavior of entity tb_profibus_uart
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 11 VHDL Units
+Built simulation executable C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/TB_Profibus_UART_isim_beh.exe
+Fuse Memory Usage: 30872 KB
+Fuse CPU Usage: 499 ms

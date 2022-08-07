@@ -1,0 +1,1 @@
+vhdtdtfi -prj Profibus_UART -o C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_UART/uart.vhi -module uart -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../../../../../../Users/z003xazw/Downloads/uart.vhd 
