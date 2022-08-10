@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-08-07T17:55:26</DateModified>
+  <DateModified>2022-08-10T09:41:23</DateModified>
   <ModuleName>Profibus_Transmitter</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Transmitter/VHDL_Implementation/Profibus_Transmitter/iseconfig/Profibus_Transmitter.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Transmitter/VHDL_Implementation/Profibus_Transmitter</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Transmitter/VHDL_Implementation/Profibus_Transmitter\</ImplementationReportsDirectory>
   <DateInitialized>2022-08-07T17:53:58</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

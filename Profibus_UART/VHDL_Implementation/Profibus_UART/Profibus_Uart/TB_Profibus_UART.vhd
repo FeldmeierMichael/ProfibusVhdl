@@ -74,6 +74,7 @@ ARCHITECTURE behavior OF TB_Profibus_UART IS
    signal TX : std_logic;
    signal Read_en : std_logic;
    signal Write_en : std_logic;
+	signal tx_busy :std_logic;
 
    -- Clock period definitions
    constant clk_period : time := 10 ns;
@@ -92,7 +93,9 @@ BEGIN
           RX => RX,
           TX => TX,
           Read_en => Read_en,
+			 tx_busy =>tx_busy,
           Write_en => Write_en
+			 
         );
 
    -- Clock process definitions

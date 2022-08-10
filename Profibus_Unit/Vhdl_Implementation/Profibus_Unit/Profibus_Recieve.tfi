@@ -1,0 +1,23 @@
+
+
+
+// Instantiate the module
+Profibus_Recieve instance_name (
+    .clk(clk), 
+    .rs485detect(rs485detect), 
+    .reset(reset), 
+    .datain(datain), 
+    .detect(detect), 
+    .type_o(type_o), 
+    .DA_o(DA_o), 
+    .SA_o(SA_o), 
+    .FC_o(FC_o), 
+    .LE_o(LE_o), 
+    .FCS_o(FCS_o), 
+    .PDU_o(PDU_o), 
+    .PDU_Count(PDU_Count), 
+    .idle(idle), 
+    .PDU_RAM_Enable(PDU_RAM_Enable)
+    );
+
+

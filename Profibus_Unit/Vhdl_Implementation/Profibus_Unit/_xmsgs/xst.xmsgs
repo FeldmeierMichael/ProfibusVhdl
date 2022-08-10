@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Unit\Vhdl_Implementation\Profibus_Unit\Profibus_UART.vhd" Line 126: Actual for formal port <arg fmt="%s" index="1">reset_n</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Unit\Vhdl_Implementation\Profibus_Unit\Profibus_UART.vhd" Line 64: &lt;<arg fmt="%s" index="1">uart</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="info" file="Xst" num="3019" delta="new" >HDL ADVISOR - <arg fmt="%s" index="1">2048</arg> flip-flops were inferred for signal &lt;<arg fmt="%s" index="2">RAM1</arg>&gt;. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Unit\Vhdl_Implementation\Profibus_Unit\Profibus_UART.vhd</arg>&quot; line <arg fmt="%s" index="2">117</arg>: Output port &lt;<arg fmt="%s" index="3">rx_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_uart</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Inst_Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Inst_Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Inst_Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Inst_Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Inst_Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Inst_Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Inst_Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Inst_Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_7&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">first_flag</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">Inst_Profibus_Transmitter</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">first_flag</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">Profibus_Transmitter</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">0</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_7&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="3002" delta="new" >This design contains one or more registers/latches that are directly
+incompatible with the <arg fmt="%s" index="1">Spartan6</arg> architecture. The two primary causes of this is
+either a register or latch described with both an asynchronous set and
+asynchronous reset, or a register or latch described with an asynchronous
+set or reset which however has an initialization value of the opposite 
+polarity (i.e. asynchronous reset with an initialization value of 1).
+ While this circuit can be built, it creates a sub-optimal implementation
+in terms of area, power and performance. For a more optimal implementation
+Xilinx highly recommends one of the following:
+
+       1) Remove either the set or reset from all registers and latches
+          if not needed for required functionality
+       2) Modify the code in order to produce a synchronous set
+          and/or reset (both is preferred)
+       3) Ensure all registers have the same initialization value as the
+          described asynchronous set or reset polarity
+       4) Use the -async_to_sync option to transform the asynchronous
+          set/reset to synchronous operation
+          (timing simulation highly recommended when using this option)
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">type_o_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Profibus_Recieve</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">type_o_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Profibus_Recieve</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">type_o_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Profibus_Recieve</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">type_o_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Profibus_Recieve</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">type_o_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Profibus_Recieve</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">type_o_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Profibus_Recieve</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">type_o_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Profibus_Recieve</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">type_o_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Profibus_Recieve</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">type_o_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Profibus_Recieve</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">type_o_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Profibus_Recieve</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_Profibus_Transmitter/tx_busy_old</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_Unit</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_Profibus_UART/Inst_Read_Write/tx_busy_old&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_Profibus_UART/Inst_neg_flanke_puls/state</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_Unit</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_Profibus_UART/Inst_neg_flanke_puls/out_o&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="3203" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_Profibus_UART/Inst_Read_Write/Read_en</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_Unit</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_Profibus_UART/Inst_Read_Write/Write_en&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">TX</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">uart</arg>&gt;. Possible simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">Inst_Profibus_Transmitter/first_flag_LD</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">Profibus_Unit</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">0</arg>.
+</msg>
+
+</messages>
+

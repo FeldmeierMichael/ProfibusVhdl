@@ -2,14 +2,14 @@ Command line:
    TB_Profibus_Transmitter_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  56148
+     -socket  62416
 
-Sun Aug 07 21:26:59 2022
+Wed Aug 10 08:54:08 2022
 
 
- Elaboration Time: 0.046875 sec
+ Elaboration Time: 0.09375 sec
 
- Current Memory Usage: 5154.53 Meg
+ Current Memory Usage: 5154.55 Meg
 
  Total Signals          : 35
  Total Nets             : 2137
@@ -27,9 +27,9 @@ In process TB_Profibus_Transmitter.vhd:stim_proc
  
 
 
- Total Simulation Time: 0.8125 sec
+ Total Simulation Time: 0.1875 sec
 
- Current Memory Usage: 4682.67 Meg
+ Current Memory Usage: 4682.69 Meg
 
-Sun Aug 07 21:31:12 2022
+Wed Aug 10 08:56:26 2022
 

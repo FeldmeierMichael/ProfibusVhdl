@@ -1,0 +1,509 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: Profibus_Recieve.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Profibus_Recieve.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Profibus_Recieve"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : Profibus_Recieve
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Unit\Vhdl_Implementation\Profibus_Unit\Profibus_Constants.vhd" into library work
+Parsing package <Profibus_Constants>.
+Parsing package body <Profibus_Constants>.
+Parsing VHDL file "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Unit\Vhdl_Implementation\Profibus_Unit\Profibus_Recieve.vhd" into library work
+Parsing entity <Profibus_Recieve>.
+Parsing architecture <Behavioral> of entity <profibus_recieve>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Profibus_Recieve> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Unit\Vhdl_Implementation\Profibus_Unit\Profibus_Recieve.vhd" Line 266. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Profibus_Recieve>.
+    Related source file is "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Unit\Vhdl_Implementation\Profibus_Unit\Profibus_Recieve.vhd".
+    Found 1-bit register for signal <idle_o>.
+    Found 8-bit register for signal <counter>.
+    Found 8-bit register for signal <fcs>.
+    Found 32-bit register for signal <timer>.
+    Found 5-bit register for signal <state>.
+    Found 1-bit register for signal <PDU_RAM_Enable>.
+    Found 1-bit register for signal <detect>.
+    Found 8-bit register for signal <type_o>.
+    Found 8-bit register for signal <DA_o>.
+    Found 8-bit register for signal <SA_o>.
+    Found 8-bit register for signal <FC_o>.
+    Found 8-bit register for signal <FCS_o>.
+    Found 8-bit register for signal <le_s>.
+    Found 8-bit register for signal <LE_o>.
+    Found 8-bit register for signal <PDU_o>.
+    Found 8-bit register for signal <PDU_Count>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 24                                             |
+    | Transitions        | 87                                             |
+    | Inputs             | 11                                             |
+    | Outputs            | 7                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <timer[31]_GND_5_o_add_0_OUT> created at line 1241.
+    Found 8-bit adder for signal <counter[7]_GND_5_o_add_52_OUT> created at line 1241.
+    Found 8-bit adder for signal <fcs[7]_datain[7]_add_54_OUT> created at line 235.
+    Found 8-bit subtractor for signal <GND_5_o_GND_5_o_sub_35_OUT<7:0>> created at line 1308.
+    Found 32-bit comparator greater for signal <n0001> created at line 75
+    Found 8-bit comparator equal for signal <le_s[7]_datain[7]_equal_25_o> created at line 147
+    Found 8-bit comparator greater for signal <counter[7]_GND_5_o_LessThan_36_o> created at line 188
+    Found 8-bit comparator greater for signal <counter[7]_GND_5_o_LessThan_54_o> created at line 234
+    Found 8-bit comparator equal for signal <fcs[7]_datain[7]_equal_56_o> created at line 238
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred 123 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred  45 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <Profibus_Recieve> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 1
+ 8-bit adder                                           : 2
+ 8-bit subtractor                                      : 1
+# Registers                                            : 15
+ 1-bit register                                        : 3
+ 32-bit register                                       : 1
+ 8-bit register                                        : 11
+# Comparators                                          : 5
+ 32-bit comparator greater                             : 1
+ 8-bit comparator equal                                : 2
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 45
+ 1-bit 2-to-1 multiplexer                              : 17
+ 32-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 27
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Profibus_Recieve>.
+The following registers are absorbed into counter <timer>: 1 register on signal <timer>.
+Unit <Profibus_Recieve> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 8-bit adder                                           : 2
+ 8-bit subtractor                                      : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 91
+ Flip-Flops                                            : 91
+# Comparators                                          : 5
+ 32-bit comparator greater                             : 1
+ 8-bit comparator equal                                : 2
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 44
+ 1-bit 2-to-1 multiplexer                              : 17
+ 8-bit 2-to-1 multiplexer                              : 27
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <le_s_0> in Unit <Profibus_Recieve> is equivalent to the following FF/Latch, which will be removed : <LE_o_0> 
+INFO:Xst:2261 - The FF/Latch <le_s_1> in Unit <Profibus_Recieve> is equivalent to the following FF/Latch, which will be removed : <LE_o_1> 
+INFO:Xst:2261 - The FF/Latch <le_s_2> in Unit <Profibus_Recieve> is equivalent to the following FF/Latch, which will be removed : <LE_o_2> 
+INFO:Xst:2261 - The FF/Latch <le_s_3> in Unit <Profibus_Recieve> is equivalent to the following FF/Latch, which will be removed : <LE_o_3> 
+INFO:Xst:2261 - The FF/Latch <le_s_4> in Unit <Profibus_Recieve> is equivalent to the following FF/Latch, which will be removed : <LE_o_4> 
+INFO:Xst:2261 - The FF/Latch <le_s_5> in Unit <Profibus_Recieve> is equivalent to the following FF/Latch, which will be removed : <LE_o_5> 
+INFO:Xst:2261 - The FF/Latch <le_s_6> in Unit <Profibus_Recieve> is equivalent to the following FF/Latch, which will be removed : <LE_o_6> 
+INFO:Xst:2261 - The FF/Latch <le_s_7> in Unit <Profibus_Recieve> is equivalent to the following FF/Latch, which will be removed : <LE_o_7> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:5]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 00000
+ sd1   | 00001
+ da1   | 00010
+ sa1   | 00011
+ fc1   | 00100
+ fcs1  | 00101
+ sd2   | 00110
+ le    | 00111
+ ler   | 01000
+ sd2_2 | 01001
+ da2   | 01010
+ sa2   | 01011
+ fc2   | 01100
+ pdu2  | 01101
+ fcs2  | 01110
+ sd3   | 01111
+ da3   | 10000
+ sa3   | 10001
+ fc3   | 10010
+ pdu3  | 10011
+ fcs3  | 10100
+ sd4   | 10101
+ da4   | 10110
+ sc    | 10111
+-------------------
+
+Optimizing unit <Profibus_Recieve> ...
+WARNING:Xst:1293 - FF/Latch <type_o_3> has a constant value of 0 in block <Profibus_Recieve>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_o_4> has a constant value of 0 in block <Profibus_Recieve>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_o_5> has a constant value of 0 in block <Profibus_Recieve>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_o_6> has a constant value of 0 in block <Profibus_Recieve>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_o_7> has a constant value of 0 in block <Profibus_Recieve>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <type_o_3> has a constant value of 0 in block <Profibus_Recieve>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_o_4> has a constant value of 0 in block <Profibus_Recieve>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_o_5> has a constant value of 0 in block <Profibus_Recieve>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_o_6> has a constant value of 0 in block <Profibus_Recieve>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_o_7> has a constant value of 0 in block <Profibus_Recieve>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Profibus_Recieve, actual ratio is 0.
+FlipFlop state_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop state_FSM_FFd3 has been replicated 2 time(s)
+FlipFlop state_FSM_FFd4 has been replicated 2 time(s)
+FlipFlop state_FSM_FFd5 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 121
+ Flip-Flops                                            : 121
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Profibus_Recieve.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 344
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 1
+#      LUT2                        : 16
+#      LUT3                        : 56
+#      LUT4                        : 22
+#      LUT5                        : 38
+#      LUT6                        : 117
+#      MUXCY                       : 46
+#      MUXF7                       : 6
+#      XORCY                       : 40
+# FlipFlops/Latches                : 121
+#      FD                          : 16
+#      FDC                         : 52
+#      FDCE                        : 8
+#      FDE                         : 44
+#      FDP                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 77
+#      IBUF                        : 10
+#      OBUF                        : 67
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             121  out of  54576     0%  
+ Number of Slice LUTs:                  251  out of  27288     0%  
+    Number used as Logic:               251  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    285
+   Number with an unused Flip Flop:     164  out of    285    57%  
+   Number with an unused LUT:            34  out of    285    11%  
+   Number of fully used LUT-FF pairs:    87  out of    285    30%  
+   Number of unique control sets:         9
+
+IO Utilization: 
+ Number of IOs:                          78
+ Number of bonded IOBs:                  78  out of    218    35%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 121   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.120ns (Maximum Frequency: 195.326MHz)
+   Minimum input arrival time before clock: 8.221ns
+   Maximum output required time after clock: 3.820ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.120ns (frequency: 195.326MHz)
+  Total number of paths / destination ports: 7331 / 141
+-------------------------------------------------------------------------
+Delay:               5.120ns (Levels of Logic = 5)
+  Source:            state_FSM_FFd5_1 (FF)
+  Destination:       state_FSM_FFd2 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: state_FSM_FFd5_1 to state_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.447   0.827  state_FSM_FFd5_1 (state_FSM_FFd5_1)
+     LUT5:I1->O            1   0.203   0.808  state_FSM_FFd2-In1 (state_FSM_FFd2-In1)
+     LUT5:I2->O            3   0.205   0.651  state_FSM_FFd2-In4 (state_FSM_FFd2-In4)
+     LUT6:I5->O            1   0.205   0.580  state_FSM_FFd2-In7_SW2_SW0 (N138)
+     LUT6:I5->O            1   0.205   0.684  state_FSM_FFd2-In7_SW2 (N32)
+     LUT6:I4->O            1   0.203   0.000  state_FSM_FFd2-In8 (state_FSM_FFd2-In)
+     FDC:D                     0.102          state_FSM_FFd2
+    ----------------------------------------
+    Total                      5.120ns (1.570ns logic, 3.550ns route)
+                                       (30.7% logic, 69.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2118 / 226
+-------------------------------------------------------------------------
+Offset:              8.221ns (Levels of Logic = 8)
+  Source:            datain<0> (PAD)
+  Destination:       state_FSM_FFd3 (FF)
+  Destination Clock: clk rising
+
+  Data Path: datain<0> to state_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.222   1.233  datain_0_IBUF (datain_0_IBUF)
+     LUT3:I0->O            3   0.205   1.015  GND_5_o_datain[7]_equal_64_o<7>111 (GND_5_o_datain[7]_equal_64_o<7>11)
+     LUT6:I0->O            6   0.203   1.089  GND_5_o_datain[7]_equal_7_o<7>1 (GND_5_o_datain[7]_equal_7_o)
+     LUT5:I0->O            1   0.203   0.944  fcs[7]_datain[7]_equal_56_o83_SW2 (N101)
+     LUT6:I0->O            1   0.203   0.580  state_FSM_FFd3-In2 (state_FSM_FFd3-In2)
+     LUT3:I2->O            1   0.205   0.000  state_FSM_FFd3-In4_F (N180)
+     MUXF7:I0->O           1   0.131   0.684  state_FSM_FFd3-In4 (state_FSM_FFd3-In4)
+     LUT6:I4->O            3   0.203   0.000  state_FSM_FFd3-In5 (state_FSM_FFd3-In)
+     FDC:D                     0.102          state_FSM_FFd3
+    ----------------------------------------
+    Total                      8.221ns (2.677ns logic, 5.544ns route)
+                                       (32.6% logic, 67.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 62 / 62
+-------------------------------------------------------------------------
+Offset:              3.820ns (Levels of Logic = 1)
+  Source:            le_s_1 (FF)
+  Destination:       LE_o<1> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: le_s_1 to LE_o<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              8   0.447   0.802  le_s_1 (le_s_1)
+     OBUF:I->O                 2.571          LE_o_1_OBUF (LE_o<1>)
+    ----------------------------------------
+    Total                      3.820ns (3.018ns logic, 0.802ns route)
+                                       (79.0% logic, 21.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.120|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.09 secs
+ 
+--> 
+
+Total memory usage is 4502000 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
+
