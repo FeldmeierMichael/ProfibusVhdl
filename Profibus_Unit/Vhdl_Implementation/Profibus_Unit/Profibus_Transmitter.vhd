@@ -30,6 +30,7 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity Profibus_Transmitter is
+	 Generic (baud:IN integer:=19_200);
     Port ( send_Telegram : in  STD_LOGIC;
            type_i : in  STD_LOGIC_VECTOR (7 downto 0);
            DA : in  STD_LOGIC_VECTOR (7 downto 0);

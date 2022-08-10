@@ -40,6 +40,7 @@ ARCHITECTURE behavior OF TB_Profibus_Unit IS
     -- Component Declaration for the Unit Under Test (UUT)
  
     COMPONENT Profibus_Unit
+	 Generic (baud:IN integer:=19_200);
     PORT(
          clk : IN  std_logic;
          reset : IN  std_logic;
