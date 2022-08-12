@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\Profibus_UART.vhd" Line 126: Actual for formal port <arg fmt="%s" index="1">reset_n</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\uart.vhd" Line 106: <arg fmt="%s" index="1">os_pulse</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\Hardware_Test.vhd</arg>&quot; line <arg fmt="%s" index="2">75</arg>: Output port &lt;<arg fmt="%s" index="3">type_r</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_Profibus_Unit</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\Hardware_Test.vhd</arg>&quot; line <arg fmt="%s" index="2">75</arg>: Output port &lt;<arg fmt="%s" index="3">DA_r</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_Profibus_Unit</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\Hardware_Test.vhd</arg>&quot; line <arg fmt="%s" index="2">75</arg>: Output port &lt;<arg fmt="%s" index="3">SA_r</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_Profibus_Unit</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\Hardware_Test.vhd</arg>&quot; line <arg fmt="%s" index="2">75</arg>: Output port &lt;<arg fmt="%s" index="3">FC_r</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_Profibus_Unit</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\Hardware_Test.vhd</arg>&quot; line <arg fmt="%s" index="2">75</arg>: Output port &lt;<arg fmt="%s" index="3">LE_r</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_Profibus_Unit</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\Hardware_Test.vhd</arg>&quot; line <arg fmt="%s" index="2">75</arg>: Output port &lt;<arg fmt="%s" index="3">FCS_r</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_Profibus_Unit</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\Hardware_Test.vhd</arg>&quot; line <arg fmt="%s" index="2">75</arg>: Output port &lt;<arg fmt="%s" index="3">PDU_r</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_Profibus_Unit</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\Hardware_Test.vhd</arg>&quot; line <arg fmt="%s" index="2">75</arg>: Output port &lt;<arg fmt="%s" index="3">PDU_count_r</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_Profibus_Unit</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\Hardware_Test.vhd</arg>&quot; line <arg fmt="%s" index="2">75</arg>: Output port &lt;<arg fmt="%s" index="3">telegram_busy</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_Profibus_Unit</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\Hardware_Test.vhd</arg>&quot; line <arg fmt="%s" index="2">75</arg>: Output port &lt;<arg fmt="%s" index="3">detect_r</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_Profibus_Unit</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\Hardware_Test.vhd</arg>&quot; line <arg fmt="%s" index="2">75</arg>: Output port &lt;<arg fmt="%s" index="3">PDU_RAM_en_r</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_Profibus_Unit</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">sd2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">le</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">ler</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">sd2_2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">da2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">sa2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">fc2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">pdu2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">fcs2</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">sd3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">da3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">sa3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">fc3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">pdu3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">fcs3</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">sd4</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">da4</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">sc</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\Profibus_UART.vhd</arg>&quot; line <arg fmt="%s" index="2">117</arg>: Output port &lt;<arg fmt="%s" index="3">rx_error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_uart</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">rx_buffer_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Inst_uart</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">le_s_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Profibus_Recieve</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;LE_o_7&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">type_o_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Profibus_Recieve</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">type_o_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Profibus_Recieve</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">type_o_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Profibus_Recieve</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">type_o_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Profibus_Recieve</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">type_o_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Profibus_Recieve</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">type_o_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Profibus_Recieve</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">type_o_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Profibus_Recieve</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">type_o_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Profibus_Recieve</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">type_o_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Profibus_Recieve</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">type_o_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Profibus_Recieve</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/detect</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/FCS_o_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/FCS_o_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/FCS_o_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/FCS_o_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/FCS_o_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/FCS_o_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/FCS_o_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/FCS_o_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/type_o_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/type_o_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/type_o_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/PDU_RAM_Enable</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/PDU_Count_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/PDU_Count_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/PDU_Count_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/PDU_Count_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/PDU_Count_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/PDU_Count_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/PDU_Count_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/PDU_Count_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/DA_o_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/DA_o_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/DA_o_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/DA_o_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/DA_o_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/DA_o_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/DA_o_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/DA_o_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/PDU_o_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/PDU_o_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/PDU_o_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/PDU_o_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/PDU_o_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/PDU_o_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/PDU_o_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/PDU_o_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/FC_o_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/FC_o_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/FC_o_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/FC_o_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/FC_o_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/FC_o_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/FC_o_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/FC_o_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/SA_o_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/SA_o_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/SA_o_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/SA_o_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/SA_o_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/SA_o_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/SA_o_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Recieve/SA_o_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Transmitter/telegram_busy</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/rx_buffer_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/rx_error</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Transmitter/dataout_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Hardware_Test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Transmitter/dataout_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Hardware_Test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Transmitter/dataout_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Hardware_Test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Transmitter/dataout_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Hardware_Test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Hardware_Test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Hardware_Test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Hardware_Test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Hardware_Test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Hardware_Test</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Transmitter/tx_busy_old</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_Profibus_Unit/Inst_Profibus_UART/Inst_Read_Write/tx_busy_old&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_UART/Inst_neg_flanke_puls/state</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_Profibus_Unit/Inst_Profibus_UART/Inst_neg_flanke_puls/out_o&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/rx_busy</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/rx_state&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="3203" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_Profibus_Unit/Inst_Profibus_UART/Inst_Read_Write/Read_en</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Hardware_Test</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_Profibus_Unit/Inst_Profibus_UART/Inst_Read_Write/Write_en&gt; </arg>
+</msg>
+
+</messages>
+

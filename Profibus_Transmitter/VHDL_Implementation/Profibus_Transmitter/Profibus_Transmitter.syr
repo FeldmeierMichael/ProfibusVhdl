@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.68 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.68 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Reading design: Profibus_Transmitter.prj
 
@@ -116,8 +116,8 @@ Parsing architecture <Behavioral> of entity <profibus_transmitter>.
 *                            HDL Elaboration                            *
 =========================================================================
 
-Elaborating entity <Profibus_Transmitter> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Transmitter\VHDL_Implementation\Profibus_Transmitter\Profibus_Transmitter.vhd" Line 302. Case statement is complete. others clause is never selected
+Elaborating entity <Profibus_Transmitter> (architecture <Behavioral>) with generics from library <work>.
+INFO:HDLCompiler:679 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Transmitter\VHDL_Implementation\Profibus_Transmitter\Profibus_Transmitter.vhd" Line 323. Case statement is complete. others clause is never selected
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -125,6 +125,8 @@ INFO:HDLCompiler:679 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profi
 
 Synthesizing Unit <Profibus_Transmitter>.
     Related source file is "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Transmitter\VHDL_Implementation\Profibus_Transmitter\Profibus_Transmitter.vhd".
+        baud_rate = 19200
+    Found 1-bit register for signal <first_flag>.
     Found 8-bit register for signal <counter>.
     Found 8-bit register for signal <fcs>.
     Found 8-bit register for signal <RAM1<0>>.
@@ -383,17 +385,18 @@ Synthesizing Unit <Profibus_Transmitter>.
     Found 8-bit register for signal <RAM1<253>>.
     Found 8-bit register for signal <RAM1<254>>.
     Found 8-bit register for signal <RAM1<255>>.
+    Found 32-bit register for signal <sync_counter>.
     Found 5-bit register for signal <state>.
     Found 1-bit register for signal <tx_busy_old>.
-    Found 8-bit register for signal <dataout>.
     Found 1-bit register for signal <telegram_busy>.
     Found 1-bit register for signal <send>.
+    Found 8-bit register for signal <dataout>.
     Found 8-bit register for signal <le_s>.
     Found finite state machine <FSM_0> for signal <state>.
     -----------------------------------------------------------------------
-    | States             | 24                                             |
-    | Transitions        | 78                                             |
-    | Inputs             | 9                                              |
+    | States             | 25                                             |
+    | Transitions        | 80                                             |
+    | Inputs             | 10                                             |
     | Outputs            | 5                                              |
     | Clock              | clk (rising_edge)                              |
     | Reset              | reset (positive)                               |
@@ -403,21 +406,23 @@ Synthesizing Unit <Profibus_Transmitter>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 8-bit adder for signal <fcs[7]_DA[7]_add_76_OUT> created at line 228.
-    Found 8-bit adder for signal <fcs[7]_SA[7]_add_80_OUT> created at line 238.
-    Found 8-bit adder for signal <fcs[7]_FC[7]_add_84_OUT> created at line 247.
-    Found 8-bit adder for signal <counter[7]_GND_5_o_add_96_OUT> created at line 1241.
-    Found 8-bit adder for signal <fcs[7]_counter[7]_add_99_OUT> created at line 268.
-    Found 8-bit subtractor for signal <GND_5_o_GND_5_o_sub_62_OUT<7:0>> created at line 1308.
+    Found 32-bit adder for signal <sync_counter[31]_GND_5_o_add_1_OUT> created at line 95.
+    Found 8-bit adder for signal <fcs[7]_DA[7]_add_80_OUT> created at line 246.
+    Found 8-bit adder for signal <fcs[7]_SA[7]_add_84_OUT> created at line 256.
+    Found 8-bit adder for signal <fcs[7]_FC[7]_add_88_OUT> created at line 265.
+    Found 8-bit adder for signal <counter[7]_GND_5_o_add_100_OUT> created at line 1241.
+    Found 8-bit adder for signal <fcs[7]_counter[7]_add_103_OUT> created at line 286.
+    Found 8-bit subtractor for signal <GND_5_o_GND_5_o_sub_66_OUT<7:0>> created at line 1308.
 INFO:Xst:3019 - HDL ADVISOR - 2048 flip-flops were inferred for signal <RAM1>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
-    Found 8-bit 256-to-1 multiplexer for signal <n1999> created at line 269.
-    Found 8-bit comparator greater for signal <counter[7]_GND_5_o_LessThan_63_o> created at line 207
-    Found 8-bit comparator greater for signal <counter[7]_GND_5_o_LessThan_98_o> created at line 266
+    Found 8-bit 256-to-1 multiplexer for signal <n2019> created at line 287.
+    Found 32-bit comparator greater for signal <GND_5_o_sync_counter[31]_LessThan_3_o> created at line 96
+    Found 8-bit comparator greater for signal <counter[7]_GND_5_o_LessThan_67_o> created at line 225
+    Found 8-bit comparator greater for signal <counter[7]_GND_5_o_LessThan_102_o> created at line 284
     Summary:
-	inferred   6 Adder/Subtractor(s).
-	inferred 2083 D-type flip-flop(s).
-	inferred   2 Comparator(s).
-	inferred  50 Multiplexer(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred 2116 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred  52 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <Profibus_Transmitter> synthesized.
 
@@ -425,16 +430,20 @@ Unit <Profibus_Transmitter> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 6
+# Adders/Subtractors                                   : 7
+ 32-bit adder                                          : 1
  8-bit adder                                           : 5
  8-bit subtractor                                      : 1
-# Registers                                            : 263
- 1-bit register                                        : 3
+# Registers                                            : 265
+ 1-bit register                                        : 4
+ 32-bit register                                       : 1
  8-bit register                                        : 260
-# Comparators                                          : 2
+# Comparators                                          : 3
+ 32-bit comparator greater                             : 1
  8-bit comparator greater                              : 2
-# Multiplexers                                         : 50
+# Multiplexers                                         : 52
  1-bit 2-to-1 multiplexer                              : 4
+ 32-bit 2-to-1 multiplexer                             : 2
  8-bit 2-to-1 multiplexer                              : 45
  8-bit 256-to-1 multiplexer                            : 1
 # FSMs                                                 : 1
@@ -450,15 +459,18 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 6
+# Adders/Subtractors                                   : 7
+ 32-bit adder                                          : 1
  8-bit adder                                           : 5
  8-bit subtractor                                      : 1
-# Registers                                            : 2083
- Flip-Flops                                            : 2083
-# Comparators                                          : 2
+# Registers                                            : 2116
+ Flip-Flops                                            : 2116
+# Comparators                                          : 3
+ 32-bit comparator greater                             : 1
  8-bit comparator greater                              : 2
-# Multiplexers                                         : 50
+# Multiplexers                                         : 52
  1-bit 2-to-1 multiplexer                              : 4
+ 32-bit 2-to-1 multiplexer                             : 2
  8-bit 2-to-1 multiplexer                              : 45
  8-bit 256-to-1 multiplexer                            : 1
 # FSMs                                                 : 1
@@ -469,45 +481,67 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <FSM_0> on signal <state[1:5]> with user encoding.
+Optimizing FSM <FSM_0> on signal <state[1:5]> with gray encoding.
 -------------------
  State | Encoding
 -------------------
  idle  | 00000
- sd1   | 00001
- da1   | 00010
- sa1   | 00011
- fc1   | 00100
- fcs1  | 00101
- sd2   | 00110
- le    | 00111
- ler   | 01000
- sd2_2 | 01001
- da2   | 01010
- sa2   | 01011
- fc2   | 01100
- pdu2  | 01101
- fcs2  | 01110
- sd3   | 01111
- da3   | 10000
- sa3   | 10001
- fc3   | 10010
- pdu3  | 10011
- fcs3  | 10100
- sd4   | 10101
- da4   | 10110
- sc    | 10111
+ sd1   | 11110
+ da1   | 00011
+ sa1   | 00010
+ fc1   | 00110
+ fcs1  | 00111
+ sd2   | 11111
+ le    | 00101
+ ler   | 00100
+ sd2_2 | 01100
+ da2   | 01101
+ sa2   | 01111
+ fc2   | 01110
+ pdu2  | 01010
+ fcs2  | 01011
+ sd3   | 11101
+ da3   | 01001
+ sa3   | 01000
+ fc3   | 11000
+ pdu3  | 11001
+ fcs3  | 11011
+ sd4   | 11100
+ da4   | 11010
+ sc    | 10100
+ sync  | 00001
 -------------------
 
 Optimizing unit <Profibus_Transmitter> ...
+WARNING:Xst:1293 - FF/Latch <sync_counter_18> has a constant value of 0 in block <Profibus_Transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sync_counter_19> has a constant value of 0 in block <Profibus_Transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sync_counter_20> has a constant value of 0 in block <Profibus_Transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sync_counter_21> has a constant value of 0 in block <Profibus_Transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sync_counter_22> has a constant value of 0 in block <Profibus_Transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sync_counter_23> has a constant value of 0 in block <Profibus_Transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sync_counter_24> has a constant value of 0 in block <Profibus_Transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sync_counter_25> has a constant value of 0 in block <Profibus_Transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sync_counter_26> has a constant value of 0 in block <Profibus_Transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sync_counter_27> has a constant value of 0 in block <Profibus_Transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sync_counter_28> has a constant value of 0 in block <Profibus_Transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sync_counter_29> has a constant value of 0 in block <Profibus_Transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sync_counter_30> has a constant value of 0 in block <Profibus_Transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sync_counter_31> has a constant value of 0 in block <Profibus_Transmitter>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block Profibus_Transmitter, actual ratio is 13.
-FlipFlop counter_0 has been replicated 28 time(s)
-FlipFlop counter_1 has been replicated 26 time(s)
-FlipFlop counter_2 has been replicated 13 time(s)
+FlipFlop counter_0 has been replicated 26 time(s)
+FlipFlop counter_1 has been replicated 25 time(s)
+FlipFlop counter_2 has been replicated 11 time(s)
 FlipFlop counter_3 has been replicated 6 time(s)
+FlipFlop counter_4 has been replicated 1 time(s)
+FlipFlop counter_5 has been replicated 1 time(s)
+FlipFlop state_FSM_FFd1 has been replicated 3 time(s)
+FlipFlop state_FSM_FFd2 has been replicated 2 time(s)
+FlipFlop state_FSM_FFd3 has been replicated 2 time(s)
+FlipFlop state_FSM_FFd4 has been replicated 3 time(s)
+FlipFlop state_FSM_FFd5 has been replicated 3 time(s)
 
 Final Macro Processing ...
 
@@ -515,8 +549,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2161
- Flip-Flops                                            : 2161
+# Registers                                            : 2190
+ Flip-Flops                                            : 2190
 
 =========================================================================
 
@@ -539,22 +573,25 @@ Top Level Output File Name         : Profibus_Transmitter.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1492
+# BELS                             : 1574
 #      GND                         : 1
-#      INV                         : 1
-#      LUT2                        : 38
-#      LUT3                        : 32
-#      LUT4                        : 14
-#      LUT5                        : 292
-#      LUT6                        : 636
-#      MUXCY                       : 28
-#      MUXF7                       : 282
+#      INV                         : 2
+#      LUT1                        : 17
+#      LUT2                        : 40
+#      LUT3                        : 47
+#      LUT4                        : 19
+#      LUT5                        : 319
+#      LUT6                        : 618
+#      MUXCY                       : 52
+#      MUXF7                       : 272
 #      MUXF8                       : 136
-#      XORCY                       : 32
-# FlipFlops/Latches                : 2161
-#      FDC                         : 5
-#      FDCE                        : 2137
+#      VCC                         : 1
+#      XORCY                       : 50
+# FlipFlops/Latches                : 2190
+#      FDC                         : 18
+#      FDCE                        : 2152
 #      FDE                         : 19
+#      FDP                         : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 70
@@ -568,16 +605,16 @@ Selected Device : 6slx45csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            2161  out of  54576     3%  
- Number of Slice LUTs:                 1013  out of  27288     3%  
-    Number used as Logic:              1013  out of  27288     3%  
+ Number of Slice Registers:            2190  out of  54576     4%  
+ Number of Slice LUTs:                 1062  out of  27288     3%  
+    Number used as Logic:              1062  out of  27288     3%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2472
-   Number with an unused Flip Flop:     311  out of   2472    12%  
-   Number with an unused LUT:          1459  out of   2472    59%  
-   Number of fully used LUT-FF pairs:   702  out of   2472    28%  
-   Number of unique control sets:       263
+ Number of LUT Flip Flop pairs used:   2531
+   Number with an unused Flip Flop:     341  out of   2531    13%  
+   Number with an unused LUT:          1469  out of   2531    58%  
+   Number of fully used LUT-FF pairs:   721  out of   2531    28%  
+   Number of unique control sets:       264
 
 IO Utilization: 
  Number of IOs:                          71
@@ -607,7 +644,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 2161  |
+clk                                | BUFGP                  | 2190  |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -618,7 +655,7 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 5.917ns (Maximum Frequency: 169.005MHz)
+   Minimum period: 5.769ns (Maximum Frequency: 173.335MHz)
    Minimum input arrival time before clock: 6.626ns
    Maximum output required time after clock: 3.634ns
    Maximum combinational path delay: No path found
@@ -629,46 +666,44 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 5.917ns (frequency: 169.005MHz)
-  Total number of paths / destination ports: 31265 / 209
+  Clock period: 5.769ns (frequency: 173.335MHz)
+  Total number of paths / destination ports: 36904 / 254
 -------------------------------------------------------------------------
-Delay:               5.917ns (Levels of Logic = 5)
-  Source:            le_s_4 (FF)
-  Destination:       fcs_0 (FF)
+Delay:               5.769ns (Levels of Logic = 3)
+  Source:            state_FSM_FFd1_1 (FF)
+  Destination:       counter_0 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: le_s_4 to fcs_0
+  Data Path: state_FSM_FFd1_1 to counter_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              3   0.447   0.995  le_s_4 (le_s_4)
-     LUT6:I1->O            4   0.203   0.684  Msub_GND_5_o_GND_5_o_sub_62_OUT<7:0>_cy<5>11 (Msub_GND_5_o_GND_5_o_sub_62_OUT<7:0>_cy<5>)
-     LUT6:I5->O            1   0.205   0.000  counter[7]_GND_5_o_LessThan_63_o25_SW0_SW0_G (N69)
-     MUXF7:I1->O           1   0.140   0.684  counter[7]_GND_5_o_LessThan_63_o25_SW0_SW0 (N61)
-     LUT5:I3->O           17   0.203   1.028  counter[7]_GND_5_o_LessThan_63_o25 (counter[7]_GND_5_o_LessThan_63_o)
-     LUT6:I5->O            8   0.205   0.802  _n2191_inv3 (_n2191_inv)
-     FDCE:CE                   0.322          fcs_0
+     FDC:C->Q              7   0.447   1.002  state_FSM_FFd1_1 (state_FSM_FFd1_1)
+     LUT5:I2->O           19   0.205   1.072  state_state<2>1 (state<2>)
+     LUT4:I3->O            1   0.205   0.580  _n2124_inv_SW0 (N4)
+     LUT6:I5->O           78   0.205   1.732  _n2124_inv (_n2124_inv)
+     FDCE:CE                   0.322          counter_0
     ----------------------------------------
-    Total                      5.917ns (1.725ns logic, 4.192ns route)
-                                       (29.2% logic, 70.8% route)
+    Total                      5.769ns (1.384ns logic, 4.385ns route)
+                                       (24.0% logic, 76.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 23065 / 6378
+  Total number of paths / destination ports: 23189 / 6418
 -------------------------------------------------------------------------
 Offset:              6.626ns (Levels of Logic = 3)
-  Source:            PDU_count<6> (PAD)
-  Destination:       RAM1_67_0 (FF)
+  Source:            PDU_count<5> (PAD)
+  Destination:       RAM1_32_0 (FF)
   Destination Clock: clk rising
 
-  Data Path: PDU_count<6> to RAM1_67_0
+  Data Path: PDU_count<5> to RAM1_32_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            67   1.222   1.888  PDU_count_6_IBUF (PDU_count_6_IBUF)
-     LUT3:I0->O           64   0.205   1.984  _n2451_inv11 (_n2451_inv1)
-     LUT5:I0->O            8   0.203   0.802  _n2687_inv1 (_n2687_inv)
+     IBUF:I->O            67   1.222   1.888  PDU_count_5_IBUF (PDU_count_5_IBUF)
+     LUT3:I0->O           64   0.205   1.984  _n2372_inv11 (_n2372_inv1)
+     LUT5:I0->O            8   0.203   0.802  _n2736_inv1 (_n2736_inv)
      FDCE:CE                   0.322          RAM1_123_0
     ----------------------------------------
     Total                      6.626ns (1.952ns logic, 4.674ns route)
@@ -703,20 +738,20 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    5.917|         |         |         |
+clk            |    5.769|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 15.00 secs
-Total CPU time to Xst completion: 15.15 secs
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 18.20 secs
  
 --> 
 
-Total memory usage is 4521676 kilobytes
+Total memory usage is 4539156 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
+Number of warnings :   14 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

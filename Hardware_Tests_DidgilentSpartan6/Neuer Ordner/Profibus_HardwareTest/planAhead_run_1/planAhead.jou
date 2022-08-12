@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Aug 12 09:37:22 2022
+# Process ID: 3196
+# Log file: C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/planAhead_run_1/planAhead.log
+# Journal file: C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/pa.fromNetlist.tcl}

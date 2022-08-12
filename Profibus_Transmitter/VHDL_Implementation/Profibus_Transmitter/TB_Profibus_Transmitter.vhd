@@ -158,8 +158,8 @@ BEGIN
 	clk_process2 :process
    begin
 		tx_busy <= '0';
-		wait for 20 ns;
+		wait for 572916 ns;
 		tx_busy<= '1';
-		wait for 20 ns;
+		wait for 572916 ns;
    end process;
 END;

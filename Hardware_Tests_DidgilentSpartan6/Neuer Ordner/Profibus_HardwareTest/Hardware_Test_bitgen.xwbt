@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\Hardware_Test.ncd
+OUTFILE=C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\Hardware_Test.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest
+LICENSE=WebPack
+USER_INFO=212388990_0_0_954

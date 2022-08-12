@@ -1,0 +1,8 @@
+
+#Created by Constraints Editor (xc6slx45-csg324-3) - 2022/08/12
+NET "clk" TNM_NET = clk | LOC = "L15"; 
+TIMESPEC TS_clk = PERIOD "clk" 100 MHz HIGH 50%;
+NET "Write_en" LOC="V9";
+NET "TX" LOC="T9";
+NET "RX" LOC="V4";
+NET "Write_en" LOC="T4";
