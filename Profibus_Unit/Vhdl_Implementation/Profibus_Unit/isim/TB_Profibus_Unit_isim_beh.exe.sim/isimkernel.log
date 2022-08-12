@@ -2,24 +2,24 @@ Command line:
    TB_Profibus_Unit_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  52158
+     -socket  64186
 
-Wed Aug 10 10:57:59 2022
+Fri Aug 12 13:57:45 2022
 
 
- Elaboration Time: 0.078125 sec
+ Elaboration Time: 0.03125 sec
 
- Current Memory Usage: 5154.55 Meg
+ Current Memory Usage: 5154.51 Meg
 
- Total Signals          : 146
- Total Nets             : 2318
- Total Signal Drivers   : 69
- Total Blocks           : 27
- Total Primitive Blocks : 23
- Total Processes        : 31
- Total Traceable Variables  : 43
- Total Scalar Nets and Variables : 2904
-Total Line Count : 436
+ Total Signals          : 290
+ Total Nets             : 4634
+ Total Signal Drivers   : 133
+ Total Blocks           : 50
+ Total Primitive Blocks : 43
+ Total Processes        : 60
+ Total Traceable Variables  : 71
+ Total Scalar Nets and Variables : 5248
+Total Line Count : 871
 
 ** Failure:Assertion violation
 User(VHDL) Code Called Simulation Stop
@@ -27,9 +27,9 @@ In process TB_Profibus_Unit.vhd:stim_proc
  
 
 
- Total Simulation Time: 2.60938 sec
+ Total Simulation Time: 7.04688 sec
 
- Current Memory Usage: 4839.97 Meg
+ Current Memory Usage: 4839.94 Meg
 
-Thu Aug 11 08:49:47 2022
+Fri Aug 12 14:02:58 2022
 

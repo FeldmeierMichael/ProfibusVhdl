@@ -11,26 +11,5 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Unit/Vhdl_Implementation/Profibus_Unit/Profibus_Constants.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Unit/Vhdl_Implementation/Profibus_Unit/Profibus_Recieve.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Unit/Vhdl_Implementation/Profibus_Unit/Profibus_Transmitter.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Unit/Vhdl_Implementation/Profibus_Unit/Profibus_UART.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Unit/Vhdl_Implementation/Profibus_Unit/Profibus_Unit.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Unit/Vhdl_Implementation/Profibus_Unit/Read_Write.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Unit/Vhdl_Implementation/Profibus_Unit/neg_flanke_puls.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Unit/Vhdl_Implementation/Profibus_Unit/uart.vhd&quot; into library work</arg>
-</msg>
-
 </messages>
 

@@ -30,7 +30,7 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity Profibus_Transmitter is
-	 Generic (baud:IN integer:=19_200);
+	generic(baud_rate:integer:=19_200);
     Port ( send_Telegram : in  STD_LOGIC;
            type_i : in  STD_LOGIC_VECTOR (7 downto 0);
            DA : in  STD_LOGIC_VECTOR (7 downto 0);
@@ -49,7 +49,7 @@ entity Profibus_Transmitter is
 end Profibus_Transmitter;
 
 architecture Behavioral of Profibus_Transmitter is
-type state_t is(idle,sd1,da1,sa1,fc1,fcs1,sd2,le,ler,sd2_2,da2,sa2,fc2,pdu2,fcs2,sd3,da3,sa3,fc3,pdu3,fcs3,sd4,da4,sc);
+type state_t is(idle,sd1,da1,sa1,fc1,fcs1,sd2,le,ler,sd2_2,da2,sa2,fc2,pdu2,fcs2,sd3,da3,sa3,fc3,pdu3,fcs3,sd4,da4,sc,sync);
 signal state:state_t:=idle;
 
 signal counter:unsigned(7 downto 0):=x"00";
@@ -57,6 +57,8 @@ signal le_s:std_logic_vector(7 downto 0):=x"00";
 type PDU_RAM is array(0 to 255)of std_logic_vector(7 downto 0);
 signal RAM1:PDU_RAM:=(others=>x"00");
 signal tx_busy_old:std_logic:='0';
+signal sync_counter:integer:=0;
+constant syncVal:integer:=((33*(5208)));--depends on baud_rate
 begin
 	
 	process(reset,clk)
@@ -71,6 +73,7 @@ begin
 			fcs:=x"00";
 			first_flag:='1';	
 			tx_busy_flag:='0';
+			sync_counter<=0;
 		elsif	 rising_edge(clk) then
 				tx_busy_old<=tx_busy;
 				tx_busy_flag:='0';	
@@ -82,9 +85,17 @@ begin
 									fcs:=x"00";									
 									telegram_busy<='0';
 									send<='0';
+									sync_counter<=0;
 									if (send_Telegram='1' and first_flag='1') or (send_Telegram='1' and tx_busy_flag='1')  then	
 									telegram_busy<='1';
 									first_flag:='0';
+									state<=sync;
+									end if;
+									
+					when sync=> sync_counter<=sync_counter+1;
+									if sync_counter <= syncVal then
+									else
+									sync_counter<=0;
 									send<='1';									
 									if type_i=x"00" then
 										state<=sd1;
@@ -103,8 +114,10 @@ begin
 										dataout<=sc_c;
 									else 
 										send<='0';
-									end if;										
+										state<=idle;
+									end if;	
 									end if;
+					
 					when sd1 =>
 									send<='0';
 									if tx_busy_flag='1' then
@@ -304,7 +317,10 @@ begin
 									end if;
 					when sc  => 
 									send<='0';																									
-									state<=idle;																	
+									state<=idle;	
+					
+					
+									
 					when others=>
 				end case;						
 			end if;

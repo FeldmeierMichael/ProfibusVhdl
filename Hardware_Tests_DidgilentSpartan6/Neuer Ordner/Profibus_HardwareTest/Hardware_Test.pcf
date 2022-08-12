@@ -1,13 +1,19 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Aug 12 09:46:00 2022
+// Written by: Map P.20131013 on Fri Aug 12 14:12:10 2022
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "rx" LOCATE = SITE "V4" LEVEL 1;
 COMP "tx" LOCATE = SITE "T9" LEVEL 1;
 COMP "clk" LOCATE = SITE "L15" LEVEL 1;
+COMP "tx_uart" LOCATE = SITE "B16" LEVEL 1;
 COMP "write_en" LOCATE = SITE "T4" LEVEL 1;
-TIMEGRP clk = BEL
+TIMEGRP clk = BEL "send" BEL "data_0" BEL "data_1" BEL "data_2" BEL "data_3"
+        BEL "data_4" BEL "data_5" BEL "data_6" BEL "data_7" BEL "c_0" BEL
+        "c_1" BEL "c_2" BEL "c_3" BEL "c_4" BEL "c_5" BEL "c_6" BEL "c_7" BEL
+        "c_8" BEL "c_9" BEL "c_10" BEL "c_11" BEL "c_12" BEL "c_13" BEL "c_14"
+        BEL "c_15" BEL "c_16" BEL "c_17" BEL "c_18" BEL "c_19" BEL "c_20" BEL
+        "c_21" BEL "c_22" BEL "c_23" BEL
         "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_neg_flanke_puls/i_old" BEL
         "Inst_Profibus_Unit/Inst_Profibus_Recieve/state_FSM_FFd2" BEL
         "Inst_Profibus_Unit/Inst_Profibus_Recieve/state_FSM_FFd3" BEL
@@ -62,6 +68,14 @@ TIMEGRP clk = BEL
         "Inst_Profibus_Unit/Inst_Profibus_Recieve/counter_2" BEL
         "Inst_Profibus_Unit/Inst_Profibus_Recieve/counter_1" BEL
         "Inst_Profibus_Unit/Inst_Profibus_Recieve/counter_0" BEL
+        "Inst_Profibus_Unit/Inst_Profibus_Recieve/FC_o_7" BEL
+        "Inst_Profibus_Unit/Inst_Profibus_Recieve/FC_o_6" BEL
+        "Inst_Profibus_Unit/Inst_Profibus_Recieve/FC_o_5" BEL
+        "Inst_Profibus_Unit/Inst_Profibus_Recieve/FC_o_4" BEL
+        "Inst_Profibus_Unit/Inst_Profibus_Recieve/FC_o_3" BEL
+        "Inst_Profibus_Unit/Inst_Profibus_Recieve/FC_o_2" BEL
+        "Inst_Profibus_Unit/Inst_Profibus_Recieve/FC_o_1" BEL
+        "Inst_Profibus_Unit/Inst_Profibus_Recieve/FC_o_0" BEL
         "Inst_Profibus_Unit/Inst_Profibus_Recieve/le_s_7" BEL
         "Inst_Profibus_Unit/Inst_Profibus_Recieve/le_s_6" BEL
         "Inst_Profibus_Unit/Inst_Profibus_Recieve/le_s_5" BEL
@@ -70,17 +84,6 @@ TIMEGRP clk = BEL
         "Inst_Profibus_Unit/Inst_Profibus_Recieve/le_s_2" BEL
         "Inst_Profibus_Unit/Inst_Profibus_Recieve/le_s_1" BEL
         "Inst_Profibus_Unit/Inst_Profibus_Recieve/le_s_0" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd2" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd3" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd1" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_Transmitter/dataout_4" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_Transmitter/dataout_2" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_Transmitter/dataout_1" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_Transmitter/dataout_0" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_2" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_1" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_Transmitter/send" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_Transmitter/tx_busy_old" BEL
         "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/count_baud_12" BEL
         "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/count_baud_11" BEL
         "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/count_baud_10" BEL
@@ -98,7 +101,6 @@ TIMEGRP clk = BEL
         "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/rx_count_2" BEL
         "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/rx_count_1" BEL
         "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/rx_count_0" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx_state" BEL
         "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/count_os_8" BEL
         "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/count_os_7" BEL
         "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/count_os_6" BEL
@@ -112,18 +114,6 @@ TIMEGRP clk = BEL
         "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/os_count_2" BEL
         "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/os_count_1" BEL
         "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/os_count_0" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx_buffer_10" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx_buffer_9" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx_buffer_8" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx_buffer_7" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx_buffer_6" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx_buffer_5" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx_buffer_4" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx_buffer_3" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx_buffer_2" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx_buffer_1" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx_buffer_0" BEL
         "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/rx_data_7" BEL
         "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/rx_data_6" BEL
         "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/rx_data_5" BEL
@@ -141,19 +131,41 @@ TIMEGRP clk = BEL
         "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/rx_buffer_3" BEL
         "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/rx_buffer_2" BEL
         "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/rx_buffer_1" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx_count_3" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx_count_2" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx_count_1" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx_count_0" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/baud_pulse" BEL
         "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/os_pulse" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_Read_Write/state" BEL
+        "Inst_UART_TX_CTRL/bitIndex_30" BEL "Inst_UART_TX_CTRL/bitIndex_29"
+        BEL "Inst_UART_TX_CTRL/bitIndex_28" BEL
+        "Inst_UART_TX_CTRL/bitIndex_27" BEL "Inst_UART_TX_CTRL/bitIndex_26"
+        BEL "Inst_UART_TX_CTRL/bitIndex_25" BEL
+        "Inst_UART_TX_CTRL/bitIndex_24" BEL "Inst_UART_TX_CTRL/bitIndex_23"
+        BEL "Inst_UART_TX_CTRL/bitIndex_22" BEL
+        "Inst_UART_TX_CTRL/bitIndex_21" BEL "Inst_UART_TX_CTRL/bitIndex_20"
+        BEL "Inst_UART_TX_CTRL/bitIndex_19" BEL
+        "Inst_UART_TX_CTRL/bitIndex_18" BEL "Inst_UART_TX_CTRL/bitIndex_17"
+        BEL "Inst_UART_TX_CTRL/bitIndex_16" BEL
+        "Inst_UART_TX_CTRL/bitIndex_15" BEL "Inst_UART_TX_CTRL/bitIndex_14"
+        BEL "Inst_UART_TX_CTRL/bitIndex_13" BEL
+        "Inst_UART_TX_CTRL/bitIndex_12" BEL "Inst_UART_TX_CTRL/bitIndex_11"
+        BEL "Inst_UART_TX_CTRL/bitIndex_10" BEL "Inst_UART_TX_CTRL/bitIndex_9"
+        BEL "Inst_UART_TX_CTRL/bitIndex_8" BEL "Inst_UART_TX_CTRL/bitIndex_7"
+        BEL "Inst_UART_TX_CTRL/bitIndex_6" BEL "Inst_UART_TX_CTRL/bitIndex_5"
+        BEL "Inst_UART_TX_CTRL/bitIndex_4" BEL "Inst_UART_TX_CTRL/bitIndex_3"
+        BEL "Inst_UART_TX_CTRL/bitIndex_2" BEL "Inst_UART_TX_CTRL/bitIndex_1"
+        BEL "Inst_UART_TX_CTRL/bitIndex_0" BEL "Inst_UART_TX_CTRL/bitTmr_13"
+        BEL "Inst_UART_TX_CTRL/bitTmr_12" BEL "Inst_UART_TX_CTRL/bitTmr_11"
+        BEL "Inst_UART_TX_CTRL/bitTmr_10" BEL "Inst_UART_TX_CTRL/bitTmr_9" BEL
+        "Inst_UART_TX_CTRL/bitTmr_8" BEL "Inst_UART_TX_CTRL/bitTmr_7" BEL
+        "Inst_UART_TX_CTRL/bitTmr_6" BEL "Inst_UART_TX_CTRL/bitTmr_5" BEL
+        "Inst_UART_TX_CTRL/bitTmr_4" BEL "Inst_UART_TX_CTRL/bitTmr_3" BEL
+        "Inst_UART_TX_CTRL/bitTmr_2" BEL "Inst_UART_TX_CTRL/bitTmr_1" BEL
+        "Inst_UART_TX_CTRL/bitTmr_0" BEL "Inst_UART_TX_CTRL/txState_FSM_FFd1"
+        BEL "Inst_UART_TX_CTRL/txState_FSM_FFd2" BEL "Inst_UART_TX_CTRL/txBit"
+        BEL "Inst_UART_TX_CTRL/txData_8" BEL "Inst_UART_TX_CTRL/txData_7" BEL
+        "Inst_UART_TX_CTRL/txData_6" BEL "Inst_UART_TX_CTRL/txData_5" BEL
+        "Inst_UART_TX_CTRL/txData_4" BEL "Inst_UART_TX_CTRL/txData_3" BEL
+        "Inst_UART_TX_CTRL/txData_2" BEL "Inst_UART_TX_CTRL/txData_1" BEL
         "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_neg_flanke_puls/state" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_Recieve/idle_o" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_Transmitter/first_flag" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx_busy" BEL
         "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/rx_busy" BEL
-        "Inst_Profibus_Unit/Inst_Profibus_UART/Inst_Read_Write/Read_en" BEL
+        "Inst_Profibus_Unit/Inst_Profibus_Recieve/detect" BEL
         "clk_BUFGP/BUFG";
 TS_clk = PERIOD TIMEGRP "clk" 100 MHz HIGH 50%;
 SCHEMATIC END;

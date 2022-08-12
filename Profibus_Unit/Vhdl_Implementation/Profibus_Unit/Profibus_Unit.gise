@@ -63,11 +63,11 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1660121419" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1660121419">
+    <transform xil_pn:end_ts="1660305195" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1660305195">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1660121871" xil_pn:in_ck="-5683164763950012381" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1660121871">
+    <transform xil_pn:end_ts="1660305195" xil_pn:in_ck="-5683164763950012381" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1660305195">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -84,19 +84,19 @@
       <outfile xil_pn:name="neg_flanke_puls.vhd"/>
       <outfile xil_pn:name="uart.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1660121419" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5737406741732999202" xil_pn:start_ts="1660121419">
+    <transform xil_pn:end_ts="1660305195" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5737406741732999202" xil_pn:start_ts="1660305195">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1660121419" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6984835059725577316" xil_pn:start_ts="1660121419">
+    <transform xil_pn:end_ts="1660305195" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6984835059725577316" xil_pn:start_ts="1660305195">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1660121419" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-2467509953377165467" xil_pn:start_ts="1660121419">
+    <transform xil_pn:end_ts="1660305195" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-2467509953377165467" xil_pn:start_ts="1660305195">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1660121871" xil_pn:in_ck="-5683164763950012381" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1660121871">
+    <transform xil_pn:end_ts="1660305195" xil_pn:in_ck="-5683164763950012381" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1660305195">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -114,11 +114,10 @@
       <outfile xil_pn:name="neg_flanke_puls.vhd"/>
       <outfile xil_pn:name="uart.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1660121876" xil_pn:in_ck="-5683164763950012381" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2232451148749252370" xil_pn:start_ts="1660121871">
+    <transform xil_pn:end_ts="1660305200" xil_pn:in_ck="-5683164763950012381" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2232451148749252370" xil_pn:start_ts="1660305195">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
@@ -130,10 +129,9 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1660121877" xil_pn:in_ck="7993657261656006594" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7807416709993980476" xil_pn:start_ts="1660121876">
+    <transform xil_pn:end_ts="1660305200" xil_pn:in_ck="7993657261656006594" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7807416709993980476" xil_pn:start_ts="1660305200">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
@@ -174,20 +172,11 @@
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="Profibus_Recieve.ngr"/>
-      <outfile xil_pn:name="Profibus_Unit.lso"/>
-      <outfile xil_pn:name="Profibus_Unit.ngc"/>
-      <outfile xil_pn:name="Profibus_Unit.ngr"/>
-      <outfile xil_pn:name="Profibus_Unit.prj"/>
-      <outfile xil_pn:name="Profibus_Unit.stx"/>
-      <outfile xil_pn:name="Profibus_Unit.syr"/>
-      <outfile xil_pn:name="Profibus_Unit.xst"/>
-      <outfile xil_pn:name="Profibus_Unit_xst.xrpt"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 

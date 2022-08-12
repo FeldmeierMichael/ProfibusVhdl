@@ -30,6 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Profibus_Unit is
+Generic (baud:IN integer:=19_200);
     Port ( clk : in  STD_LOGIC;
            reset : in  STD_LOGIC;
            type_s : in  STD_LOGIC_VECTOR (7 downto 0);

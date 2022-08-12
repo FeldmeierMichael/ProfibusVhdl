@@ -32,10 +32,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity Hardware_Test is
     Port ( clk : in  STD_LOGIC;
            reset : in  STD_LOGIC;
+			  in_B:in std_logic;
 			  rx: in std_logic;
 			  tx: out std_logic;
 			  write_en:out std_logic;
-			  read_en: out std_logic);
+			  read_en: out std_logic;
+			  tx_uart:out std_logic
+			  );
 end Hardware_Test;
 
 architecture Behavioral of Hardware_Test is
@@ -69,8 +72,20 @@ COMPONENT Profibus_Unit
 		Write_en : OUT std_logic
 		);
 	END COMPONENT;
-	signal telegram_busy,detect_r,PDU_RAM_en_r:std_logic;
-	signal type_r,DA_r,SA_r,FC_r,LE_r,FCS_r,PDU_r,PDU_count_r:std_logic_vector(7 downto 0);
+	signal telegram_busy,send_telegram,detect_r,PDU_RAM_en_r:std_logic:='0';
+	signal type_r,DA_r,SA_r,FC_r,LE_r,FCS_r,PDU_r,PDU_count_r,data:std_logic_vector(7 downto 0);
+	
+	COMPONENT UART_TX_CTRL
+	PORT(
+		SEND : IN std_logic;
+		DATA : IN std_logic_vector(7 downto 0);
+		CLK : IN std_logic;          
+		READY : OUT std_logic;
+		UART_TX : OUT std_logic
+		);
+	END COMPONENT;
+	signal rdy,send:std_logic:='0';
+	
 begin
 	Inst_Profibus_Unit: Profibus_Unit PORT MAP(
 		clk => clk,
@@ -83,7 +98,7 @@ begin
 		PDU_s => x"00",
 		PDU_count_s => x"00",
 		PDU_RAM_en_s => '0',
-		send_telegram => '1',
+		send_telegram => send_telegram,
 		telegram_busy => telegram_busy,
 		detect_r => detect_r,
 		type_r => type_r,
@@ -100,9 +115,30 @@ begin
 		Read_en => read_en,
 		Write_en => write_en
 	);
-
-
-
-
+	Inst_UART_TX_CTRL: UART_TX_CTRL PORT MAP(
+		SEND => send,
+		DATA => data,
+		CLK => clk,
+		READY => rdy,
+		UART_TX => tx_uart
+	);
+	process(clk)
+	variable c:integer:=0;
+	begin
+		if rising_edge(clk) then
+		if c>10000000 then
+			send<='1';
+			c:=0;
+		else
+			if detect_r='1' then
+				data<=FC_r;
+			else
+				data<=x"00";
+			end if;
+			send<='0';			
+		end if;
+		c:=c+1;
+		end if;
+	end process;	
 end Behavioral;
 

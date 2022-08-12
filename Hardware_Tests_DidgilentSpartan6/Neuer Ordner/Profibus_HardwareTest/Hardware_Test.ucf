@@ -6,3 +6,5 @@ NET "Write_en" LOC="V9";
 NET "TX" LOC="T9";
 NET "RX" LOC="V4";
 NET "Write_en" LOC="T4";
+NET "tx_uart" LOC = "B16"; # Bank = 0, Pin name = IO_L66P_SCP1, Sch name = USBB-TXD
+

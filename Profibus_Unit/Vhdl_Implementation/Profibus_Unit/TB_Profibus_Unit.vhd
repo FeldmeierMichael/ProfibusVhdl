@@ -71,6 +71,14 @@ ARCHITECTURE behavior OF TB_Profibus_Unit IS
         );
     END COMPONENT;
     
+	
+	
+	
+	
+	
+	
+	
+	
 
    --Inputs
    signal clk : std_logic := '0';
@@ -105,6 +113,9 @@ ARCHITECTURE behavior OF TB_Profibus_Unit IS
    -- Clock period definitions
    constant clk_period : time := 10 ns;
  
+ 
+			signal send_telegram_2, telegram_busy_2, detect_r_2, PDU_RAM_en_r_2, Read_en_2, Write_en_2 :std_logic:='0';
+		  signal type_r_2, DA_r_2, SA_r_2, FC_r_2, LE_r_2, FCS_r_2, PDU_r_2, PDU_count_r_2 :std_logic_vector(7 downto 0):=x"00";
 	BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
@@ -136,7 +147,36 @@ ARCHITECTURE behavior OF TB_Profibus_Unit IS
           Read_en => Read_en,
           Write_en => Write_en
         );
-
+		  
+		  uuut: Profibus_Unit PORT MAP (
+          clk => clk,
+          reset => reset,
+          type_s => x"00",
+          DA_s => x"01",
+          SA_s => x"02",
+          FC_s => x"03",
+          LE_s => x"04",
+          PDU_s => x"05",
+          PDU_count_s => x"00",
+          PDU_RAM_en_s => '0',
+          send_telegram => send_telegram_2,
+          telegram_busy => telegram_busy_2,
+          detect_r => detect_r_2,
+          type_r => type_r_2,
+          DA_r => DA_r_2,
+          SA_r => SA_r_2,
+          FC_r => FC_r_2,
+          LE_r => LE_r_2,
+          FCS_r => FCS_r_2,
+          PDU_r => PDU_r_2,
+          PDU_count_r => PDU_count_r_2,
+          PDU_RAM_en_r => PDU_RAM_en_r_2,
+          RX => TX,
+          TX => RX,
+          Read_en => Read_en_2,
+          Write_en => Write_en_2
+        );
+		  
    -- Clock process definitions
    clk_process :process
    begin
@@ -163,7 +203,7 @@ ARCHITECTURE behavior OF TB_Profibus_Unit IS
 		FC_s<=x"03";	
 		wait until telegram_busy='0';
 		send_Telegram<='0';
-		wait for 1 us;
+		wait for 1000 us;
 		
 		
 		

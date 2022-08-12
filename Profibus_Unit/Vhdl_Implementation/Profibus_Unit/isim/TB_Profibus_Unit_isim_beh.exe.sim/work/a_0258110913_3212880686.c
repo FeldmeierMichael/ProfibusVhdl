@@ -25,7 +25,7 @@
 
 
 
-extern void work_a_3355253031_3212880686_init()
+extern void work_a_0258110913_3212880686_init()
 {
-	xsi_register_didat("work_a_3355253031_3212880686", "isim/TB_Profibus_Unit_isim_beh.exe.sim/work/a_3355253031_3212880686.didat");
+	xsi_register_didat("work_a_0258110913_3212880686", "isim/TB_Profibus_Unit_isim_beh.exe.sim/work/a_0258110913_3212880686.didat");
 }

@@ -1,0 +1,1 @@
+vhdtdtfi -prj Profibus_HardwareTest -o "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/UART_TX_CTRL.vhi" -module UART_TX_CTRL -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work UART_TX_CTRL.vhd 

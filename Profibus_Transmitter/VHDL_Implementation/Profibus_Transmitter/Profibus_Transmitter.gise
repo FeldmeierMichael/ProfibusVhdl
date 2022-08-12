@@ -54,6 +54,10 @@
     <transform xil_pn:end_ts="1660296249" xil_pn:in_ck="-8940798910466109993" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1660296249">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Profibus_Constants.vhd"/>
       <outfile xil_pn:name="Profibus_Transmitter.vhd"/>
       <outfile xil_pn:name="TB_Profibus_Transmitter.vhd"/>
@@ -73,6 +77,11 @@
     <transform xil_pn:end_ts="1660296249" xil_pn:in_ck="-8940798910466109993" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1660296249">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Profibus_Constants.vhd"/>
       <outfile xil_pn:name="Profibus_Transmitter.vhd"/>
       <outfile xil_pn:name="TB_Profibus_Transmitter.vhd"/>
@@ -80,6 +89,11 @@
     <transform xil_pn:end_ts="1660296254" xil_pn:in_ck="-8940798910466109993" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7660467222185330220" xil_pn:start_ts="1660296249">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TB_Profibus_Transmitter_beh.prj"/>
       <outfile xil_pn:name="TB_Profibus_Transmitter_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -90,6 +104,9 @@
     <transform xil_pn:end_ts="1660296255" xil_pn:in_ck="-6968351214366424726" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7196851600509719378" xil_pn:start_ts="1660296254">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TB_Profibus_Transmitter_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
