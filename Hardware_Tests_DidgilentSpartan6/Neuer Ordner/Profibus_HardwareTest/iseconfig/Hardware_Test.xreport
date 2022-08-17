@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-08-12T14:03:12</DateModified>
+  <DateModified>2022-08-17T09:02:12</DateModified>
   <ModuleName>Hardware_Test</ModuleName>
-  <SummaryTimeStamp>2022-08-12T12:35:38</SummaryTimeStamp>
+  <SummaryTimeStamp>2022-08-15T16:59:13</SummaryTimeStamp>
   <SavedFilePath>C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/iseconfig/Hardware_Test.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest\</ImplementationReportsDirectory>
   <DateInitialized>2022-08-12T10:39:29</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

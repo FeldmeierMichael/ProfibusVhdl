@@ -49,10 +49,13 @@ begin
 		if reset='1' then
 			Write_en<='0';
 			Read_en<='1';
+			tx_busy_old<='0';
+			state<=read_T;
 		elsif rising_edge(clk) then	
 			tx_busy_old<=tx_busy;
 			case state is 
 				when read_T=>	if idle='1' and send='1' then state<=write_t; Write_en<='1';Read_en<='0'; end if;
+									--if  send='1' then state<=write_t; Write_en<='1';Read_en<='0'; end if;
 				when write_T=>	if tx_busy='0' and tx_busy_old='1' then state<=read_T;Write_en<='0';Read_en<='1'; end if;	
 				when others=>
 			end case;

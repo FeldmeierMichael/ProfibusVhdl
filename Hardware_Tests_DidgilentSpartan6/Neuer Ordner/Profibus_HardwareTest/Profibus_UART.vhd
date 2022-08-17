@@ -38,7 +38,7 @@ entity Profibus_UART is
            dataout : out  STD_LOGIC_VECTOR (7 downto 0);
            send : in  STD_LOGIC;
            recieve : out  STD_LOGIC;
-           RX : in  STD_LOGIC;
+           RX : in  STD_LOGIC:='1';
            TX : out  STD_LOGIC;
            Read_en : out  STD_LOGIC;
 			  tx_busy : out std_logic:='0';
@@ -48,6 +48,8 @@ end Profibus_UART;
 architecture Behavioral of Profibus_UART is
 signal rx_busy_s:std_logic;
 signal tx_busy_s:std_logic;
+signal rx_s:std_logic;
+signal tx_s:std_logic;
 COMPONENT Read_Write
 	PORT(
 		idle : IN std_logic;
@@ -68,7 +70,7 @@ COMPONENT Read_Write
     os_rate   :  INTEGER    := 16;          --oversampling rate to find center of receive bits (in samples per baud period)
     d_width   :  INTEGER    := 8;           --data bus width
     parity    :  INTEGER    := 1;           --0 for no parity, 1 for parity
-    parity_eo :  STD_LOGIC  := '1');        --'0' for even, '1' for odd parity
+    parity_eo :  STD_LOGIC  := '0');        --'0' for even, '1' for odd parity
 
 	PORT(	   
 		clk : IN std_logic;
@@ -126,13 +128,33 @@ Inst_uart: uart GENERIC map(
 		reset_n => not reset,
 		tx_ena => send,
 		tx_data => datain,
-		rx => rx,
+		rx =>rx_s,
 		rx_busy => rx_busy_s,		
 		rx_data => dataout,
 		tx_busy => tx_busy_s,
-		tx => tx
+		tx => tx_s
 	);
-
+--- this is new in the code hopefull this will fix it
+--rx_s<='1' when tx_busy_s='1' else rx when tx_busy_s='0';
+--tx<='1' when rx_busy_s='1' else tx_s when rx_busy_s='0';
+process(clk,reset)
+	begin
+		if reset='1' then
+		rx_s<=rx;		
+		tx<=tx_s;
+		elsif rising_edge(clk) then
+			if tx_busy_s='1' then				
+				rx_s<='1';
+			else
+				rx_s<=rx;
+			end if;			
+			if rx_busy_s='1' then				
+				tx<='1';
+			else
+				tx<=tx_s;
+			end if;		
+		end if;
+end process;
 
 end Behavioral;
 

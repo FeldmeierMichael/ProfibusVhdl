@@ -33,11 +33,12 @@ entity Hardware_Test is
     Port ( clk : in  STD_LOGIC;
            reset : in  STD_LOGIC;
 			  in_B:in std_logic;
-			  rx: in std_logic;
-			  tx: out std_logic;
-			  write_en:out std_logic;
-			  read_en: out std_logic;
-			  tx_uart:out std_logic
+			  rx: in std_logic:='1';
+			  tx: out std_logic:='1';
+			  write_en:out std_logic:='0';
+			  read_en: out std_logic:='1';
+			  tx_uart:out std_logic:='1';
+			  test: out std_logic:='1'
 			  );
 end Hardware_Test;
 
@@ -84,21 +85,59 @@ COMPONENT Profibus_Unit
 		UART_TX : OUT std_logic
 		);
 	END COMPONENT;
-	signal rdy,send:std_logic:='0';
+	signal send:std_logic:=('0');
+	signal send_s:std_logic:=('0');
+	signal send_o:std_logic:=('0');
+	signal tx_s:std_logic:=('1');
+	COMPONENT Profibus_UART
+	PORT(
+		Reciever_idle : IN std_logic;
+		clk : IN std_logic;
+		reset : IN std_logic;
+		datain : IN std_logic_vector(7 downto 0);
+		send : IN std_logic;
+		RX : IN std_logic;          
+		dataout : OUT std_logic_vector(7 downto 0);
+		recieve : OUT std_logic;
+		TX : OUT std_logic;
+		Read_en : OUT std_logic;
+		tx_busy : OUT std_logic;
+		Write_en : OUT std_logic
+		);
+	END COMPONENT;
+		COMPONENT debounce
+
+    PORT(
+		clk : IN std_logic;
+		reset_n : IN std_logic;
+		button : IN std_logic;          
+		result : OUT std_logic
+		);
+	END COMPONENT;
+
 	
-begin
+
+	
+	begin
+	Inst_debounce: debounce PORT MAP(
+		clk => clk,
+		reset_n => not reset,
+		button => in_b,
+		result => send
+	);
+	
 	Inst_Profibus_Unit: Profibus_Unit PORT MAP(
 		clk => clk,
 		reset => reset,
 		type_s => x"00",
 		DA_s => x"01",
 		SA_s => x"02",
-		FC_s => x"03",
-		LE_s => x"00",
+		FC_s => x"49",
+		LE_s => x"04",
 		PDU_s => x"00",
 		PDU_count_s => x"00",
 		PDU_RAM_en_s => '0',
-		send_telegram => send_telegram,
+		send_telegram => send_s,
 		telegram_busy => telegram_busy,
 		detect_r => detect_r,
 		type_r => type_r,
@@ -111,34 +150,49 @@ begin
 		PDU_count_r => PDU_count_r,
 		PDU_RAM_en_r => PDU_RAM_en_r,
 		RX => rx,
-		TX => tx,
+		TX => tx_s,
 		Read_en => read_en,
 		Write_en => write_en
 	);
+	tx<=tx_s;
+	--tx_uart<=tx_s;
 	Inst_UART_TX_CTRL: UART_TX_CTRL PORT MAP(
-		SEND => send,
-		DATA => data,
-		CLK => clk,
-		READY => rdy,
+		SEND => send_s,
+		DATA => DA_r,
+		CLK => clk,		
 		UART_TX => tx_uart
 	);
+
+	
+	
+--	Inst_Profibus_UART: Profibus_UART PORT MAP(
+--		Reciever_idle => '1',
+--		clk => clk,
+--		reset =>  reset,
+--		datain => x"AA",		
+--		send => send,		
+--		RX => '1',
+--		TX => tx,
+--		Read_en => read_en,		
+--		Write_en => write_en
+--	);
 	process(clk)
-	variable c:integer:=0;
-	begin
-		if rising_edge(clk) then
-		if c>10000000 then
-			send<='1';
-			c:=0;
-		else
-			if detect_r='1' then
-				data<=FC_r;
-			else
-				data<=x"00";
+	
+		begin
+			if reset='1' then
+					send_o<='0';
+				
+			elsif rising_edge(clk) then
+				send_o<=send;
+				if send_o='0' and send='1' then
+					send_s<='1';
+				else
+					send_s<='0';				
+				end if;	
 			end if;
-			send<='0';			
-		end if;
-		c:=c+1;
-		end if;
-	end process;	
+	end process;
+
+	
+
 end Behavioral;
 

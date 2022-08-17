@@ -74,6 +74,7 @@ begin
 				timer<=timer+1;
 				if timer>= diff_c then
 					state<=idle;
+					idle_o<='1';
 					if state= sc then
 						detect<='1';
 						type_o<=x"04";	
@@ -131,7 +132,8 @@ begin
 									end if;
 					when fcs1=>									
 									timer<=(others=>'0');	
-									state<=idle;									
+									state<=idle;	
+									idle_o<='1';									
 									if dataIn=ed_c then 
 										detect<='1';
 										type_o<=x"00";
@@ -198,6 +200,7 @@ begin
 									timer<=(others=>'0');
 									counter<=(others=>'0');
 									state<=idle;
+									idle_o<='1';
 									if dataIn=ed_c then 
 										detect<='1';
 										type_o<=x"01";										
@@ -244,6 +247,7 @@ begin
 									timer<=(others=>'0');
 									counter<=(others=>'0');
 									state<=idle;
+									idle_o<='1';
 									if dataIn=ed_c then 
 										detect<='1';
 										type_o<=x"02";										
@@ -256,11 +260,13 @@ begin
 					when da4 =>
 									timer<=(others=>'0');
 									detect<='1';
+									idle_o<='1';
 									type_o<=x"03";
 									state<=idle;
 					when sc  => 
 									timer<=(others=>'0');
 									detect<='1';
+									idle_o<='1';
 									type_o<=x"04";	
 									state<=idle;									
 					when others=>

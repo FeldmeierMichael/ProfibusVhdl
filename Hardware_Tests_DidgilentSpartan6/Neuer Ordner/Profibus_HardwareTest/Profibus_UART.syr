@@ -1,0 +1,588 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: Profibus_UART.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Profibus_UART.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Profibus_UART"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : Profibus_UART
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\uart.vhd" into library work
+Parsing entity <uart>.
+Parsing architecture <logic> of entity <uart>.
+Parsing VHDL file "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\Read_Write.vhd" into library work
+Parsing entity <Read_Write>.
+Parsing architecture <Behavioral> of entity <read_write>.
+Parsing VHDL file "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\neg_flanke_puls.vhd" into library work
+Parsing entity <neg_flanke_puls>.
+Parsing architecture <Behavioral> of entity <neg_flanke_puls>.
+Parsing VHDL file "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\Profibus_UART.vhd" into library work
+Parsing entity <Profibus_UART>.
+Parsing architecture <Behavioral> of entity <profibus_uart>.
+WARNING:HDLCompiler:946 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\Profibus_UART.vhd" Line 128: Actual for formal port reset_n is neither a static name nor a globally static expression
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Profibus_UART> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <neg_flanke_puls> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\neg_flanke_puls.vhd" Line 55. Case statement is complete. others clause is never selected
+
+Elaborating entity <Read_Write> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\Read_Write.vhd" Line 59. Case statement is complete. others clause is never selected
+
+Elaborating entity <uart> (architecture <logic>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\uart.vhd" Line 106: os_pulse should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Profibus_UART>.
+    Related source file is "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\Profibus_UART.vhd".
+INFO:Xst:3210 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\Profibus_UART.vhd" line 119: Output port <rx_error> of the instance <Inst_uart> is unconnected or connected to loadless signal.
+WARNING:Xst:737 - Found 1-bit latch for signal <TX>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rx_s>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   2 Latch(s).
+Unit <Profibus_UART> synthesized.
+
+Synthesizing Unit <neg_flanke_puls>.
+    Related source file is "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\neg_flanke_puls.vhd".
+    Found 1-bit register for signal <out_o>.
+    Found 1-bit register for signal <i_old>.
+    Found 1-bit register for signal <state>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <neg_flanke_puls> synthesized.
+
+Synthesizing Unit <Read_Write>.
+    Related source file is "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\Read_Write.vhd".
+    Found 1-bit register for signal <Read_en>.
+    Found 1-bit register for signal <tx_busy_old>.
+    Found 1-bit register for signal <state>.
+    Found 1-bit register for signal <Write_en>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <Read_Write> synthesized.
+
+Synthesizing Unit <uart>.
+    Related source file is "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\Profibus_HardwareTest\uart.vhd".
+        clk_freq = 100000000
+        baud_rate = 19200
+        os_rate = 16
+        d_width = 8
+        parity = 1
+        parity_eo = '0'
+    Found 13-bit register for signal <count_baud>.
+    Found 9-bit register for signal <count_os>.
+    Found 4-bit register for signal <os_count>.
+    Found 4-bit register for signal <rx_count>.
+    Found 4-bit register for signal <tx_count>.
+    Found 8-bit register for signal <rx_data>.
+    Found 1-bit register for signal <os_pulse>.
+    Found 1-bit register for signal <rx_busy>.
+    Found 1-bit register for signal <rx_error>.
+    Found 1-bit register for signal <rx_state>.
+    Found 1-bit register for signal <tx_state>.
+    Found 1-bit register for signal <baud_pulse>.
+    Found 1-bit register for signal <tx_busy>.
+    Found 1-bit register for signal <tx>.
+    Found 10-bit register for signal <rx_buffer>.
+    Found 11-bit register for signal <tx_buffer>.
+    Found 13-bit adder for signal <count_baud[12]_GND_7_o_add_1_OUT> created at line 76.
+    Found 9-bit adder for signal <GND_7_o_GND_7_o_add_5_OUT> created at line 85.
+    Found 4-bit adder for signal <os_count[3]_GND_7_o_add_18_OUT> created at line 127.
+    Found 4-bit adder for signal <rx_count[3]_GND_7_o_add_20_OUT> created at line 131.
+    Found 4-bit adder for signal <tx_count[3]_GND_7_o_add_46_OUT> created at line 179.
+    Found 13-bit comparator greater for signal <count_baud[12]_PWR_6_o_LessThan_1_o> created at line 75
+    Found 9-bit comparator greater for signal <GND_7_o_PWR_6_o_LessThan_5_o> created at line 84
+    Found 4-bit comparator greater for signal <os_count[3]_PWR_6_o_LessThan_10_o> created at line 111
+    Found 4-bit comparator greater for signal <os_count[3]_PWR_6_o_LessThan_18_o> created at line 126
+    Found 4-bit comparator greater for signal <rx_count[3]_PWR_6_o_LessThan_20_o> created at line 129
+    Found 4-bit comparator greater for signal <tx_count[3]_PWR_6_o_LessThan_50_o> created at line 182
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred  71 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred  17 Multiplexer(s).
+Unit <uart> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 13-bit adder                                          : 1
+ 4-bit adder                                           : 3
+ 9-bit adder                                           : 1
+# Registers                                            : 23
+ 1-bit register                                        : 15
+ 10-bit register                                       : 1
+ 11-bit register                                       : 1
+ 13-bit register                                       : 1
+ 4-bit register                                        : 3
+ 8-bit register                                        : 1
+ 9-bit register                                        : 1
+# Latches                                              : 2
+ 1-bit latch                                           : 2
+# Comparators                                          : 6
+ 13-bit comparator greater                             : 1
+ 4-bit comparator greater                              : 4
+ 9-bit comparator greater                              : 1
+# Multiplexers                                         : 18
+ 1-bit 2-to-1 multiplexer                              : 6
+ 10-bit 2-to-1 multiplexer                             : 1
+ 11-bit 2-to-1 multiplexer                             : 1
+ 13-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 7
+ 9-bit 2-to-1 multiplexer                              : 2
+# Xors                                                 : 2
+ 1-bit xor10                                           : 1
+ 1-bit xor9                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <state> in Unit <Inst_Read_Write> is equivalent to the following FF/Latch, which will be removed : <Write_en> 
+WARNING:Xst:2677 - Node <rx_buffer_0> of sequential type is unconnected in block <Inst_uart>.
+
+Synthesizing (advanced) Unit <uart>.
+The following registers are absorbed into counter <count_baud>: 1 register on signal <count_baud>.
+The following registers are absorbed into counter <rx_count>: 1 register on signal <rx_count>.
+Unit <uart> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 4-bit adder                                           : 2
+ 9-bit adder                                           : 1
+# Counters                                             : 2
+ 13-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 61
+ Flip-Flops                                            : 61
+# Comparators                                          : 6
+ 13-bit comparator greater                             : 1
+ 4-bit comparator greater                              : 4
+ 9-bit comparator greater                              : 1
+# Multiplexers                                         : 18
+ 1-bit 2-to-1 multiplexer                              : 9
+ 10-bit 2-to-1 multiplexer                             : 1
+ 11-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 5
+ 9-bit 2-to-1 multiplexer                              : 2
+# Xors                                                 : 2
+ 1-bit xor10                                           : 1
+ 1-bit xor9                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <state> in Unit <Read_Write> is equivalent to the following FF/Latch, which will be removed : <Write_en> 
+
+Optimizing unit <Profibus_UART> ...
+
+Optimizing unit <uart> ...
+WARNING:Xst:2677 - Node <Inst_uart/rx_buffer_0> of sequential type is unconnected in block <Profibus_UART>.
+WARNING:Xst:2677 - Node <Inst_uart/rx_error> of sequential type is unconnected in block <Profibus_UART>.
+INFO:Xst:2261 - The FF/Latch <Inst_uart/rx_busy> in Unit <Profibus_UART> is equivalent to the following FF/Latch, which will be removed : <Inst_uart/rx_state> 
+INFO:Xst:3203 - The FF/Latch <Inst_Read_Write/state> in Unit <Profibus_UART> is the opposite to the following FF/Latch, which will be removed : <Inst_Read_Write/Read_en> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Profibus_UART, actual ratio is 0.
+INFO:Xst:2260 - The FF/Latch <Inst_neg_flanke_puls/state> in Unit <Profibus_UART> is equivalent to the following FF/Latch : <Inst_neg_flanke_puls/out_o> 
+INFO:Xst:2261 - The FF/Latch <Inst_neg_flanke_puls/out_o> in Unit <Profibus_UART> is equivalent to the following FF/Latch, which will be removed : <Inst_neg_flanke_puls/state> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 72
+ Flip-Flops                                            : 72
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Profibus_UART.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 119
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 10
+#      LUT3                        : 19
+#      LUT4                        : 16
+#      LUT5                        : 9
+#      LUT6                        : 36
+#      MUXCY                       : 12
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 13
+# FlipFlops/Latches                : 74
+#      FDC                         : 30
+#      FDCE                        : 20
+#      FDE                         : 20
+#      FDP                         : 2
+#      LDP_1                       : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 25
+#      IBUF                        : 12
+#      OBUF                        : 13
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              72  out of  54576     0%  
+ Number of Slice LUTs:                   91  out of  27288     0%  
+    Number used as Logic:                91  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    106
+   Number with an unused Flip Flop:      34  out of    106    32%  
+   Number with an unused LUT:            15  out of    106    14%  
+   Number of fully used LUT-FF pairs:    57  out of    106    53%  
+   Number of unique control sets:         9
+
+IO Utilization: 
+ Number of IOs:                          26
+ Number of bonded IOBs:                  26  out of    218    11%  
+    IOB Flip Flops/Latches:               2
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Inst_uart/tx_busy                  | NONE(rx_s)             | 1     |
+Inst_uart/rx_busy                  | NONE(TX)               | 1     |
+clk                                | BUFGP                  | 72    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.172ns (Maximum Frequency: 239.713MHz)
+   Minimum input arrival time before clock: 5.267ns
+   Maximum output required time after clock: 4.453ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.172ns (frequency: 239.713MHz)
+  Total number of paths / destination ports: 2006 / 112
+-------------------------------------------------------------------------
+Delay:               4.172ns (Levels of Logic = 15)
+  Source:            Inst_uart/count_baud_8 (FF)
+  Destination:       Inst_uart/count_baud_12 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Inst_uart/count_baud_8 to Inst_uart/count_baud_12
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.912  Inst_uart/count_baud_8 (Inst_uart/count_baud_8)
+     LUT3:I0->O           12   0.205   1.013  Inst_uart/count_baud[12]_PWR_6_o_LessThan_1_o_inv_inv21 (Inst_uart/count_baud[12]_PWR_6_o_LessThan_1_o_inv_inv2)
+     LUT6:I4->O           11   0.203   0.882  Inst_uart/count_baud[12]_PWR_6_o_LessThan_1_o_inv_inv23 (Inst_uart/count_baud[12]_PWR_6_o_LessThan_1_o_inv_inv)
+     MUXCY:CI->O           1   0.019   0.000  Inst_uart/Mcount_count_baud_cy<0> (Inst_uart/Mcount_count_baud_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_uart/Mcount_count_baud_cy<1> (Inst_uart/Mcount_count_baud_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_uart/Mcount_count_baud_cy<2> (Inst_uart/Mcount_count_baud_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_uart/Mcount_count_baud_cy<3> (Inst_uart/Mcount_count_baud_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_uart/Mcount_count_baud_cy<4> (Inst_uart/Mcount_count_baud_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_uart/Mcount_count_baud_cy<5> (Inst_uart/Mcount_count_baud_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_uart/Mcount_count_baud_cy<6> (Inst_uart/Mcount_count_baud_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_uart/Mcount_count_baud_cy<7> (Inst_uart/Mcount_count_baud_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_uart/Mcount_count_baud_cy<8> (Inst_uart/Mcount_count_baud_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_uart/Mcount_count_baud_cy<9> (Inst_uart/Mcount_count_baud_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_uart/Mcount_count_baud_cy<10> (Inst_uart/Mcount_count_baud_cy<10>)
+     MUXCY:CI->O           0   0.019   0.000  Inst_uart/Mcount_count_baud_cy<11> (Inst_uart/Mcount_count_baud_cy<11>)
+     XORCY:CI->O           1   0.180   0.000  Inst_uart/Mcount_count_baud_xor<12> (Inst_uart/Mcount_count_baud12)
+     FDC:D                     0.102          Inst_uart/count_baud_12
+    ----------------------------------------
+    Total                      4.172ns (1.365ns logic, 2.807ns route)
+                                       (32.7% logic, 67.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_uart/tx_busy'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.838ns (Levels of Logic = 1)
+  Source:            RX (PAD)
+  Destination:       rx_s (LATCH)
+  Destination Clock: Inst_uart/tx_busy rising
+
+  Data Path: RX to rx_s
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  RX_IBUF (RX_IBUF)
+     LDP_1:D                   0.037          rx_s
+    ----------------------------------------
+    Total                      1.838ns (1.259ns logic, 0.579ns route)
+                                       (68.5% logic, 31.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 107 / 88
+-------------------------------------------------------------------------
+Offset:              5.267ns (Levels of Logic = 3)
+  Source:            reset (PAD)
+  Destination:       Inst_uart/rx_buffer_9 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to Inst_uart/rx_buffer_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            54   1.222   1.678  reset_IBUF (Inst_uart/reset_n_inv)
+     LUT2:I0->O            1   0.203   0.808  Inst_uart/_n0236_inv_SW0 (N8)
+     LUT6:I3->O            9   0.205   0.829  Inst_uart/_n0236_inv (Inst_uart/_n0236_inv)
+     FDE:CE                    0.322          Inst_uart/rx_buffer_1
+    ----------------------------------------
+    Total                      5.267ns (1.952ns logic, 3.315ns route)
+                                       (37.1% logic, 62.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              4.453ns (Levels of Logic = 2)
+  Source:            Inst_Read_Write/state (FF)
+  Destination:       Read_en (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Inst_Read_Write/state to Read_en
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.447   0.650  Inst_Read_Write/state (Inst_Read_Write/state)
+     INV:I->O              1   0.206   0.579  Inst_Read_Write/Write_en_Write_en_MUX_11_o1_INV_0 (Read_en_OBUF)
+     OBUF:I->O                 2.571          Read_en_OBUF (Read_en)
+    ----------------------------------------
+    Total                      4.453ns (3.224ns logic, 1.229ns route)
+                                       (72.4% logic, 27.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_uart/rx_busy'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.648ns (Levels of Logic = 1)
+  Source:            TX (LATCH)
+  Destination:       TX (PAD)
+  Source Clock:      Inst_uart/rx_busy rising
+
+  Data Path: TX to TX
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDP_1:G->Q            1   0.498   0.579  TX (TX_OBUF)
+     OBUF:I->O                 2.571          TX_OBUF (TX)
+    ----------------------------------------
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Inst_uart/rx_busy
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.926|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Inst_uart/tx_busy
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.621|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+Inst_uart/tx_busy|    3.018|         |         |         |
+clk              |    4.172|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.37 secs
+ 
+--> 
+
+Total memory usage is 4485808 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
+

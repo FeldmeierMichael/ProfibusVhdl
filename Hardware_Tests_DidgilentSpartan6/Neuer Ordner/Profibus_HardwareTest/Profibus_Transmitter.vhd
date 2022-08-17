@@ -86,7 +86,8 @@ begin
 									telegram_busy<='0';
 									send<='0';
 									sync_counter<=0;
-									if (send_Telegram='1' and first_flag='1') or (send_Telegram='1' and tx_busy_flag='1')  then	
+									--if (send_Telegram='1' and first_flag='1') or (send_Telegram='1' and tx_busy_flag='1')  then
+									if (send_Telegram='1' and tx_busy='0')  then										
 									telegram_busy<='1';
 									first_flag:='0';
 									state<=sync;
@@ -122,7 +123,7 @@ begin
 									send<='0';
 									if tx_busy_flag='1' then
 										dataout<=DA;
-										state<=da1;
+										state<=da1;										
 										send<='1';
 										fcs:=fcs+unsigned(DA);	
 									end if;
@@ -170,7 +171,7 @@ begin
 					when le  =>
 									send<='0';
 									if tx_busy_flag='1' then	
-										dataout<=not Le_i;
+										dataout<= Le_i;
 										send<='1';																
 										state<=ler;	
 									end if;

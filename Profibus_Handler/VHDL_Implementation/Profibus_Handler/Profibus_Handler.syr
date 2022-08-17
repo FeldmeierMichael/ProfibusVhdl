@@ -1,0 +1,425 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: Profibus_Handler.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Profibus_Handler.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Profibus_Handler"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : Profibus_Handler
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Handler\VHDL_Implementation\Profibus_Handler\Profibus_Handler.vhd" into library work
+Parsing entity <Profibus_Handler>.
+Parsing architecture <Behavioral> of entity <profibus_handler>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Profibus_Handler> (architecture <Behavioral>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Profibus_Handler>.
+    Related source file is "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Handler\VHDL_Implementation\Profibus_Handler\Profibus_Handler.vhd".
+        baud_rate = 19200
+        master_adress = "00000001"
+        max_Tdsr = 850
+        slave_adress = "00000010"
+        slave_PDU_size_in = 16
+        slave_PDU_size_out = 16
+WARNING:Xst:647 - Input <type_r> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DA_r> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SA_r> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <FC_r> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LE_r> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <FCS_r> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PDU_count_r<7:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <telegram_busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <detect_r> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2935 - Signal 'type_s', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'DA_s', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'SA_s', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'FC_s', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'LE_s', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'PDU_RAM_en_s', unconnected in block 'Profibus_Handler', is tied to its initial value (1).
+WARNING:Xst:2935 - Signal 'send_telegram', unconnected in block 'Profibus_Handler', is tied to its initial value (0).
+    Found 8-bit register for signal <RAMin<1>>.
+    Found 8-bit register for signal <RAMout<0>>.
+    Found 8-bit register for signal <RAMout<1>>.
+    Found 8-bit register for signal <RAMin<0>>.
+    Found 2-bit register for signal <RAM_in_p.counter>.
+    Found 8-bit register for signal <PDU_s>.
+    Found 8-bit register for signal <PDU_count_s>.
+    Found 16-bit register for signal <output_bus>.
+    Found 2-bit adder for signal <RAM_in_p.counter[1]_GND_4_o_add_2_OUT> created at line 84.
+    Found 2-bit comparator greater for signal <RAM_in_p.counter[1]_PWR_4_o_LessThan_1_o> created at line 81
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  66 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <Profibus_Handler> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 2-bit adder                                           : 1
+# Registers                                            : 8
+ 16-bit register                                       : 1
+ 2-bit register                                        : 1
+ 8-bit register                                        : 6
+# Comparators                                          : 1
+ 2-bit comparator greater                              : 1
+# Multiplexers                                         : 2
+ 2-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <PDU_count_s_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PDU_count_s_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PDU_count_s_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PDU_count_s_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PDU_count_s_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PDU_count_s_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 2-bit adder                                           : 1
+# Registers                                            : 66
+ Flip-Flops                                            : 66
+# Comparators                                          : 1
+ 2-bit comparator greater                              : 1
+# Multiplexers                                         : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <PDU_count_s_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PDU_count_s_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PDU_count_s_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PDU_count_s_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PDU_count_s_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PDU_count_s_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Profibus_Handler> ...
+WARNING:Xst:1293 - FF/Latch <PDU_count_s_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Profibus_Handler, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 59
+ Flip-Flops                                            : 59
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Profibus_Handler.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 17
+#      GND                         : 1
+#      INV                         : 2
+#      LUT2                        : 4
+#      LUT4                        : 1
+#      LUT5                        : 8
+#      VCC                         : 1
+# FlipFlops/Latches                : 59
+#      FD                          : 1
+#      FDC                         : 18
+#      FDCE                        : 16
+#      FDE                         : 24
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 101
+#      IBUF                        : 27
+#      OBUF                        : 74
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              59  out of  54576     0%  
+ Number of Slice LUTs:                   15  out of  27288     0%  
+    Number used as Logic:                15  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     61
+   Number with an unused Flip Flop:       2  out of     61     3%  
+   Number with an unused LUT:            46  out of     61    75%  
+   Number of fully used LUT-FF pairs:    13  out of     61    21%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                         159
+ Number of bonded IOBs:                 102  out of    218    46%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 59    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.459ns (Maximum Frequency: 406.653MHz)
+   Minimum input arrival time before clock: 4.216ns
+   Maximum output required time after clock: 3.634ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.459ns (frequency: 406.653MHz)
+  Total number of paths / destination ports: 63 / 35
+-------------------------------------------------------------------------
+Delay:               2.459ns (Levels of Logic = 1)
+  Source:            RAM_in_p.counter_1 (FF)
+  Destination:       PDU_s_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: RAM_in_p.counter_1 to PDU_s_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.683  RAM_in_p.counter_1 (RAM_in_p.counter_1)
+     INV:I->O              8   0.206   0.802  _n0073_inv1_cepot_INV_0 (_n0073_inv1_cepot)
+     FDE:CE                    0.322          PDU_s_0
+    ----------------------------------------
+    Total                      2.459ns (0.975ns logic, 1.484ns route)
+                                       (39.6% logic, 60.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 123 / 107
+-------------------------------------------------------------------------
+Offset:              4.216ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       output_bus_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to output_bus_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            44   1.222   1.462  reset_IBUF (reset_IBUF)
+     INV:I->O             16   0.206   1.004  reset_inv1_INV_0 (reset_inv)
+     FDE:CE                    0.322          output_bus_0
+    ----------------------------------------
+    Total                      4.216ns (1.750ns logic, 2.466ns route)
+                                       (41.5% logic, 58.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 25 / 25
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            PDU_s_7 (FF)
+  Destination:       PDU_s<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: PDU_s_7 to PDU_s<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.447   0.616  PDU_s_7 (PDU_s_7)
+     OBUF:I->O                 2.571          PDU_s_7_OBUF (PDU_s<7>)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.459|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.79 secs
+ 
+--> 
+
+Total memory usage is 4485808 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   29 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

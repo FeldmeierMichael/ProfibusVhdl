@@ -1,0 +1,1 @@
+vhdtdtfi -prj Profibus_HardwareTest -o "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/btn_debounce.vhi" -module btn_debounce -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work btn_debounce.vhd 

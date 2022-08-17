@@ -27,7 +27,7 @@ USE ieee.std_logic_1164.all;
 
 ENTITY uart IS
   GENERIC(
-    clk_freq  :  INTEGER    := 50_000_000;  --frequency of system clock in Hertz
+    clk_freq  :  INTEGER    := 100_000_000;  --frequency of system clock in Hertz
     baud_rate :  INTEGER    := 19_200;      --data link baud rate in bits/second
     os_rate   :  INTEGER    := 16;          --oversampling rate to find center of receive bits (in samples per baud period)
     d_width   :  INTEGER    := 8;           --data bus width

@@ -118,3 +118,664 @@ map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
 bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/Profibus_HardwareTest/Hardware_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hardware_Test.ucf -p xc6slx45-csg324-3 "Hardware_Test.ngc" Hardware_Test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Hardware_Test_map.ncd Hardware_Test.ngd Hardware_Test.pcf 
+par -w -intstyle ise -ol high -mt off Hardware_Test_map.ncd Hardware_Test.ncd Hardware_Test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Hardware_Test.twx Hardware_Test.ncd -o Hardware_Test.twr Hardware_Test.pcf -ucf Hardware_Test.ucf 
+bitgen -intstyle ise -f Hardware_Test.ut Hardware_Test.ncd 
