@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/HardwareTest_Handler/TB_HandlerRam_isim_beh.exe" -prj "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/HardwareTest_Handler/TB_HandlerRam_beh.prj" "work.TB_HandlerRam" 

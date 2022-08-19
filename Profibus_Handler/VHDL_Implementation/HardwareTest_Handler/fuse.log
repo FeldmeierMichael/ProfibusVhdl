@@ -1,0 +1,37 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/TB_Profibus_Handler_isim_beh.exe" -prj "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/TB_Profibus_Handler_beh.prj" "work.TB_Profibus_Handler" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/uart.vhd" into library work
+Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/Read_Write.vhd" into library work
+Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/Profibus_Constants.vhd" into library work
+Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/neg_flanke_puls.vhd" into library work
+Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/Profibus_UART.vhd" into library work
+WARNING:HDLCompiler:946 - "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/Profibus_UART.vhd" Line 128: Actual for formal port reset_n is neither a static name nor a globally static expression
+Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/Profibus_Transmitter.vhd" into library work
+Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/Profibus_Recieve.vhd" into library work
+Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/Profibus_Unit.vhd" into library work
+Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/Profibus_Handler.vhd" into library work
+Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/TB_Profibus_Handler.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity Profibus_Handler [\Profibus_Handler(19200,('0','0'...]
+Compiling package profibus_constants
+Compiling architecture behavioral of entity Profibus_Recieve [profibus_recieve_default]
+Compiling architecture behavioral of entity Profibus_Transmitter [\Profibus_Transmitter(19200)\]
+Compiling architecture behavioral of entity neg_flanke_puls [neg_flanke_puls_default]
+Compiling architecture behavioral of entity Read_Write [read_write_default]
+Compiling architecture logic of entity uart [\uart(100000000,19200,16,8,1,'0'...]
+Compiling architecture behavioral of entity Profibus_UART [profibus_uart_default]
+Compiling architecture behavioral of entity Profibus_Unit [profibus_unit_default]
+Compiling architecture behavior of entity tb_profibus_handler
+Time Resolution for simulation is 1ps.
+Waiting for 5 sub-compilation(s) to finish...
+Compiled 21 VHDL Units
+Built simulation executable C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/TB_Profibus_Handler_isim_beh.exe
+Fuse Memory Usage: 37456 KB
+Fuse CPU Usage: 780 ms

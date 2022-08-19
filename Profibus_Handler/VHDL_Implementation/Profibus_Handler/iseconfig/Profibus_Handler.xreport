@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-08-16T19:15:46</DateModified>
+  <DateModified>2022-08-19T15:08:28</DateModified>
   <ModuleName>Profibus_Handler</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2022-08-17T16:31:38</SummaryTimeStamp>
   <SavedFilePath>C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/iseconfig/Profibus_Handler.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler\</ImplementationReportsDirectory>
   <DateInitialized>2022-08-16T09:24:08</DateInitialized>

@@ -1,0 +1,18 @@
+ISim log file
+Running: C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Handler\VHDL_Implementation\Profibus_Handler\TB_Profibus_Handler_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/TB_Profibus_Handler_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1 ms
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 18507770 ns : File "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/Profibus_Transmitter.vhd" Line 70

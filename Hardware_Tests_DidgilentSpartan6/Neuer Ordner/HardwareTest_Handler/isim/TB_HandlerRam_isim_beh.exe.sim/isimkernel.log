@@ -1,0 +1,35 @@
+Command line:
+   TB_HandlerRam_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64788
+
+Fri Aug 19 14:06:16 2022
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5154.48 Meg
+
+ Total Signals          : 52
+ Total Nets             : 4257
+ Total Signal Drivers   : 18
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 5
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 4761
+Total Line Count : 146
+
+** Failure:Assertion violation
+User(VHDL) Code Called Simulation Stop
+In process TB_HandlerRam.vhd:stim_proc 
+ 
+
+
+ Total Simulation Time: 0.34375 sec
+
+ Current Memory Usage: 4682.62 Meg
+
+Fri Aug 19 15:24:06 2022
+

@@ -1,0 +1,19 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/HardwareTest_Handler/TB_HandlerRam_isim_beh.exe" -prj "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/HardwareTest_Handler/TB_HandlerRam_beh.prj" "work.TB_HandlerRam" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/HardwareTest_Handler/Profibus_Handler.vhd" into library work
+Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/HardwareTest_Handler/TB_HandlerRam.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity Profibus_Handler [\Profibus_Handler(19200,('0','0'...]
+Compiling architecture behavior of entity tb_handlerram
+Time Resolution for simulation is 1ps.
+Compiled 6 VHDL Units
+Built simulation executable C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/HardwareTest_Handler/TB_HandlerRam_isim_beh.exe
+Fuse Memory Usage: 36512 KB
+Fuse CPU Usage: 483 ms

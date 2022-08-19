@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/TB_Profibus_Handler_isim_beh.exe" -prj "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/TB_Profibus_Handler_beh.prj" "work.TB_Profibus_Handler" 

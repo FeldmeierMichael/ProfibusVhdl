@@ -13,7 +13,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000016e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000016e0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000223000000020000000000000000000000000200000064ffffffff000000810000000300000002000002230000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>Profibus_Handler - Behavioral (C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/Profibus_Handler.vhd)</CurrentItem>
    </ItemView>
@@ -73,5 +73,59 @@
       <CurrentItem></CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Profibus_Constants C:|UserData|z003xazw|Documents|GitHub|ProfibusVhdl|Profibus_Handler|VHDL_Implementation|Profibus_Handler|Profibus_Constants.vhd</ClosedNode>
+         <ClosedNode>/Profibus_UART - Behavioral C:|UserData|z003xazw|Documents|GitHub|ProfibusVhdl|Profibus_Handler|VHDL_Implementation|Profibus_Handler|Profibus_UART.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>TB_Profibus_Handler - behavior (C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/TB_Profibus_Handler.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000237000000020000000000000000000000000200000064ffffffff000000810000000300000002000002370000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>TB_Profibus_Handler - behavior (C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/TB_Profibus_Handler.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012b0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012b0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_PACKAGE_BODY" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" />
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <CopyAdditionalFiles/>
 </Project>

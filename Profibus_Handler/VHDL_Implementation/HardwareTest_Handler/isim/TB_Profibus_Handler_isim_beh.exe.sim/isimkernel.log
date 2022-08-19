@@ -1,0 +1,30 @@
+Command line:
+   TB_Profibus_Handler_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64280
+
+Fri Aug 19 09:37:35 2022
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 5155.17 Meg
+
+ Total Signals          : 178
+ Total Nets             : 6451
+ Total Signal Drivers   : 80
+ Total Blocks           : 28
+ Total Primitive Blocks : 24
+ Total Processes        : 35
+ Total Traceable Variables  : 51
+ Total Scalar Nets and Variables : 7059
+Total Line Count : 578
+Total Line Count : 578
+
+ Total Simulation Time: 23.6094 sec
+
+ Current Memory Usage: 5469.75 Meg
+
+Fri Aug 19 09:38:17 2022
+

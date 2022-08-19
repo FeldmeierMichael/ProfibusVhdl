@@ -1,0 +1,11 @@
+
+#Created by Constraints Editor (xc6slx45-csg324-3) - 2022/08/12
+NET "clk" TNM_NET = clk | LOC = "L15"; 
+TIMESPEC TS_clk = PERIOD "clk" 100 MHz HIGH 50%;
+NET "write_en" LOC="T3";
+NET "tx" LOC="R3";
+NET "RX" LOC="P6"  ;
+NET "write_en" LOC="N5" ;
+NET "tx_uart" LOC = "B16"; # Bank = 0, Pin name = IO_L66P_SCP1, Sch name = USBB-TXD
+NET "reset" LOC="F5";
+NET "in_B" LOC="N4";
