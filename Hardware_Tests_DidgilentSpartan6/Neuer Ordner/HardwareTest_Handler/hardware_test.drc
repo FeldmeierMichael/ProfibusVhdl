@@ -1,17 +1,8 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Aug 19 15:05:26 2022
+Mon Aug 29 09:00:22 2022
 
 drc -z Hardware_Test.ncd Hardware_Test.pcf
 
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   Inst_Profibus_Unit/Inst_Profibus_UART/reset_RX_AND_561_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   Inst_Profibus_Unit/Inst_Profibus_UART/reset_tx_s_AND_563_o is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-DRC detected 0 errors and 2 warnings.  Please see the previously displayed
-individual error or warning messages for more details.
+DRC detected 0 errors and 0 warnings.

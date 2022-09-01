@@ -56,9 +56,10 @@ signal counter:unsigned(7 downto 0):=x"00";
 signal le_s:std_logic_vector(7 downto 0):=x"00";
 type PDU_RAM is array(0 to 255)of std_logic_vector(7 downto 0);
 signal RAM1:PDU_RAM:=(others=>x"00");
-signal tx_busy_old:std_logic:='0';
+signal tx_busy_old,tx_busy_old2:std_logic:='0';
 signal sync_counter:integer:=0;
-constant syncVal:integer:=((33*(5208)));--depends on baud_rate
+constant syncVal:integer:=171875;--depends on baud_rate
+signal countold:integer:=0;
 begin
 	
 	process(reset,clk)
@@ -75,7 +76,14 @@ begin
 			tx_busy_flag:='0';
 			sync_counter<=0;
 		elsif	 rising_edge(clk) then
-				tx_busy_old<=tx_busy;
+		tx_busy_old<=tx_busy;
+				if tx_busy='0' and tx_busy_old2='1' then
+					countold<=countold+1;					
+				else
+					tx_busy_old2<=tx_busy;
+					countold<=0;
+				end if;
+				
 				tx_busy_flag:='0';	
 				if tx_busy='0' and tx_busy_old='1' then
 				tx_busy_flag:='1';				
@@ -83,11 +91,15 @@ begin
 				case state is
 					when idle=> counter<=(others=>'0');
 									fcs:=x"00";									
-									telegram_busy<='0';
+									
 									send<='0';
 									sync_counter<=0;
 									--if (send_Telegram='1' and first_flag='1') or (send_Telegram='1' and tx_busy_flag='1')  then
-									if (send_Telegram='1' and tx_busy='0')  then										
+									
+									if(countold>10) then
+									telegram_busy<='0';									
+									end if;									
+									if (send_Telegram='1' and countold>10) or (first_flag='1'and send_Telegram='1')  then										
 									telegram_busy<='1';
 									first_flag:='0';
 									state<=sync;

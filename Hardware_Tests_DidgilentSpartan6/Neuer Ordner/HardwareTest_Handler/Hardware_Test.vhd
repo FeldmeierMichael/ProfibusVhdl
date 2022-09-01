@@ -211,21 +211,21 @@ BEGIN
 		UART_TX => tx_uart
 	);
 	
-	process(clk,reset)
-		variable c:integer:=0;
-		begin
-		if reset='1' then
-		c:=0;
-		elsif rising_edge(clk) then
-			if(c>10000000) then
-				send_s<='1';
-				c:=0;
-			else
-				send_s<='0';		
-				c:=c+1;
-			end if;
-		end if;
-	end process;
+--	process(clk,reset)
+--		variable c:integer:=0;
+--		begin
+--		if reset='1' then
+--		c:=0;
+--		elsif rising_edge(clk) then
+--			if(c>10000000) then
+--				send_s<='1';
+--				c:=0;
+--			else
+--				send_s<='0';		
+--				c:=c+1;
+--			end if;
+--		end if;
+--	end process;
 
 
 end Behavioral;

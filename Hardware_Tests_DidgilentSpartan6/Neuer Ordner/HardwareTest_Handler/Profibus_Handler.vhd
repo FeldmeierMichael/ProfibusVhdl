@@ -70,26 +70,27 @@ signal RAMin:RAM_in:=(others=>x"00");
 signal RAMout:RAM_out:=(others=>x"00");
 signal state:state_t:=idle;
 signal detect_old:std_logic:='0';
+signal statereq:std_logic_vector(1 downto 0):="00";
+signal waiter:integer:=0;
 begin
 	RAM_in_p:Process(clk,reset)
-	variable counter:integer range 0 to slave_PDU_size_in/8:=0;
+	variable counter:integer range 0 to 255:=0;
 	begin
 	if reset='1' then
-		RAMin<=(others=>x"00");
+		--RAMin<=(others=>x"00");
 		counter:=0;
 	elsif rising_edge(clk) then	
 		for i in 0 to slave_PDU_size_in-1 loop
-        RAMin(i/8)(i mod 8)<= input_bus(i);   
+        --RAMin(i/8)(i mod 8)<= input_bus(i);   
       end loop;
-		if counter<slave_PDU_size_in/8 then
+		--if counter<slave_PDU_size_in/8 then
+		if counter<255 then	
 			PDU_s<=RAMin(counter);
 			PDU_count_s<=std_logic_vector(to_unsigned(counter,8));
 			counter:=counter+1;
 		else
 			counter:=0;
-		end if;	
-			RAMin(0)<=x"3C";
-			RAMin(1)<=x"3E";
+		end if;		
 	end if;	
 	end process;
 	
@@ -121,7 +122,7 @@ begin
 			detect_old<='0';
 		elsif rising_edge(clk) then	
 			--timeout flag
-			if(timer>((max_Tdsr*100000000)/19200)) then
+			if(timer>(max_Tdsr*5209)) then
 				timeout:='1';
 			else
 				timer:=timer+1;
@@ -135,6 +136,7 @@ begin
 			detect_old<=detect_r;
 			case state is
 				when idle    =>--send SearchSlave Telegram
+									timer:=0;
 									type_s<=x"00";
 									DA_S<=slave_adress;
 									SA_S<=master_adress;
@@ -150,6 +152,7 @@ begin
 										timer:=0;
 									end if;
 				when is_1    =>
+									
 									if rising_detect='1' then
 										if FC_r=x"00" and DA_r=master_adress and SA_r=slave_adress then
 											state<=is_2;
@@ -160,12 +163,16 @@ begin
 										state<=idle;										
 									end if;									
 				when is_2    =>--send Diagnostic Request
+									timer:=0;
 									type_s<=x"01";
 									DA_S<="1000"&slave_adress(3 downto 0);
 									SA_S<="1000"&master_adress(3 downto 0);
 									FC_s<=x"6d";
+									statereq<="01";
 									LE_s<=x"05";
 									send_telegram<='1';
+									RAMin(0)<=x"3C";
+									RAMin(1)<=x"3E";
 									if telegram_busy='1' then
 										state<=diag_0;
 									end if;									
@@ -190,7 +197,10 @@ begin
 									DA_S<="1000"&slave_adress(3 downto 0);
 									SA_S<="1000"&master_adress(3 downto 0);
 									FC_s<=x"5d";
+									statereq<="10";
 									LE_s<=x"27";
+									RAMin(0 to 35)<=(x"3D",x"3E",x"b8",x"1e",x"01",x"00",x"80",x"6a",x"01",x"40",x"01",x"00",x"11",x"21",x"00",x"00",x"00",x"00",x"00",x"00",x"00",x"00",x"00",x"00",x"00",x"00",x"00",x"00",x"00",x"20",x"01",x"00",x"12",x"12",x"18",x"18");
+									
 									send_telegram<='1';
 									if telegram_busy='1' then
 										state<=param_0;
@@ -211,16 +221,18 @@ begin
 									elsif timeout='1' then
 										state<=is_2;										
 									end if;
-				when param   =>--send Ceck Config Request
+				when param   =>--send Ceck Config Request									
 									type_s<=x"01";
 									DA_S<="1000"&slave_adress(3 downto 0);
 									SA_S<="1000"&master_adress(3 downto 0);
 									FC_s<=x"7d";
+									statereq<="01";
 									LE_s<=x"0a";
+									RAMin(0 to 6)<=(x"3E",x"3E",x"00",x"20",x"20",x"10",x"10");								
 									send_telegram<='1';
 									if telegram_busy='1' then
 										state<=conf_0;
-									end if;
+										end if;
 				when conf_0  =>
 									send_telegram<='0';
 									if telegram_busy='0' then
@@ -232,16 +244,17 @@ begin
 										if  type_r=x"04" then
 											state<=conf;
 										else
-											state<=is_2;
+											--state<=is_2;
 										end if;
 									elsif timeout='1' then
-										state<=is_2;										
+										--state<=is_2;										
 									end if;
 				when conf    => --send Diagnostic Request
 									type_s<=x"01";
 									DA_S<="1000"&slave_adress(3 downto 0);
 									SA_S<="1000"&master_adress(3 downto 0);
-									FC_s<=x"6d";
+									FC_s<=x"5d";
+									statereq<="10";
 									LE_s<=x"05";
 									send_telegram<='1';
 									if telegram_busy='1' then
@@ -255,7 +268,7 @@ begin
 									end if;
 				when dxchgs_1=>
 									if rising_detect='1' then
-										if  LE_r=x"0B" and DA_r=x"82" and SA_r=x"81" and FC_r=x"08" and RAMout(0)= x"3E"  and RAMout(1)= x"3C"  and RAMout(2)= x"02"  and RAMout(3)= x"05"  and RAMout(4)= x"00"  and RAMout(5)= x"FF"  and RAMout(6)= x"80"  and RAMout(7)= x"6A"  then
+										if  LE_r=x"0B" and DA_r=x"82" and SA_r=x"81" and FC_r=x"08" and RAMout(0)= x"3E"  and RAMout(1)= x"3C"  and RAMout(2)= x"02"  and RAMout(3)= x"0C"  and RAMout(4)= x"00"  and RAMout(5)= x"02"  and RAMout(6)= x"80"  and RAMout(7)= x"6A"  then
 											state<=dxchgs;
 										else
 											state<=is_2;
@@ -265,9 +278,17 @@ begin
 									end if;	
 				when dxchgs  =>--send PDU mussnoch geändert werden
 									type_s<=x"01";
-									DA_S<="1000"&slave_adress(3 downto 0);
-									SA_S<="1000"&master_adress(3 downto 0);
-									FC_s<=x"6d";
+									DA_S<=slave_adress;
+									SA_S<=master_adress;
+									if statereq="10" then
+										FC_s<=x"7d";
+										statereq<="01";
+									else
+										FC_s<=x"5d";
+										statereq<="10";
+									end if;
+									RAMin(0)<=x"FF";
+									RAMin(1)<=x"FF";									
 									LE_s<=x"05";
 									send_telegram<='1';
 									if telegram_busy='1' then
@@ -281,7 +302,7 @@ begin
 									end if;
 				when dxchgr  =>--muss noch geändert werden
 									if rising_detect='1' then
-										if  LE_r=x"0B" and DA_r=x"82" and SA_r=x"81" and FC_r=x"08" and RAMout(0)= x"3E"  and RAMout(1)= x"3C"  and RAMout(2)= x"02"  and RAMout(3)= x"05"  and RAMout(4)= x"00"  and RAMout(5)= x"FF"  and RAMout(6)= x"80"  and RAMout(7)= x"6A"  then
+										if  LE_r=x"05" and DA_r=x"02" and SA_r=x"01" and FC_r=x"08" then
 											state<=dxchgs;
 										else
 											state<=is_2;

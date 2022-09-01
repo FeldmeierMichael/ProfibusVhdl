@@ -140,9 +140,7 @@ Inst_uart: uart GENERIC map(
 process(clk,reset)
 	begin
 		if reset='1' then
-		rx_s<=rx;		
-		tx<=tx_s;
-		elsif rising_edge(clk) then
+				elsif rising_edge(clk) then
 			if tx_busy_s='1' then				
 				rx_s<='1';
 			else

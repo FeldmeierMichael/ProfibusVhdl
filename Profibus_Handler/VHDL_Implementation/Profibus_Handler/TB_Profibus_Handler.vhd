@@ -135,10 +135,15 @@ ARCHITECTURE behavior OF TB_Profibus_Handler IS
    constant clk_period : time := 10 ns;
 	signal rx,tx:std_logic:='1';
 	signal write_en:std_logic:='0';
-	
+	   signal type_s2 : std_logic_vector(7 downto 0):=x"00";
+   signal DA_s2 : std_logic_vector(7 downto 0):=x"00";
+   signal SA_s2 : std_logic_vector(7 downto 0):=x"00";
+   signal FC_s2 : std_logic_vector(7 downto 0):=x"00";
+   signal LE_s2 : std_logic_vector(7 downto 0):=x"00";
+
 	 signal PDU_s2 :std_logic_vector(7 downto 0):=x"00";
 		signal PDU_count_s2 :std_logic_vector(7 downto 0):=x"00";
-		signal PDU_RAM_en_s2,send_s1,send_s2:std_logic:='0';
+		signal PDU_RAM_en_s2,send_s1,send_s2,detect_r2:std_logic:='0';
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
@@ -175,12 +180,12 @@ BEGIN
 		type_s => type_s,
 		DA_s => DA_s,
 		SA_s => SA_s,
-		FC_s => 		FC_s,
+		FC_s =>FC_s,
 		LE_s => LE_s,
 		PDU_s =>PDU_s ,
 		PDU_count_s => PDU_count_s,
 		PDU_RAM_en_s => PDU_RAM_en_s,
-		send_telegram => '0',
+		send_telegram => send_telegram,
 		telegram_busy => 		telegram_busy,
 		detect_r => detect_r,
 		type_r => type_r,
@@ -201,16 +206,17 @@ BEGIN
 		Inst_Profibus_Unit2: Profibus_Unit PORT MAP(
 		clk => clk,
 		reset => reset,
-		type_s => x"01",
-		DA_s => x"82",
-		SA_s => x"81",
-		FC_s => x"08",
-		LE_s => x"0B",
+		type_s => type_s2,
+		DA_s => DA_s2,
+		SA_s => SA_s2,
+		FC_s => FC_s2,
+		LE_s => LE_s2,
 		PDU_s => PDU_s2,
 		PDU_count_s => PDU_count_s2,
 		PDU_RAM_en_s => PDU_RAM_en_s2,
-		send_telegram => send_s1,		
-		RX => '1',
+		send_telegram => send_s1,
+		detect_r=> detect_r2,
+		RX => tx,
 		TX => rx		
 	);
 
@@ -263,9 +269,46 @@ BEGIN
 		wait until rising_edge(clk);		
 		wait until rising_edge(clk);
 		PDU_RAM_en_s2<='0';
-		wait for 20 ms ;
+		wait for 100 ms ;
 		assert false severity failure;
   end process;
-  send_s1<='1' after 3 ms;
+  --send_s1<='1' after 3 ms;
  -- send_s2<='1' after 0 ms,'0' after 3 ms;
+ 
+ 
+ process
+ begin
+	wait until detect_r2='1' ;
+	type_s2<=x"00";
+	DA_s2<=x"02";
+	SA_s2<=x"01";
+	FC_s2<=x"00";
+	send_s1<='1';
+	wait until rising_edge(clk);
+	send_s1<='0';
+	--diagnostic
+	wait until detect_r2='1' ;
+	type_s2<=x"01";
+   LE_s2<=x"0B";
+   DA_s2<=x"82";
+   SA_s2<=x"81";
+   FC_s2<=x"08";	
+	send_s1<='1';
+	wait until rising_edge(clk);
+	send_s1<='0';
+	-- Acknowledge
+	wait until detect_r2='1' ;
+	type_s2<=x"04";
+	send_s1<='1';
+	wait until rising_edge(clk);
+	send_s1<='0';
+	-- Acknowledge
+	wait until detect_r2='1' ;
+	type_s2<=x"04";
+	send_s1<='1';	
+	wait until rising_edge(clk);
+	send_s1<='0';
+
+	wait;
+ end process;
 END;

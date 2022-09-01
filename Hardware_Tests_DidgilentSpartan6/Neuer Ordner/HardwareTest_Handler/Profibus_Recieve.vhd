@@ -146,7 +146,7 @@ begin
 									state<=le;									
 					when le  =>
 									timer<=(others=>'0');
-									if datain=not(le_s) then
+									if datain=(le_s) then
 										state<=ler;
 									else
 										state<=idle;

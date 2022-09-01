@@ -2,34 +2,9 @@ Command line:
    TB_Profibus_Handler_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  58097
+     -socket  65079
 
-Fri Aug 19 15:36:41 2022
+Mon Aug 29 09:50:01 2022
 
 
  Elaboration Time: 0.0625 sec
-
- Current Memory Usage: 5162.89 Meg
-
- Total Signals          : 313
- Total Nets             : 8771
- Total Signal Drivers   : 149
- Total Blocks           : 51
- Total Primitive Blocks : 44
- Total Processes        : 67
- Total Traceable Variables  : 75
- Total Scalar Nets and Variables : 9403
-Total Line Count : 1060
-
-** Failure:Assertion violation
-User(VHDL) Code Called Simulation Stop
-In process TB_Profibus_Handler.vhd:229 
- 
-
-
- Total Simulation Time: 43.3281 sec
-
- Current Memory Usage: 4691.03 Meg
-
-Fri Aug 19 15:39:05 2022
-

@@ -29,19 +29,19 @@ INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on
 Timing constraint: TS_clk = PERIOD TIMEGRP "clk" 100 MHz HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 30749 paths analyzed, 1826 endpoints analyzed, 0 failing endpoints
+ 61275 paths analyzed, 5909 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   6.532ns.
+ Minimum period is   9.916ns.
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_3 (SLICE_X1Y23.CE), 98 paths
+Paths for end point Inst_Profibus_Unit/Inst_Profibus_Transmitter/RAM1_192_3 (SLICE_X40Y68.DX), 1 path
 --------------------------------------------------------------------------------
-Slack (setup path):     3.468ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd1 (FF)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_3 (FF)
+Slack (setup path):     0.084ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               uut/PDU_s_3 (FF)
+  Destination:          Inst_Profibus_Unit/Inst_Profibus_Transmitter/RAM1_192_3 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      6.480ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.017ns (0.232 - 0.249)
+  Data Path Delay:      9.854ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.027ns (0.573 - 0.600)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -52,38 +52,29 @@ Slack (setup path):     3.468ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd1 to Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_3
+  Maximum Data Path at Slow Process Corner: uut/PDU_s_3 to Inst_Profibus_Unit/Inst_Profibus_Transmitter/RAM1_192_3
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X6Y21.AQ       Tcko                  0.447   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd2
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd1
-    SLICE_X3Y28.B1       net (fanout=33)       1.464   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd1
-    SLICE_X3Y28.B        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_state<3>1
-    SLICE_X4Y24.D1       net (fanout=30)       1.305   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state<3>
-    SLICE_X4Y24.D        Tilo                  0.205   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-    SLICE_X3Y27.C3       net (fanout=1)        0.878   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-    SLICE_X3Y27.C        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv5
-    SLICE_X3Y27.D5       net (fanout=1)        0.209   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv5
-    SLICE_X3Y27.D        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv6
-    SLICE_X1Y23.CE       net (fanout=4)        0.855   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-    SLICE_X1Y23.CLK      Tceck                 0.340   Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs<3>
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_3
+    SLICE_X9Y27.CQ       Tcko                  0.391   uut/PDU_s<3>
+                                                       uut/PDU_s_3
+    SLICE_X40Y68.DX      net (fanout=256)      9.327   uut/PDU_s<3>
+    SLICE_X40Y68.CLK     Tdick                 0.136   Inst_Profibus_Unit/Inst_Profibus_Transmitter/RAM1_192<3>
+                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/RAM1_192_3
     -------------------------------------------------  ---------------------------
-    Total                                      6.480ns (1.769ns logic, 4.711ns route)
-                                                       (27.3% logic, 72.7% route)
+    Total                                      9.854ns (0.527ns logic, 9.327ns route)
+                                                       (5.3% logic, 94.7% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     3.618ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5 (FF)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_3 (FF)
+
+Paths for end point Inst_Profibus_Unit/Inst_Profibus_Transmitter/RAM1_205_1 (SLICE_X41Y70.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     0.096ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               uut/PDU_s_1 (FF)
+  Destination:          Inst_Profibus_Unit/Inst_Profibus_Transmitter/RAM1_205_1 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      6.324ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.023ns (0.232 - 0.255)
+  Data Path Delay:      9.837ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.032ns (0.568 - 0.600)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -94,38 +85,29 @@ Slack (setup path):     3.618ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5 to Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_3
+  Maximum Data Path at Slow Process Corner: uut/PDU_s_1 to Inst_Profibus_Unit/Inst_Profibus_Transmitter/RAM1_205_1
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X3Y28.CQ       Tcko                  0.391   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5
-    SLICE_X3Y28.B5       net (fanout=36)       1.364   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5
-    SLICE_X3Y28.B        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_state<3>1
-    SLICE_X4Y24.D1       net (fanout=30)       1.305   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state<3>
-    SLICE_X4Y24.D        Tilo                  0.205   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-    SLICE_X3Y27.C3       net (fanout=1)        0.878   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-    SLICE_X3Y27.C        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv5
-    SLICE_X3Y27.D5       net (fanout=1)        0.209   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv5
-    SLICE_X3Y27.D        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv6
-    SLICE_X1Y23.CE       net (fanout=4)        0.855   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-    SLICE_X1Y23.CLK      Tceck                 0.340   Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs<3>
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_3
+    SLICE_X8Y27.BMUX     Tshcko                0.455   uut/RAM_in_p.counter[7]_RAMin[255][7]_wide_mux_1_OUT<1>2
+                                                       uut/PDU_s_1
+    SLICE_X41Y70.BX      net (fanout=256)      9.319   uut/PDU_s<1>
+    SLICE_X41Y70.CLK     Tdick                 0.063   Inst_Profibus_Unit/Inst_Profibus_Transmitter/RAM1_205<3>
+                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/RAM1_205_1
     -------------------------------------------------  ---------------------------
-    Total                                      6.324ns (1.713ns logic, 4.611ns route)
-                                                       (27.1% logic, 72.9% route)
+    Total                                      9.837ns (0.518ns logic, 9.319ns route)
+                                                       (5.3% logic, 94.7% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     3.671ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd4 (FF)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_3 (FF)
+
+Paths for end point Inst_Profibus_Unit/Inst_Profibus_Transmitter/RAM1_134_2 (SLICE_X52Y66.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     0.138ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               uut/PDU_s_2 (FF)
+  Destination:          Inst_Profibus_Unit/Inst_Profibus_Transmitter/RAM1_134_2 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      6.281ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.013ns (0.232 - 0.245)
+  Data Path Delay:      9.801ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.026ns (0.574 - 0.600)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -136,375 +118,103 @@ Slack (setup path):     3.671ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd4 to Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_3
+  Maximum Data Path at Slow Process Corner: uut/PDU_s_2 to Inst_Profibus_Unit/Inst_Profibus_Transmitter/RAM1_134_2
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X5Y24.CQ       Tcko                  0.391   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd4
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd4
-    SLICE_X3Y28.B2       net (fanout=35)       1.321   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd4
-    SLICE_X3Y28.B        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_state<3>1
-    SLICE_X4Y24.D1       net (fanout=30)       1.305   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state<3>
-    SLICE_X4Y24.D        Tilo                  0.205   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-    SLICE_X3Y27.C3       net (fanout=1)        0.878   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-    SLICE_X3Y27.C        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv5
-    SLICE_X3Y27.D5       net (fanout=1)        0.209   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv5
-    SLICE_X3Y27.D        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv6
-    SLICE_X1Y23.CE       net (fanout=4)        0.855   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-    SLICE_X1Y23.CLK      Tceck                 0.340   Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs<3>
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_3
+    SLICE_X9Y27.AQ       Tcko                  0.391   uut/PDU_s<3>
+                                                       uut/PDU_s_2
+    SLICE_X52Y66.CX      net (fanout=256)      9.324   uut/PDU_s<2>
+    SLICE_X52Y66.CLK     Tdick                 0.086   Inst_Profibus_Unit/Inst_Profibus_Transmitter/RAM1_134<3>
+                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/RAM1_134_2
     -------------------------------------------------  ---------------------------
-    Total                                      6.281ns (1.713ns logic, 4.568ns route)
-                                                       (27.3% logic, 72.7% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_7 (SLICE_X1Y24.CE), 98 paths
---------------------------------------------------------------------------------
-Slack (setup path):     3.488ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd1 (FF)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_7 (FF)
-  Requirement:          10.000ns
-  Data Path Delay:      6.460ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.017ns (0.232 - 0.249)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 10.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd1 to Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_7
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X6Y21.AQ       Tcko                  0.447   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd2
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd1
-    SLICE_X3Y28.B1       net (fanout=33)       1.464   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd1
-    SLICE_X3Y28.B        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_state<3>1
-    SLICE_X4Y24.D1       net (fanout=30)       1.305   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state<3>
-    SLICE_X4Y24.D        Tilo                  0.205   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-    SLICE_X3Y27.C3       net (fanout=1)        0.878   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-    SLICE_X3Y27.C        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv5
-    SLICE_X3Y27.D5       net (fanout=1)        0.209   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv5
-    SLICE_X3Y27.D        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv6
-    SLICE_X1Y24.CE       net (fanout=4)        0.835   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-    SLICE_X1Y24.CLK      Tceck                 0.340   Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs<7>
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_7
-    -------------------------------------------------  ---------------------------
-    Total                                      6.460ns (1.769ns logic, 4.691ns route)
-                                                       (27.4% logic, 72.6% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     3.638ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5 (FF)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_7 (FF)
-  Requirement:          10.000ns
-  Data Path Delay:      6.304ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.023ns (0.232 - 0.255)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 10.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5 to Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_7
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X3Y28.CQ       Tcko                  0.391   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5
-    SLICE_X3Y28.B5       net (fanout=36)       1.364   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5
-    SLICE_X3Y28.B        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_state<3>1
-    SLICE_X4Y24.D1       net (fanout=30)       1.305   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state<3>
-    SLICE_X4Y24.D        Tilo                  0.205   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-    SLICE_X3Y27.C3       net (fanout=1)        0.878   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-    SLICE_X3Y27.C        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv5
-    SLICE_X3Y27.D5       net (fanout=1)        0.209   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv5
-    SLICE_X3Y27.D        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv6
-    SLICE_X1Y24.CE       net (fanout=4)        0.835   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-    SLICE_X1Y24.CLK      Tceck                 0.340   Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs<7>
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_7
-    -------------------------------------------------  ---------------------------
-    Total                                      6.304ns (1.713ns logic, 4.591ns route)
-                                                       (27.2% logic, 72.8% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     3.691ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd4 (FF)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_7 (FF)
-  Requirement:          10.000ns
-  Data Path Delay:      6.261ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.013ns (0.232 - 0.245)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 10.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd4 to Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_7
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X5Y24.CQ       Tcko                  0.391   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd4
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd4
-    SLICE_X3Y28.B2       net (fanout=35)       1.321   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd4
-    SLICE_X3Y28.B        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_state<3>1
-    SLICE_X4Y24.D1       net (fanout=30)       1.305   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state<3>
-    SLICE_X4Y24.D        Tilo                  0.205   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-    SLICE_X3Y27.C3       net (fanout=1)        0.878   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-    SLICE_X3Y27.C        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv5
-    SLICE_X3Y27.D5       net (fanout=1)        0.209   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv5
-    SLICE_X3Y27.D        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv6
-    SLICE_X1Y24.CE       net (fanout=4)        0.835   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-    SLICE_X1Y24.CLK      Tceck                 0.340   Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs<7>
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_7
-    -------------------------------------------------  ---------------------------
-    Total                                      6.261ns (1.713ns logic, 4.548ns route)
-                                                       (27.4% logic, 72.6% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_2 (SLICE_X1Y23.CE), 98 paths
---------------------------------------------------------------------------------
-Slack (setup path):     3.513ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd1 (FF)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_2 (FF)
-  Requirement:          10.000ns
-  Data Path Delay:      6.435ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.017ns (0.232 - 0.249)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 10.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd1 to Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_2
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X6Y21.AQ       Tcko                  0.447   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd2
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd1
-    SLICE_X3Y28.B1       net (fanout=33)       1.464   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd1
-    SLICE_X3Y28.B        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_state<3>1
-    SLICE_X4Y24.D1       net (fanout=30)       1.305   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state<3>
-    SLICE_X4Y24.D        Tilo                  0.205   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-    SLICE_X3Y27.C3       net (fanout=1)        0.878   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-    SLICE_X3Y27.C        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv5
-    SLICE_X3Y27.D5       net (fanout=1)        0.209   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv5
-    SLICE_X3Y27.D        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv6
-    SLICE_X1Y23.CE       net (fanout=4)        0.855   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-    SLICE_X1Y23.CLK      Tceck                 0.295   Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs<3>
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_2
-    -------------------------------------------------  ---------------------------
-    Total                                      6.435ns (1.724ns logic, 4.711ns route)
-                                                       (26.8% logic, 73.2% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     3.663ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5 (FF)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_2 (FF)
-  Requirement:          10.000ns
-  Data Path Delay:      6.279ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.023ns (0.232 - 0.255)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 10.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5 to Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_2
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X3Y28.CQ       Tcko                  0.391   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5
-    SLICE_X3Y28.B5       net (fanout=36)       1.364   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5
-    SLICE_X3Y28.B        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_state<3>1
-    SLICE_X4Y24.D1       net (fanout=30)       1.305   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state<3>
-    SLICE_X4Y24.D        Tilo                  0.205   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-    SLICE_X3Y27.C3       net (fanout=1)        0.878   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-    SLICE_X3Y27.C        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv5
-    SLICE_X3Y27.D5       net (fanout=1)        0.209   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv5
-    SLICE_X3Y27.D        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv6
-    SLICE_X1Y23.CE       net (fanout=4)        0.855   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-    SLICE_X1Y23.CLK      Tceck                 0.295   Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs<3>
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_2
-    -------------------------------------------------  ---------------------------
-    Total                                      6.279ns (1.668ns logic, 4.611ns route)
-                                                       (26.6% logic, 73.4% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     3.716ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd4 (FF)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_2 (FF)
-  Requirement:          10.000ns
-  Data Path Delay:      6.236ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.013ns (0.232 - 0.245)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 10.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd4 to Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_2
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X5Y24.CQ       Tcko                  0.391   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd4
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd4
-    SLICE_X3Y28.B2       net (fanout=35)       1.321   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd4
-    SLICE_X3Y28.B        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_state<3>1
-    SLICE_X4Y24.D1       net (fanout=30)       1.305   Inst_Profibus_Unit/Inst_Profibus_Transmitter/state<3>
-    SLICE_X4Y24.D        Tilo                  0.205   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-    SLICE_X3Y27.C3       net (fanout=1)        0.878   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv4
-    SLICE_X3Y27.C        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv5
-    SLICE_X3Y27.D5       net (fanout=1)        0.209   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv5
-    SLICE_X3Y27.D        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv6
-    SLICE_X1Y23.CE       net (fanout=4)        0.855   Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2210_inv
-    SLICE_X1Y23.CLK      Tceck                 0.295   Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs<3>
-                                                       Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_2
-    -------------------------------------------------  ---------------------------
-    Total                                      6.236ns (1.668ns logic, 4.568ns route)
-                                                       (26.7% logic, 73.3% route)
+    Total                                      9.801ns (0.477ns logic, 9.324ns route)
+                                                       (4.9% logic, 95.1% route)
 
 --------------------------------------------------------------------------------
 
 Hold Paths: TS_clk = PERIOD TIMEGRP "clk" 100 MHz HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_4 (SLICE_X24Y42.A6), 1 path
+Paths for end point Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_2 (SLICE_X14Y10.CE), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.413ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_4 (FF)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_4 (FF)
+Slack (hold path):      0.414ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_Profibus_Unit/Inst_Profibus_UART/Inst_neg_flanke_puls/out_o (FF)
+  Destination:          Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_2 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.413ns (Levels of Logic = 1)
+  Data Path Delay:      0.413ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.001ns (0.069 - 0.070)
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: Inst_Profibus_Unit/Inst_Profibus_UART/Inst_neg_flanke_puls/out_o to Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y12.AQ       Tcko                  0.198   Inst_Profibus_Unit/Inst_Profibus_UART/Inst_neg_flanke_puls/out_o
+                                                       Inst_Profibus_Unit/Inst_Profibus_UART/Inst_neg_flanke_puls/out_o
+    SLICE_X14Y10.CE      net (fanout=64)       0.323   Inst_Profibus_Unit/Inst_Profibus_UART/Inst_neg_flanke_puls/out_o
+    SLICE_X14Y10.CLK     Tckce       (-Th)     0.108   Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs<2>
+                                                       Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.413ns (0.090ns logic, 0.323ns route)
+                                                       (21.8% logic, 78.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_1 (SLICE_X14Y10.CE), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.418ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_Profibus_Unit/Inst_Profibus_UART/Inst_neg_flanke_puls/out_o (FF)
+  Destination:          Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.417ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.001ns (0.069 - 0.070)
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: Inst_Profibus_Unit/Inst_Profibus_UART/Inst_neg_flanke_puls/out_o to Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y12.AQ       Tcko                  0.198   Inst_Profibus_Unit/Inst_Profibus_UART/Inst_neg_flanke_puls/out_o
+                                                       Inst_Profibus_Unit/Inst_Profibus_UART/Inst_neg_flanke_puls/out_o
+    SLICE_X14Y10.CE      net (fanout=64)       0.323   Inst_Profibus_Unit/Inst_Profibus_UART/Inst_neg_flanke_puls/out_o
+    SLICE_X14Y10.CLK     Tckce       (-Th)     0.104   Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs<2>
+                                                       Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.417ns (0.094ns logic, 0.323ns route)
+                                                       (22.5% logic, 77.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_Profibus_Unit/Inst_Profibus_Recieve/counter_7 (SLICE_X20Y11.D6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.418ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_Profibus_Unit/Inst_Profibus_Recieve/counter_7 (FF)
+  Destination:          Inst_Profibus_Unit/Inst_Profibus_Recieve/counter_7 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.418ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         clk_BUFGP rising at 10.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_4 to Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_4
+  Minimum Data Path at Fast Process Corner: Inst_Profibus_Unit/Inst_Profibus_Recieve/counter_7 to Inst_Profibus_Unit/Inst_Profibus_Recieve/counter_7
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X24Y42.AQ      Tcko                  0.200   Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs<7>
-                                                       Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_4
-    SLICE_X24Y42.A6      net (fanout=4)        0.023   Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs<4>
-    SLICE_X24Y42.CLK     Tah         (-Th)    -0.190   Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs<7>
-                                                       Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_4_dpot
-                                                       Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_4
+    SLICE_X20Y11.DQ      Tcko                  0.200   Inst_Profibus_Unit/Inst_Profibus_Recieve/counter<7>
+                                                       Inst_Profibus_Unit/Inst_Profibus_Recieve/counter_7
+    SLICE_X20Y11.D6      net (fanout=4)        0.028   Inst_Profibus_Unit/Inst_Profibus_Recieve/counter<7>
+    SLICE_X20Y11.CLK     Tah         (-Th)    -0.190   Inst_Profibus_Unit/Inst_Profibus_Recieve/counter<7>
+                                                       Inst_Profibus_Unit/Inst_Profibus_Recieve/Mmux_state[4]_X_8_o_wide_mux_66_OUT8
+                                                       Inst_Profibus_Unit/Inst_Profibus_Recieve/counter_7
     -------------------------------------------------  ---------------------------
-    Total                                      0.413ns (0.390ns logic, 0.023ns route)
-                                                       (94.4% logic, 5.6% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_7 (SLICE_X24Y42.D6), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.413ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_7 (FF)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_7 (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.413ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
-  Source Clock:         clk_BUFGP rising at 10.000ns
-  Destination Clock:    clk_BUFGP rising at 10.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_7 to Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_7
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X24Y42.DQ      Tcko                  0.200   Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs<7>
-                                                       Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_7
-    SLICE_X24Y42.D6      net (fanout=3)        0.023   Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs<7>
-    SLICE_X24Y42.CLK     Tah         (-Th)    -0.190   Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs<7>
-                                                       Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_7_dpot
-                                                       Inst_Profibus_Unit/Inst_Profibus_Recieve/fcs_7
-    -------------------------------------------------  ---------------------------
-    Total                                      0.413ns (0.390ns logic, 0.023ns route)
-                                                       (94.4% logic, 5.6% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point Inst_Profibus_Unit/Inst_Profibus_Recieve/idle_o (SLICE_X16Y40.A6), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.421ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_Profibus_Unit/Inst_Profibus_Recieve/idle_o (FF)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_Recieve/idle_o (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.421ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
-  Source Clock:         clk_BUFGP rising at 10.000ns
-  Destination Clock:    clk_BUFGP rising at 10.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: Inst_Profibus_Unit/Inst_Profibus_Recieve/idle_o to Inst_Profibus_Unit/Inst_Profibus_Recieve/idle_o
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X16Y40.AQ      Tcko                  0.200   Inst_Profibus_Unit/Inst_Profibus_Recieve/idle_o
-                                                       Inst_Profibus_Unit/Inst_Profibus_Recieve/idle_o
-    SLICE_X16Y40.A6      net (fanout=3)        0.031   Inst_Profibus_Unit/Inst_Profibus_Recieve/idle_o
-    SLICE_X16Y40.CLK     Tah         (-Th)    -0.190   Inst_Profibus_Unit/Inst_Profibus_Recieve/idle_o
-                                                       Inst_Profibus_Unit/Inst_Profibus_Recieve/idle_o_rstpot
-                                                       Inst_Profibus_Unit/Inst_Profibus_Recieve/idle_o
-    -------------------------------------------------  ---------------------------
-    Total                                      0.421ns (0.390ns logic, 0.031ns route)
-                                                       (92.6% logic, 7.4% route)
+    Total                                      0.418ns (0.390ns logic, 0.028ns route)
+                                                       (93.3% logic, 6.7% route)
 
 --------------------------------------------------------------------------------
 
@@ -521,467 +231,20 @@ Slack: 8.270ns (period - min period limit)
 Slack: 9.570ns (period - min period limit)
   Period: 10.000ns
   Min period limit: 0.430ns (2325.581MHz) (Tcp)
-  Physical resource: Inst_UART_TX_CTRL/bitIndex<3>/CLK
-  Logical resource: Inst_UART_TX_CTRL/bitIndex_0/CK
-  Location pin: SLICE_X32Y73.CLK
+  Physical resource: uut/FSM_process.timeout/CLK
+  Logical resource: uut/FSM_process.timeout/CK
+  Location pin: SLICE_X28Y22.CLK
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
 Slack: 9.570ns (period - min period limit)
   Period: 10.000ns
   Min period limit: 0.430ns (2325.581MHz) (Tcp)
-  Physical resource: Inst_UART_TX_CTRL/bitIndex<3>/CLK
-  Logical resource: Inst_UART_TX_CTRL/bitIndex_1/CK
-  Location pin: SLICE_X32Y73.CLK
+  Physical resource: Inst_Profibus_Unit/Inst_Profibus_Recieve/timer<3>/CLK
+  Logical resource: Inst_Profibus_Unit/Inst_Profibus_Recieve/timer_0/CK
+  Location pin: SLICE_X8Y7.CLK
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
 
-================================================================================
-Timing constraint: TS_TO_Inst_Profibus_UnitInst_Profibus_UARTTX_LDC = MAXDELAY 
-TO TIMEGRP         "TO_Inst_Profibus_UnitInst_Profibus_UARTTX_LDC" TS_clk 
-DATAPATHONLY;
-For more information, see From:To (Multicycle) Analysis in the Timing Closure User Guide (UG612).
-
- 4 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
- 0 timing errors detected. (0 setup errors, 0 hold errors)
- Maximum delay is   9.504ns.
---------------------------------------------------------------------------------
-
-Paths for end point Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC (SLICE_X7Y11.SR), 2 paths
---------------------------------------------------------------------------------
-Slack (slowest paths):  0.496ns (requirement - data path)
-  Source:               reset (PAD)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC (LATCH)
-  Requirement:          10.000ns
-  Data Path Delay:      9.504ns (Levels of Logic = 2)
-  Destination Clock:    Inst_Profibus_Unit/Inst_Profibus_UART/reset_tx_s_AND_563_o falling
-
-  Maximum Data Path at Slow Process Corner: reset to Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    F5.I                 Tiopi                 0.790   reset
-                                                       reset
-                                                       reset_IBUF
-                                                       ProtoComp97.IMUX.3
-    SLICE_X7Y11.A4       net (fanout=102)      7.701   Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/reset_n_inv
-    SLICE_X7Y11.A        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/reset_tx_s_AND_564_o1
-    SLICE_X7Y11.SR       net (fanout=2)        0.474   Inst_Profibus_Unit/Inst_Profibus_UART/reset_tx_s_AND_564_o
-    SLICE_X7Y11.CLK      Trck                  0.280   Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-    -------------------------------------------------  ---------------------------
-    Total                                      9.504ns (1.329ns logic, 8.175ns route)
-                                                       (14.0% logic, 86.0% route)
-
---------------------------------------------------------------------------------
-Slack (setup paths):    7.953ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx (FF)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC (LATCH)
-  Requirement:          10.000ns
-  Data Path Delay:      2.047ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    Inst_Profibus_Unit/Inst_Profibus_UART/reset_tx_s_AND_563_o falling
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path at Slow Process Corner: Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx to Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X6Y16.DQ       Tcko                  0.447   Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx
-    SLICE_X7Y11.A5       net (fanout=2)        0.587   Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx
-    SLICE_X7Y11.A        Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/reset_tx_s_AND_564_o1
-    SLICE_X7Y11.SR       net (fanout=2)        0.474   Inst_Profibus_Unit/Inst_Profibus_UART/reset_tx_s_AND_564_o
-    SLICE_X7Y11.CLK      Trck                  0.280   Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-    -------------------------------------------------  ---------------------------
-    Total                                      2.047ns (0.986ns logic, 1.061ns route)
-                                                       (48.2% logic, 51.8% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC (SLICE_X7Y11.CLK), 2 paths
---------------------------------------------------------------------------------
-Slack (slowest paths):  0.873ns (requirement - data path)
-  Source:               reset (PAD)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC (LATCH)
-  Requirement:          10.000ns
-  Data Path Delay:      9.127ns (Levels of Logic = 2)
-
-  Maximum Data Path at Slow Process Corner: reset to Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    F5.I                 Tiopi                 0.790   reset
-                                                       reset
-                                                       reset_IBUF
-                                                       ProtoComp97.IMUX.3
-    SLICE_X7Y11.A4       net (fanout=102)      7.701   Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/reset_n_inv
-    SLICE_X7Y11.AMUX     Tilo                  0.313   Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/reset_tx_s_AND_563_o1
-    SLICE_X7Y11.CLK      net (fanout=2)        0.323   Inst_Profibus_Unit/Inst_Profibus_UART/reset_tx_s_AND_563_o
-    -------------------------------------------------  ---------------------------
-    Total                                      9.127ns (1.103ns logic, 8.024ns route)
-                                                       (12.1% logic, 87.9% route)
-
---------------------------------------------------------------------------------
-Slack (slowest paths):  8.330ns (requirement - data path)
-  Source:               Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx (FF)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC (LATCH)
-  Requirement:          10.000ns
-  Data Path Delay:      1.670ns (Levels of Logic = 1)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-
-  Maximum Data Path at Slow Process Corner: Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx to Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X6Y16.DQ       Tcko                  0.447   Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx
-    SLICE_X7Y11.A5       net (fanout=2)        0.587   Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx
-    SLICE_X7Y11.AMUX     Tilo                  0.313   Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/reset_tx_s_AND_563_o1
-    SLICE_X7Y11.CLK      net (fanout=2)        0.323   Inst_Profibus_Unit/Inst_Profibus_UART/reset_tx_s_AND_563_o
-    -------------------------------------------------  ---------------------------
-    Total                                      1.670ns (0.760ns logic, 0.910ns route)
-                                                       (45.5% logic, 54.5% route)
-
---------------------------------------------------------------------------------
-Hold Paths: TS_TO_Inst_Profibus_UnitInst_Profibus_UARTTX_LDC = MAXDELAY TO TIMEGRP         "TO_Inst_Profibus_UnitInst_Profibus_UARTTX_LDC" TS_clk DATAPATHONLY;
---------------------------------------------------------------------------------
-
-Paths for end point Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC (SLICE_X7Y11.SR), 2 paths
---------------------------------------------------------------------------------
-Slack (hold path):      1.141ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx (FF)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC (LATCH)
-  Requirement:          0.000ns
-  Data Path Delay:      1.141ns (Levels of Logic = 1)
-  Positive Clock Path Skew: 0.000ns
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    Inst_Profibus_Unit/Inst_Profibus_UART/reset_tx_s_AND_563_o falling
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx to Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X6Y16.DQ       Tcko                  0.234   Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx
-    SLICE_X7Y11.A5       net (fanout=2)        0.305   Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx
-    SLICE_X7Y11.A        Tilo                  0.156   Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/reset_tx_s_AND_564_o1
-    SLICE_X7Y11.SR       net (fanout=2)        0.291   Inst_Profibus_Unit/Inst_Profibus_UART/reset_tx_s_AND_564_o
-    SLICE_X7Y11.CLK      Tremck      (-Th)    -0.155   Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-    -------------------------------------------------  ---------------------------
-    Total                                      1.141ns (0.545ns logic, 0.596ns route)
-                                                       (47.8% logic, 52.2% route)
---------------------------------------------------------------------------------
-Delay (fastest path):   5.762ns (data path)
-  Source:               reset (PAD)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC (LATCH)
-  Data Path Delay:      5.762ns (Levels of Logic = 2)
-  Destination Clock:    Inst_Profibus_Unit/Inst_Profibus_UART/reset_tx_s_AND_563_o falling
-
-  Minimum Data Path at Fast Process Corner: reset to Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    F5.I                 Tiopi                 0.321   reset
-                                                       reset
-                                                       reset_IBUF
-                                                       ProtoComp97.IMUX.3
-    SLICE_X7Y11.A4       net (fanout=102)      4.839   Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/reset_n_inv
-    SLICE_X7Y11.A        Tilo                  0.156   Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/reset_tx_s_AND_564_o1
-    SLICE_X7Y11.SR       net (fanout=2)        0.291   Inst_Profibus_Unit/Inst_Profibus_UART/reset_tx_s_AND_564_o
-    SLICE_X7Y11.CLK      Tremck      (-Th)    -0.155   Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-    -------------------------------------------------  ---------------------------
-    Total                                      5.762ns (0.632ns logic, 5.130ns route)
-                                                       (11.0% logic, 89.0% route)
---------------------------------------------------------------------------------
-
-Paths for end point Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC (SLICE_X7Y11.CLK), 2 paths
---------------------------------------------------------------------------------
-Delay (fastest path):   0.922ns (data path)
-  Source:               Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx (FF)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC (LATCH)
-  Data Path Delay:      0.922ns (Levels of Logic = 1)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-
-  Minimum Data Path at Fast Process Corner: Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx to Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X6Y16.DQ       Tcko                  0.234   Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx
-    SLICE_X7Y11.A5       net (fanout=2)        0.305   Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/tx
-    SLICE_X7Y11.AMUX     Tilo                  0.203   Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/reset_tx_s_AND_563_o1
-    SLICE_X7Y11.CLK      net (fanout=2)        0.180   Inst_Profibus_Unit/Inst_Profibus_UART/reset_tx_s_AND_563_o
-    -------------------------------------------------  ---------------------------
-    Total                                      0.922ns (0.437ns logic, 0.485ns route)
-                                                       (47.4% logic, 52.6% route)
---------------------------------------------------------------------------------
-
-Paths for end point Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC (SLICE_X7Y11.CLK), 2 paths
---------------------------------------------------------------------------------
-Delay (fastest path):   5.543ns (data path)
-  Source:               reset (PAD)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC (LATCH)
-  Data Path Delay:      5.543ns (Levels of Logic = 2)
-
-  Minimum Data Path at Fast Process Corner: reset to Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    F5.I                 Tiopi                 0.321   reset
-                                                       reset
-                                                       reset_IBUF
-                                                       ProtoComp97.IMUX.3
-    SLICE_X7Y11.A4       net (fanout=102)      4.839   Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/reset_n_inv
-    SLICE_X7Y11.AMUX     Tilo                  0.203   Inst_Profibus_Unit/Inst_Profibus_UART/TX_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/reset_tx_s_AND_563_o1
-    SLICE_X7Y11.CLK      net (fanout=2)        0.180   Inst_Profibus_Unit/Inst_Profibus_UART/reset_tx_s_AND_563_o
-    -------------------------------------------------  ---------------------------
-    Total                                      5.543ns (0.524ns logic, 5.019ns route)
-                                                       (9.5% logic, 90.5% route)
---------------------------------------------------------------------------------
-
-================================================================================
-Timing constraint: TS_TO_Inst_Profibus_UnitInst_Profibus_UARTrx_s_LDC = 
-MAXDELAY TO TIMEGRP         "TO_Inst_Profibus_UnitInst_Profibus_UARTrx_s_LDC" 
-TS_clk DATAPATHONLY;
-For more information, see From:To (Multicycle) Analysis in the Timing Closure User Guide (UG612).
-
- 4 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
- 0 timing errors detected. (0 setup errors, 0 hold errors)
- Maximum delay is   9.016ns.
---------------------------------------------------------------------------------
-
-Paths for end point Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC (SLICE_X11Y25.SR), 2 paths
---------------------------------------------------------------------------------
-Slack (slowest paths):  0.984ns (requirement - data path)
-  Source:               reset (PAD)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC (LATCH)
-  Requirement:          10.000ns
-  Data Path Delay:      9.016ns (Levels of Logic = 2)
-  Destination Clock:    Inst_Profibus_Unit/Inst_Profibus_UART/reset_RX_AND_561_o falling
-
-  Maximum Data Path at Slow Process Corner: reset to Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    F5.I                 Tiopi                 0.790   reset
-                                                       reset
-                                                       reset_IBUF
-                                                       ProtoComp97.IMUX.3
-    SLICE_X11Y25.A5      net (fanout=102)      6.768   Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/reset_n_inv
-    SLICE_X11Y25.A       Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/reset_RX_AND_562_o1
-    SLICE_X11Y25.SR      net (fanout=2)        0.919   Inst_Profibus_Unit/Inst_Profibus_UART/reset_RX_AND_562_o
-    SLICE_X11Y25.CLK     Trck                  0.280   Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-    -------------------------------------------------  ---------------------------
-    Total                                      9.016ns (1.329ns logic, 7.687ns route)
-                                                       (14.7% logic, 85.3% route)
-
---------------------------------------------------------------------------------
-Slack (slowest paths):  4.099ns (requirement - data path)
-  Source:               rx (PAD)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC (LATCH)
-  Requirement:          10.000ns
-  Data Path Delay:      5.901ns (Levels of Logic = 2)
-  Destination Clock:    Inst_Profibus_Unit/Inst_Profibus_UART/reset_RX_AND_561_o falling
-
-  Maximum Data Path at Slow Process Corner: rx to Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    P6.I                 Tiopi                 0.790   rx
-                                                       rx
-                                                       rx_IBUF
-                                                       ProtoComp97.IMUX
-    SLICE_X11Y25.A3      net (fanout=2)        3.653   rx_IBUF
-    SLICE_X11Y25.A       Tilo                  0.259   Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/reset_RX_AND_562_o1
-    SLICE_X11Y25.SR      net (fanout=2)        0.919   Inst_Profibus_Unit/Inst_Profibus_UART/reset_RX_AND_562_o
-    SLICE_X11Y25.CLK     Trck                  0.280   Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-    -------------------------------------------------  ---------------------------
-    Total                                      5.901ns (1.329ns logic, 4.572ns route)
-                                                       (22.5% logic, 77.5% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC (SLICE_X11Y25.CLK), 2 paths
---------------------------------------------------------------------------------
-Slack (slowest paths):  1.814ns (requirement - data path)
-  Source:               reset (PAD)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC (LATCH)
-  Requirement:          10.000ns
-  Data Path Delay:      8.186ns (Levels of Logic = 2)
-
-  Maximum Data Path at Slow Process Corner: reset to Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    F5.I                 Tiopi                 0.790   reset
-                                                       reset
-                                                       reset_IBUF
-                                                       ProtoComp97.IMUX.3
-    SLICE_X11Y25.A5      net (fanout=102)      6.768   Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/reset_n_inv
-    SLICE_X11Y25.AMUX    Tilo                  0.313   Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/reset_RX_AND_561_o1
-    SLICE_X11Y25.CLK     net (fanout=2)        0.315   Inst_Profibus_Unit/Inst_Profibus_UART/reset_RX_AND_561_o
-    -------------------------------------------------  ---------------------------
-    Total                                      8.186ns (1.103ns logic, 7.083ns route)
-                                                       (13.5% logic, 86.5% route)
-
---------------------------------------------------------------------------------
-Slack (slowest paths):  4.929ns (requirement - data path)
-  Source:               rx (PAD)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC (LATCH)
-  Requirement:          10.000ns
-  Data Path Delay:      5.071ns (Levels of Logic = 2)
-
-  Maximum Data Path at Slow Process Corner: rx to Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    P6.I                 Tiopi                 0.790   rx
-                                                       rx
-                                                       rx_IBUF
-                                                       ProtoComp97.IMUX
-    SLICE_X11Y25.A3      net (fanout=2)        3.653   rx_IBUF
-    SLICE_X11Y25.AMUX    Tilo                  0.313   Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/reset_RX_AND_561_o1
-    SLICE_X11Y25.CLK     net (fanout=2)        0.315   Inst_Profibus_Unit/Inst_Profibus_UART/reset_RX_AND_561_o
-    -------------------------------------------------  ---------------------------
-    Total                                      5.071ns (1.103ns logic, 3.968ns route)
-                                                       (21.8% logic, 78.2% route)
-
---------------------------------------------------------------------------------
-Hold Paths: TS_TO_Inst_Profibus_UnitInst_Profibus_UARTrx_s_LDC = MAXDELAY TO TIMEGRP         "TO_Inst_Profibus_UnitInst_Profibus_UARTrx_s_LDC" TS_clk DATAPATHONLY;
---------------------------------------------------------------------------------
-
-Paths for end point Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC (SLICE_X11Y25.SR), 2 paths
---------------------------------------------------------------------------------
-Delay (fastest path):   3.474ns (data path)
-  Source:               rx (PAD)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC (LATCH)
-  Data Path Delay:      3.474ns (Levels of Logic = 2)
-  Destination Clock:    Inst_Profibus_Unit/Inst_Profibus_UART/reset_RX_AND_561_o falling
-
-  Minimum Data Path at Fast Process Corner: rx to Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    P6.I                 Tiopi                 0.321   rx
-                                                       rx
-                                                       rx_IBUF
-                                                       ProtoComp97.IMUX
-    SLICE_X11Y25.A3      net (fanout=2)        2.341   rx_IBUF
-    SLICE_X11Y25.A       Tilo                  0.156   Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/reset_RX_AND_562_o1
-    SLICE_X11Y25.SR      net (fanout=2)        0.501   Inst_Profibus_Unit/Inst_Profibus_UART/reset_RX_AND_562_o
-    SLICE_X11Y25.CLK     Tremck      (-Th)    -0.155   Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-    -------------------------------------------------  ---------------------------
-    Total                                      3.474ns (0.632ns logic, 2.842ns route)
-                                                       (18.2% logic, 81.8% route)
---------------------------------------------------------------------------------
-Delay (fastest path):   5.435ns (data path)
-  Source:               reset (PAD)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC (LATCH)
-  Data Path Delay:      5.435ns (Levels of Logic = 2)
-  Destination Clock:    Inst_Profibus_Unit/Inst_Profibus_UART/reset_RX_AND_561_o falling
-
-  Minimum Data Path at Fast Process Corner: reset to Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    F5.I                 Tiopi                 0.321   reset
-                                                       reset
-                                                       reset_IBUF
-                                                       ProtoComp97.IMUX.3
-    SLICE_X11Y25.A5      net (fanout=102)      4.302   Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/reset_n_inv
-    SLICE_X11Y25.A       Tilo                  0.156   Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/reset_RX_AND_562_o1
-    SLICE_X11Y25.SR      net (fanout=2)        0.501   Inst_Profibus_Unit/Inst_Profibus_UART/reset_RX_AND_562_o
-    SLICE_X11Y25.CLK     Tremck      (-Th)    -0.155   Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-    -------------------------------------------------  ---------------------------
-    Total                                      5.435ns (0.632ns logic, 4.803ns route)
-                                                       (11.6% logic, 88.4% route)
---------------------------------------------------------------------------------
-
-Paths for end point Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC (SLICE_X11Y25.CLK), 2 paths
---------------------------------------------------------------------------------
-Delay (fastest path):   3.037ns (data path)
-  Source:               rx (PAD)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC (LATCH)
-  Data Path Delay:      3.037ns (Levels of Logic = 2)
-
-  Minimum Data Path at Fast Process Corner: rx to Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    P6.I                 Tiopi                 0.321   rx
-                                                       rx
-                                                       rx_IBUF
-                                                       ProtoComp97.IMUX
-    SLICE_X11Y25.A3      net (fanout=2)        2.341   rx_IBUF
-    SLICE_X11Y25.AMUX    Tilo                  0.203   Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/reset_RX_AND_561_o1
-    SLICE_X11Y25.CLK     net (fanout=2)        0.172   Inst_Profibus_Unit/Inst_Profibus_UART/reset_RX_AND_561_o
-    -------------------------------------------------  ---------------------------
-    Total                                      3.037ns (0.524ns logic, 2.513ns route)
-                                                       (17.3% logic, 82.7% route)
---------------------------------------------------------------------------------
-
-Paths for end point Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC (SLICE_X11Y25.CLK), 2 paths
---------------------------------------------------------------------------------
-Delay (fastest path):   4.998ns (data path)
-  Source:               reset (PAD)
-  Destination:          Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC (LATCH)
-  Data Path Delay:      4.998ns (Levels of Logic = 2)
-
-  Minimum Data Path at Fast Process Corner: reset to Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    F5.I                 Tiopi                 0.321   reset
-                                                       reset
-                                                       reset_IBUF
-                                                       ProtoComp97.IMUX.3
-    SLICE_X11Y25.A5      net (fanout=102)      4.302   Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/reset_n_inv
-    SLICE_X11Y25.AMUX    Tilo                  0.203   Inst_Profibus_Unit/Inst_Profibus_UART/rx_s_LDC
-                                                       Inst_Profibus_Unit/Inst_Profibus_UART/reset_RX_AND_561_o1
-    SLICE_X11Y25.CLK     net (fanout=2)        0.172   Inst_Profibus_Unit/Inst_Profibus_UART/reset_RX_AND_561_o
-    -------------------------------------------------  ---------------------------
-    Total                                      4.998ns (0.524ns logic, 4.474ns route)
-                                                       (10.5% logic, 89.5% route)
---------------------------------------------------------------------------------
-
-
-Derived Constraint Report
-Derived Constraints for TS_clk
-+-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
-|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
-|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
-+-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_clk                         |     10.000ns|      6.532ns|      9.504ns|            0|            0|        30749|            8|
-| TS_TO_Inst_Profibus_UnitInst_P|     10.000ns|      9.504ns|          N/A|            0|            0|            4|            0|
-| rofibus_UARTTX_LDC            |             |             |             |             |             |             |             |
-| TS_TO_Inst_Profibus_UnitInst_P|     10.000ns|      9.016ns|          N/A|            0|            0|            4|            0|
-| rofibus_UARTrx_s_LDC          |             |             |             |             |             |             |             |
-+-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
 
@@ -995,26 +258,7 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    6.532|         |         |         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock reset
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    2.047|         |
-reset          |         |         |    1.316|    1.316|
-rx             |         |         |   -1.294|   -1.294|
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock rx
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-reset          |         |         |    4.277|    4.277|
-rx             |         |         |    1.162|    1.162|
+clk            |    9.916|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -1023,24 +267,23 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 30757 paths, 0 nets, and 3165 connections
+Constraints cover 61275 paths, 0 nets, and 11428 connections
 
 Design statistics:
-   Minimum period:   9.504ns{1}   (Maximum frequency: 105.219MHz)
-   Maximum path delay from/to any node:   9.504ns
+   Minimum period:   9.916ns{1}   (Maximum frequency: 100.847MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Fri Aug 19 15:05:21 2022 
+Analysis completed Mon Aug 29 09:00:16 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 4628 MB
+Peak Memory Usage: 4667 MB
 
 
 
