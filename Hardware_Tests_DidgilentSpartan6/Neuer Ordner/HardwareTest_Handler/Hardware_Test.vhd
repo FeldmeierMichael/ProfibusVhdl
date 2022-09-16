@@ -33,6 +33,7 @@ entity Hardware_Test is
     Port ( clk : in  STD_LOGIC;
            reset : in  STD_LOGIC;
 			  in_B:in std_logic;
+			  ss : in std_logic_vector(7 downto 0);
 			  rx: in std_logic:='1';
 			  tx: out std_logic:='1';
 			  write_en:out std_logic:='0';
@@ -148,7 +149,15 @@ architecture Behavioral of Hardware_Test is
 	--signal write_en:std_logic:='0';
 	
 BEGIN
- 
+ input_bus(0)<=ss(0);
+ input_bus(1)<=ss(1);
+ input_bus(2)<=ss(2);
+ input_bus(3)<=ss(3);
+ input_bus(8)<=ss(4);
+ input_bus(9)<=ss(5);
+ input_bus(10)<=ss(6);
+ input_bus(11)<=ss(7); 
+
 	-- Instantiate the Unit Under Test (UUT)
    uut: Profibus_Handler PORT MAP (
           input_bus => input_bus,

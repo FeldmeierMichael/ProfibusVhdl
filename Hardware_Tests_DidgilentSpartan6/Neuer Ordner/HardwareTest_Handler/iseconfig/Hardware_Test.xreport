@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-08-29T08:00:45</DateModified>
+  <DateModified>2022-09-09T13:14:16</DateModified>
   <ModuleName>Hardware_Test</ModuleName>
-  <SummaryTimeStamp>2022-08-26T16:20:57</SummaryTimeStamp>
+  <SummaryTimeStamp>2022-09-08T19:40:07</SummaryTimeStamp>
   <SavedFilePath>C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/HardwareTest_Handler/iseconfig/Hardware_Test.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Hardware_Tests_DidgilentSpartan6/Neuer Ordner/HardwareTest_Handler\</ImplementationReportsDirectory>
   <DateInitialized>2022-08-19T15:43:03</DateInitialized>

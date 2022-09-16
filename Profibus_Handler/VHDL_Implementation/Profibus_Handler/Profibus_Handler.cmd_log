@@ -36,3 +36,4 @@ map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off Profibus_Handler_map.ncd Profibus_Handler.ncd Profibus_Handler.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Profibus_Handler.twx Profibus_Handler.ncd -o Profibus_Handler.twr Profibus_Handler.pcf 
 bitgen -intstyle ise -f Profibus_Handler.ut Profibus_Handler.ncd 
+xst -intstyle ise -ifn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/Profibus_Handler.xst" -ofn "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/Profibus_Handler.syr" 

@@ -65,7 +65,7 @@ BEGIN
     VARIABLE count_baud :  INTEGER RANGE 0 TO clk_freq/baud_rate-1 := 0;         --counter to determine baud rate period
     VARIABLE count_os   :  INTEGER RANGE 0 TO clk_freq/baud_rate/os_rate-1 := 0; --counter to determine oversampling period
   BEGIN
-    IF(reset_n = '0') THEN                            --asynchronous reset asserted
+    IF(reset_n = '0' or(tx_state=idle and rx_state=idle and rx='1')) THEN                            --asynchronous reset asserted
       baud_pulse <= '0';                                --reset baud rate pulse
       os_pulse <= '0';                                  --reset oversampling rate pulse
       count_baud := 0;                                  --reset baud period counter
@@ -163,9 +163,9 @@ BEGIN
       CASE tx_state IS
         WHEN idle =>                                              --idle state
           IF(tx_ena = '1') THEN                                     --new transaction latched in
-            tx_buffer(d_width+1 DOWNTO 0) <=  tx_data & '0' & '1';    --latch in data for transmission and start/stop bits
+            tx_buffer(d_width+2 DOWNTO 0) <='1' & '1' & tx_data & '0' ;    --latch in data for transmission and start/stop bits
             IF(parity = 1) THEN                                       --if parity is used
-              tx_buffer(parity+d_width+1) <= tx_parity(d_width);        --latch in parity bit from parity logic
+              tx_buffer(parity+d_width) <= tx_parity(d_width);        --latch in parity bit from parity logic
             END IF;
             tx_busy <= '1';                                           --assert transmit busy flag
             tx_count := 0;                                            --clear transmit bit count
@@ -178,11 +178,14 @@ BEGIN
           IF(baud_pulse = '1') THEN                                 --beginning of bit
             tx_count := tx_count + 1;                                 --increment transmit bit counter
             tx_buffer <= '1' & tx_buffer(parity+d_width+1 DOWNTO 1);  --shift transmit buffer to output next bit
+				--tx_buffer <= tx_buffer(parity+d_width+1 DOWNTO 1);
           END IF;
-          IF(tx_count < parity+d_width+3) THEN                      --not all bits transmitted
+          IF(tx_count < parity+d_width+2) THEN                      --not all bits transmitted
             tx_state <= transmit;                                     --remain in transmit state
           ELSE                                                      --all bits transmitted
-            tx_state <= idle;                                         --return to idle state
+            tx_state <= idle;
+				tx_busy <= '0'; 
+				--return to idle state
           END IF;
       END CASE;
       tx <= tx_buffer(0);                                       --output last bit in transmit transaction buffer

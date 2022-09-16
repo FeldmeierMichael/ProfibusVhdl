@@ -98,20 +98,20 @@ COMPONENT Profibus_Transmitter
 		);
 	END COMPONENT;
 COMPONENT Profibus_UART
-	PORT(
-		Reciever_idle : IN std_logic;
-		clk : IN std_logic;
-		reset : IN std_logic;
-		datain : IN std_logic_vector(7 downto 0);
-		send : IN std_logic;
-		RX : IN std_logic;          
-		dataout : OUT std_logic_vector(7 downto 0);
-		recieve : OUT std_logic;
-		TX : OUT std_logic;
-		Read_en : OUT std_logic;
-		tx_busy : OUT std_logic;
-		Write_en : OUT std_logic
-		);
+	Port ( 
+				Reciever_idle: in  STD_LOGIC;
+				clk : in  STD_LOGIC;
+           reset : in  STD_LOGIC;
+           datain : in  STD_LOGIC_VECTOR (7 downto 0);
+           dataout : out  STD_LOGIC_VECTOR (7 downto 0);
+           send : in  STD_LOGIC;
+			  send_telegram : in STD_LOGIC;
+           recieve : out  STD_LOGIC;
+           RX : in  STD_LOGIC:='1';
+           TX : out  STD_LOGIC;
+           Read_en : out  STD_LOGIC;
+			  tx_busy : out std_logic:='0';
+           Write_en : out  STD_LOGIC);
 	END COMPONENT;
 
 	signal send_s:std_logic:='0';
@@ -162,6 +162,7 @@ Inst_Profibus_Recieve: Profibus_Recieve PORT MAP(
 		reset => reset,
 		datain => dataout_s,
 		dataout => datain_s,
+		send_telegram => send_telegram,
 		send => send_s,
 		recieve => rs485detect_s,
 		RX => RX,

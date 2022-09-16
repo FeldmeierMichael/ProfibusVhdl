@@ -242,12 +242,12 @@ begin
 				when conf_1  =>
 									if rising_detect='1' then
 										if  type_r=x"04" then
-											state<=conf;
+											--state<=conf;
 										else
-											state<=is_2;
+											--state<=is_2;
 										end if;
 									elsif timeout='1' then
-										state<=is_2;										
+										--state<=is_2;										
 									end if;
 				when conf    => --send Diagnostic Request
 									type_s<=x"01";

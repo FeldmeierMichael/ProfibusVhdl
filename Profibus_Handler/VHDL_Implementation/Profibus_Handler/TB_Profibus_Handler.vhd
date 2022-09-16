@@ -144,6 +144,8 @@ ARCHITECTURE behavior OF TB_Profibus_Handler IS
 	 signal PDU_s2 :std_logic_vector(7 downto 0):=x"00";
 		signal PDU_count_s2 :std_logic_vector(7 downto 0):=x"00";
 		signal PDU_RAM_en_s2,send_s1,send_s2,detect_r2:std_logic:='0';
+		
+		signal clock_uart:std_logic:='0';
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
@@ -308,7 +310,72 @@ BEGIN
 	send_s1<='1';	
 	wait until rising_edge(clk);
 	send_s1<='0';
-
 	wait;
+ end process;
+ 
+ 
+ process
+ begin
+ wait until rx='0';
+ clock_uart<='1';
+ wait for 52083 ns;
+ clock_uart<='0';
+ wait for 52083 ns;
+ clock_uart<='1';
+ wait for 52083 ns;
+ clock_uart<='0';
+ wait for 52083 ns;
+ clock_uart<='1';
+ wait for 52083 ns;
+ clock_uart<='0';
+ wait for 52083 ns;
+ clock_uart<='1';
+ wait for 52083 ns;
+ clock_uart<='0';
+ wait for 52083 ns;
+ clock_uart<='1';
+ wait for 52083 ns;
+ clock_uart<='0';
+ wait for 52083 ns;
+ clock_uart<='1';
+ wait for 52083 ns;
+ clock_uart<='0';
+ wait for 52083 ns;
+ clock_uart<='1';
+ wait for 52083 ns;
+ clock_uart<='0';
+ wait for 52083 ns;
+ clock_uart<='1';
+ wait for 52083 ns;
+ clock_uart<='0';
+ wait for 52083 ns;
+ clock_uart<='1';
+ wait for 52083 ns;
+ clock_uart<='0';
+ wait for 52083 ns;
+ clock_uart<='1';
+ wait for 52083 ns;
+ clock_uart<='0';
+ wait for 52083 ns;
+ clock_uart<='1';
+ wait for 52083 ns;
+ clock_uart<='0';
+ wait for 52083 ns;
+ clock_uart<='1';
+ wait for 52083 ns;
+ clock_uart<='0';
+ wait for 52083 ns;
+ clock_uart<='1';
+ wait for 52083 ns;
+ clock_uart<='0';
+ wait for 52083 ns;
+ clock_uart<='1';
+ wait for 52083 ns;
+ clock_uart<='0';
+ wait for 52083 ns;
+ clock_uart<='1';
+ wait for 52083 ns;
+ clock_uart<='0';
+ wait for 52083 ns;
  end process;
 END;

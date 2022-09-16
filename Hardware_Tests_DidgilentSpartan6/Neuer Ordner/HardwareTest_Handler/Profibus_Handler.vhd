@@ -72,6 +72,7 @@ signal state:state_t:=idle;
 signal detect_old:std_logic:='0';
 signal statereq:std_logic_vector(1 downto 0):="00";
 signal waiter:integer:=0;
+
 begin
 	RAM_in_p:Process(clk,reset)
 	variable counter:integer range 0 to 255:=0;
@@ -80,9 +81,9 @@ begin
 		--RAMin<=(others=>x"00");
 		counter:=0;
 	elsif rising_edge(clk) then	
-		for i in 0 to slave_PDU_size_in-1 loop
+		--for i in 0 to slave_PDU_size_in-1 loop
         --RAMin(i/8)(i mod 8)<= input_bus(i);   
-      end loop;
+      --end loop;
 		--if counter<slave_PDU_size_in/8 then
 		if counter<255 then	
 			PDU_s<=RAMin(counter);
@@ -123,9 +124,9 @@ begin
 		elsif rising_edge(clk) then	
 			--timeout flag
 			if(timer>(max_Tdsr*5209)) then
-				timeout:='1';
+				--timeout:='1';
 			else
-				timer:=timer+1;
+				--timer:=timer+1;
 			end if;
 			--ring_edge(detect_r) flag
 			if detect_old='0' and detect_r='1' then
@@ -244,18 +245,24 @@ begin
 										if  type_r=x"04" then
 											state<=conf;
 										else
-											--state<=is_2;
+											state<=is_2;
 										end if;
 									elsif timeout='1' then
-										--state<=is_2;										
+										state<=is_2;										
 									end if;
 				when conf    => --send Diagnostic Request
 									type_s<=x"01";
 									DA_S<="1000"&slave_adress(3 downto 0);
 									SA_S<="1000"&master_adress(3 downto 0);
-									FC_s<=x"5d";
-									statereq<="10";
+									if statereq="10" then
+										FC_s<=x"7d";
+										statereq<="01";
+									else
+										FC_s<=x"5d";
+										statereq<="10";
+									end if;									
 									LE_s<=x"05";
+									RAMin(0 to 6)<=(x"3C",x"3E",x"00",x"20",x"20",x"10",x"10");	
 									send_telegram<='1';
 									if telegram_busy='1' then
 										state<=dxchgs_0;
@@ -268,7 +275,9 @@ begin
 									end if;
 				when dxchgs_1=>
 									if rising_detect='1' then
-										if  LE_r=x"0B" and DA_r=x"82" and SA_r=x"81" and FC_r=x"08" and RAMout(0)= x"3E"  and RAMout(1)= x"3C"  and RAMout(2)= x"02"  and RAMout(3)= x"0C"  and RAMout(4)= x"00"  and RAMout(5)= x"02"  and RAMout(6)= x"80"  and RAMout(7)= x"6A"  then
+										if  DA_r=x"82" and SA_r=x"81" and FC_r=x"08" and RAMout(0)= x"3E"  and RAMout(1)= x"3C"  and RAMout(2)= x"02"    then
+											state<=conf;
+										elsif DA_r=x"82" and SA_r=x"81" and FC_r=x"08" and RAMout(0)= x"3E"  and RAMout(1)= x"3C"  and RAMout(2)= x"00" then
 											state<=dxchgs;
 										else
 											state<=is_2;
@@ -287,8 +296,11 @@ begin
 										FC_s<=x"5d";
 										statereq<="10";
 									end if;
-									RAMin(0)<=x"FF";
-									RAMin(1)<=x"FF";									
+									--RAMin(0)<=x"01";
+									--RAMin(1)<=x"01";	
+									for i in 0 to slave_PDU_size_in-1 loop
+										RAMin(i/8)(i mod 8)<= input_bus(i);   
+									end loop;
 									LE_s<=x"05";
 									send_telegram<='1';
 									if telegram_busy='1' then

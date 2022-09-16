@@ -2,9 +2,9 @@ Command line:
    TB_Profibus_Handler_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  65079
+     -socket  60487
 
-Mon Aug 29 09:50:01 2022
+Fri Sep 09 13:12:02 2022
 
 
- Elaboration Time: 0.0625 sec
+ Elaboration Time: 0.046875 sec

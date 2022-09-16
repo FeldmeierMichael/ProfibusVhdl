@@ -8,7 +8,7 @@ Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_H
 Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/Profibus_Constants.vhd" into library work
 Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/neg_flanke_puls.vhd" into library work
 Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/Profibus_UART.vhd" into library work
-WARNING:HDLCompiler:946 - "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/Profibus_UART.vhd" Line 128: Actual for formal port reset_n is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/Profibus_UART.vhd" Line 129: Actual for formal port reset_n is neither a static name nor a globally static expression
 Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/Profibus_Transmitter.vhd" into library work
 Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/Profibus_Recieve.vhd" into library work
 Parsing VHDL file "C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/Profibus_Unit.vhd" into library work
@@ -33,5 +33,5 @@ Time Resolution for simulation is 1ps.
 Waiting for 5 sub-compilation(s) to finish...
 Compiled 21 VHDL Units
 Built simulation executable C:/UserData/z003xazw/Documents/GitHub/ProfibusVhdl/Profibus_Handler/VHDL_Implementation/Profibus_Handler/TB_Profibus_Handler_isim_beh.exe
-Fuse Memory Usage: 36872 KB
+Fuse Memory Usage: 38096 KB
 Fuse CPU Usage: 874 ms

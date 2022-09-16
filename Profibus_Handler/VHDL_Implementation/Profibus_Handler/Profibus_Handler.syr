@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.66 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.66 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Reading design: Profibus_Handler.prj
 
@@ -114,6 +114,7 @@ Parsing architecture <Behavioral> of entity <profibus_handler>.
 =========================================================================
 
 Elaborating entity <Profibus_Handler> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:634 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Handler\VHDL_Implementation\Profibus_Handler\Profibus_Handler.vhd" Line 69: Net <RAMin[36][7]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -122,14 +123,234 @@ Elaborating entity <Profibus_Handler> (architecture <Behavioral>) with generics 
 Synthesizing Unit <Profibus_Handler>.
     Related source file is "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Profibus_Handler\VHDL_Implementation\Profibus_Handler\Profibus_Handler.vhd".
         baud_rate = 19200
-        master_adress = "00000001"
+        master_adress = "00000010"
         max_Tdsr = 850
-        slave_adress = "00000010"
+        slave_adress = "00000001"
         slave_PDU_size_in = 16
         slave_PDU_size_out = 16
+WARNING:Xst:647 - Input <input_bus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <FCS_r> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2935 - Signal 'RAMin<36>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<37>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<38>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<39>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<40>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<41>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<42>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<43>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<44>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<45>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<46>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<47>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<48>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<49>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<50>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<51>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<52>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<53>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<54>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<55>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<56>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<57>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<58>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<59>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<60>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<61>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<62>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<63>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<64>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<65>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<66>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<67>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<68>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<69>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<70>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<71>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<72>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<73>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<74>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<75>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<76>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<77>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<78>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<79>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<80>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<81>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<82>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<83>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<84>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<85>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<86>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<87>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<88>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<89>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<90>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<91>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<92>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<93>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<94>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<95>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<96>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<97>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<98>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<99>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<100>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<101>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<102>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<103>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<104>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<105>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<106>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<107>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<108>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<109>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<110>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<111>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<112>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<113>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<114>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<115>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<116>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<117>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<118>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<119>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<120>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<121>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<122>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<123>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<124>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<125>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<126>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<127>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<128>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<129>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<130>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<131>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<132>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<133>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<134>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<135>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<136>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<137>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<138>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<139>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<140>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<141>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<142>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<143>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<144>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<145>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<146>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<147>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<148>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<149>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<150>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<151>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<152>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<153>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<154>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<155>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<156>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<157>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<158>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<159>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<160>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<161>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<162>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<163>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<164>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<165>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<166>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<167>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<168>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<169>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<170>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<171>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<172>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<173>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<174>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<175>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<176>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<177>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<178>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<179>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<180>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<181>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<182>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<183>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<184>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<185>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<186>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<187>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<188>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<189>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<190>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<191>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<192>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<193>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<194>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<195>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<196>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<197>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<198>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<199>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<200>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<201>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<202>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<203>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<204>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<205>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<206>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<207>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<208>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<209>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<210>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<211>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<212>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<213>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<214>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<215>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<216>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<217>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<218>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<219>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<220>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<221>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<222>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<223>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<224>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<225>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<226>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<227>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<228>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<229>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<230>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<231>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<232>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<233>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<234>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<235>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<236>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<237>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<238>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<239>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<240>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<241>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<242>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<243>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<244>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<245>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<246>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<247>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<248>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<249>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<250>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<251>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<252>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<253>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<254>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
+WARNING:Xst:2935 - Signal 'RAMin<255>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
 WARNING:Xst:2935 - Signal 'PDU_RAM_en_s', unconnected in block 'Profibus_Handler', is tied to its initial value (1).
-    Found 8-bit register for signal <RAMin<1>>.
     Found 8-bit register for signal <RAMout<0>>.
     Found 8-bit register for signal <RAMout<1>>.
     Found 8-bit register for signal <RAMout<2>>.
@@ -138,8 +359,7 @@ WARNING:Xst:2935 - Signal 'PDU_RAM_en_s', unconnected in block 'Profibus_Handler
     Found 8-bit register for signal <RAMout<5>>.
     Found 8-bit register for signal <RAMout<6>>.
     Found 8-bit register for signal <RAMout<7>>.
-    Found 8-bit register for signal <RAMin<0>>.
-    Found 2-bit register for signal <RAM_in_p.counter>.
+    Found 8-bit register for signal <RAM_in_p.counter>.
     Found 5-bit register for signal <state>.
     Found 32-bit register for signal <FSM_process.timer>.
     Found 1-bit register for signal <detect_old>.
@@ -152,13 +372,56 @@ WARNING:Xst:2935 - Signal 'PDU_RAM_en_s', unconnected in block 'Profibus_Handler
     Found 8-bit register for signal <SA_s>.
     Found 8-bit register for signal <FC_s>.
     Found 1-bit register for signal <send_telegram>.
+    Found 2-bit register for signal <statereq>.
     Found 8-bit register for signal <LE_s>.
+    Found 8-bit register for signal <RAMin<0>>.
+    Found 8-bit register for signal <RAMin<1>>.
+    Found 8-bit register for signal <RAMin<2>>.
+    Found 8-bit register for signal <RAMin<3>>.
+    Found 8-bit register for signal <RAMin<4>>.
+    Found 8-bit register for signal <RAMin<5>>.
+    Found 8-bit register for signal <RAMin<6>>.
+    Found 8-bit register for signal <RAMin<7>>.
+    Found 8-bit register for signal <RAMin<8>>.
+    Found 8-bit register for signal <RAMin<9>>.
+    Found 8-bit register for signal <RAMin<10>>.
+    Found 8-bit register for signal <RAMin<11>>.
+    Found 8-bit register for signal <RAMin<12>>.
+    Found 8-bit register for signal <RAMin<13>>.
+    Found 8-bit register for signal <RAMin<14>>.
+    Found 8-bit register for signal <RAMin<15>>.
+    Found 8-bit register for signal <RAMin<16>>.
+    Found 8-bit register for signal <RAMin<17>>.
+    Found 8-bit register for signal <RAMin<18>>.
+    Found 8-bit register for signal <RAMin<19>>.
+    Found 8-bit register for signal <RAMin<20>>.
+    Found 8-bit register for signal <RAMin<21>>.
+    Found 8-bit register for signal <RAMin<22>>.
+    Found 8-bit register for signal <RAMin<23>>.
+    Found 8-bit register for signal <RAMin<24>>.
+    Found 8-bit register for signal <RAMin<25>>.
+    Found 8-bit register for signal <RAMin<26>>.
+    Found 8-bit register for signal <RAMin<27>>.
+    Found 8-bit register for signal <RAMin<28>>.
+    Found 8-bit register for signal <RAMin<29>>.
+    Found 8-bit register for signal <RAMin<30>>.
+    Found 8-bit register for signal <RAMin<31>>.
+    Found 8-bit register for signal <RAMin<32>>.
+    Found 8-bit register for signal <RAMin<33>>.
+    Found 8-bit register for signal <RAMin<34>>.
+    Found 8-bit register for signal <RAMin<35>>.
+INFO:Xst:1799 - State conf is never reached in FSM <state>.
+INFO:Xst:1799 - State dxchgs_0 is never reached in FSM <state>.
+INFO:Xst:1799 - State dxchgs_1 is never reached in FSM <state>.
+INFO:Xst:1799 - State dxchgs is never reached in FSM <state>.
+INFO:Xst:1799 - State dxchgr_0 is never reached in FSM <state>.
+INFO:Xst:1799 - State dxchgr is never reached in FSM <state>.
     Found finite state machine <FSM_0> for signal <state>.
     -----------------------------------------------------------------------
     | States             | 18                                             |
-    | Transitions        | 95                                             |
-    | Inputs             | 20                                             |
-    | Outputs            | 22                                             |
+    | Transitions        | 48                                             |
+    | Inputs             | 23                                             |
+    | Outputs            | 46                                             |
     | Clock              | clk (rising_edge)                              |
     | Reset              | reset (positive)                               |
     | Reset type         | asynchronous                                   |
@@ -167,17 +430,27 @@ WARNING:Xst:2935 - Signal 'PDU_RAM_en_s', unconnected in block 'Profibus_Handler
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 2-bit adder for signal <RAM_in_p.counter[1]_GND_4_o_add_2_OUT> created at line 87.
-    Found 32-bit adder for signal <FSM_process.timer[31]_GND_4_o_add_1039_OUT> created at line 128.
-    Found 8-bit 3-to-1 multiplexer for signal <RAM_in_p.counter[1]_RAMin[3][7]_wide_mux_1_OUT> created at line 85.
-    Found 2-bit comparator greater for signal <RAM_in_p.counter[1]_PWR_4_o_LessThan_1_o> created at line 84
-    Found 32-bit comparator greater for signal <FSM_process.timer[31]_GND_4_o_LessThan_1039_o> created at line 125
+    Found finite state machine <FSM_1> for signal <statereq>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 32                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit adder for signal <RAM_in_p.counter[7]_GND_4_o_add_2_OUT> created at line 90.
+    Found 32-bit adder for signal <FSM_process.timer[31]_GND_4_o_add_783_OUT> created at line 128.
+    Found 8-bit comparator greater for signal <RAM_in_p.counter[7]_PWR_4_o_LessThan_1_o> created at line 87
+    Found 32-bit comparator greater for signal <FSM_process.timer[31]_GND_4_o_LessThan_783_o> created at line 125
     Summary:
 	inferred   2 Adder/Subtractor(s).
-	inferred 189 D-type flip-flop(s).
+	inferred 331 D-type flip-flop(s).
 	inferred   2 Comparator(s).
-	inferred   6 Multiplexer(s).
-	inferred   1 Finite State Machine(s).
+	inferred  28 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
 Unit <Profibus_Handler> synthesized.
 
 =========================================================================
@@ -185,23 +458,21 @@ HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 2
- 2-bit adder                                           : 1
  32-bit adder                                          : 1
-# Registers                                            : 23
+ 8-bit adder                                           : 1
+# Registers                                            : 40
  1-bit register                                        : 3
  16-bit register                                       : 1
- 2-bit register                                        : 1
  32-bit register                                       : 1
- 8-bit register                                        : 17
+ 8-bit register                                        : 35
 # Comparators                                          : 2
- 2-bit comparator greater                              : 1
  32-bit comparator greater                             : 1
-# Multiplexers                                         : 6
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 28
  1-bit 2-to-1 multiplexer                              : 1
- 2-bit 2-to-1 multiplexer                              : 1
- 32-bit 2-to-1 multiplexer                             : 3
- 8-bit 3-to-1 multiplexer                              : 1
-# FSMs                                                 : 1
+ 32-bit 2-to-1 multiplexer                             : 4
+ 8-bit 2-to-1 multiplexer                              : 23
+# FSMs                                                 : 2
 
 =========================================================================
 
@@ -209,17 +480,62 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1293 - FF/Latch <LE_s_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <LE_s_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <LE_s_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FC_s_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FC_s_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_10_0 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_12_0 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_12_4 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_13_0 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_13_5 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_29_5 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_30_0 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_32_1 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_32_4 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_33_1 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_33_4 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_34_3 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_34_4 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_35_3 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_35_4 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_7_1 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_7_3 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_7_5 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_7_6 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_8_0 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_9_6 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <RAMin_0_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_0_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SA_s_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SA_s_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SA_s_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SA_s_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SA_s_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SA_s_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DA_s_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DA_s_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DA_s_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DA_s_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DA_s_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DA_s_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DA_s_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_s_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_s_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_s_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
@@ -227,18 +543,113 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_s_4> has a con
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_s_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_s_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_s_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SA_s_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SA_s_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SA_s_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SA_s_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SA_s_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SA_s_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PDU_count_s_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PDU_count_s_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PDU_count_s_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PDU_count_s_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PDU_count_s_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PDU_count_s_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_34_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_34_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_34_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_34_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_34_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_34_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_6_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_6_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_6_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_6_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_6_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_6_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_4_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_4_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_4_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_4_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_4_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_4_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_3_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_3_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_3_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_2_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_2_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_2_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_2_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_1_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_1_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_1_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <LE_s_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <LE_s_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <LE_s_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_13_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_10_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_10_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_10_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_10_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_10_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_10_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_10_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_8_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_8_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_8_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_8_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_8_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_8_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_8_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_7_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_7_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_7_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_7_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_9_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_9_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_9_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_9_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_9_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_9_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_9_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_32_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_32_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_32_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_32_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_32_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_32_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_30_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_30_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_30_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_30_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_30_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_30_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_30_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_29_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_29_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_29_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_29_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_29_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_29_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_29_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_13_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_13_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_13_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_13_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_13_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <Profibus_Handler>.
 The following registers are absorbed into counter <RAM_in_p.counter>: 1 register on signal <RAM_in_p.counter>.
@@ -251,40 +662,79 @@ Macro Statistics
 # Adders/Subtractors                                   : 1
  32-bit adder                                          : 1
 # Counters                                             : 1
- 2-bit up counter                                      : 1
-# Registers                                            : 187
- Flip-Flops                                            : 187
+ 8-bit up counter                                      : 1
+# Registers                                            : 323
+ Flip-Flops                                            : 323
 # Comparators                                          : 2
- 2-bit comparator greater                              : 1
  32-bit comparator greater                             : 1
-# Multiplexers                                         : 5
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 27
  1-bit 2-to-1 multiplexer                              : 1
- 32-bit 2-to-1 multiplexer                             : 3
- 8-bit 3-to-1 multiplexer                              : 1
-# FSMs                                                 : 1
+ 32-bit 2-to-1 multiplexer                             : 4
+ 8-bit 2-to-1 multiplexer                              : 22
+# FSMs                                                 : 2
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1293 - FF/Latch <LE_s_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <LE_s_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <LE_s_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FC_s_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FC_s_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_10_0 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_12_0 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_12_4 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_13_0 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_13_5 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_29_5 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_30_0 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_32_1 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_32_4 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_33_1 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_33_4 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_34_3 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_34_4 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_35_3 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_35_4 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_7_1 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_7_3 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_7_5 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_7_6 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_8_0 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_9_6 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <RAMin_0_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_0_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SA_s_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SA_s_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SA_s_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SA_s_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SA_s_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SA_s_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SA_s_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DA_s_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DA_s_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DA_s_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DA_s_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DA_s_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DA_s_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DA_s_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_s_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_s_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_s_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
@@ -292,39 +742,168 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_s_4> has a con
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_s_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_s_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_s_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PDU_count_s_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PDU_count_s_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PDU_count_s_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PDU_count_s_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PDU_count_s_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PDU_count_s_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_34_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_34_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_34_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_34_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_34_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_34_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_6_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_6_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_6_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_6_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_6_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_6_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_4_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_4_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_4_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_4_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_4_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_4_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_3_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_3_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_3_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_2_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_2_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_2_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_2_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_1_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_1_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_1_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <LE_s_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <LE_s_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <LE_s_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_13_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_10_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_10_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_10_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_10_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_10_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_10_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_10_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_8_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_8_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_8_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_8_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_8_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_8_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_8_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_7_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_7_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_7_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_7_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_9_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_9_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_9_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_9_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_9_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_9_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_9_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_32_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_32_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_32_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_32_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_32_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_32_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_30_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_30_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_30_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_30_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_30_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_30_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_30_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_29_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_29_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_29_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_29_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_29_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_29_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_29_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_13_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_13_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_13_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_13_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_13_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <RAMin_9_6> in Unit <Profibus_Handler> is equivalent to the following 20 FFs/Latches, which will be removed : <RAMin_7_1> <RAMin_7_3> <RAMin_7_5> <RAMin_7_6> <RAMin_8_0> <RAMin_10_0> <RAMin_12_0> <RAMin_12_4> <RAMin_13_0> <RAMin_13_5> <RAMin_29_5> <RAMin_30_0> <RAMin_32_1> <RAMin_32_4> <RAMin_35_3> <RAMin_35_4> <RAMin_33_1> <RAMin_33_4> <RAMin_34_3> <RAMin_34_4> 
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <FSM_0> on signal <state[1:5]> with user encoding.
+Optimizing FSM <FSM_0> on signal <state[1:4]> with sequential encoding.
 ----------------------
  State    | Encoding
 ----------------------
- idle     | 00000
- is_0     | 00001
- is_1     | 00010
- is_2     | 00011
- diag_0   | 00100
- diag_1   | 00101
- diag     | 00110
- param_0  | 00111
- param_1  | 01000
- param    | 01001
- conf_0   | 01010
- conf_1   | 01011
- conf     | 01100
- dxchgs_0 | 01101
- dxchgs_1 | 01110
- dxchgs   | 01111
- dxchgr_0 | 10000
- dxchgr   | 10001
+ idle     | 0000
+ is_0     | 0001
+ is_1     | 0010
+ is_2     | 0011
+ diag_0   | 0100
+ diag_1   | 0101
+ diag     | 0110
+ param_0  | 0111
+ param_1  | 1000
+ param    | 1001
+ conf_0   | 1010
+ conf_1   | 1011
+ conf     | unreached
+ dxchgs_0 | unreached
+ dxchgs_1 | unreached
+ dxchgs   | unreached
+ dxchgr_0 | unreached
+ dxchgr   | unreached
 ----------------------
-WARNING:Xst:1426 - The value init of the FF/Latch DA_s_1 hinder the constant cleaning in the block Profibus_Handler.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_1> on signal <statereq[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+WARNING:Xst:1426 - The value init of the FF/Latch DA_s_0 hinder the constant cleaning in the block Profibus_Handler.
    You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch SA_s_0 hinder the constant cleaning in the block Profibus_Handler.
+WARNING:Xst:1426 - The value init of the FF/Latch SA_s_1 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_0_2 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_0_3 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_0_4 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_0_5 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_1_1 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_1_2 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_1_3 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_1_4 hinder the constant cleaning in the block Profibus_Handler.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_1_5 hinder the constant cleaning in the block Profibus_Handler.
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1426 - The value init of the FF/Latch FC_s_6 hinder the constant cleaning in the block Profibus_Handler.
    You should achieve better results by setting this init to 1.
@@ -332,13 +911,18 @@ WARNING:Xst:1426 - The value init of the FF/Latch FC_s_3 hinder the constant cle
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1426 - The value init of the FF/Latch FC_s_0 hinder the constant cleaning in the block Profibus_Handler.
    You should achieve better results by setting this init to 1.
-INFO:Xst:2261 - The FF/Latch <type_s_0> in Unit <Profibus_Handler> is equivalent to the following 3 FFs/Latches, which will be removed : <DA_s_7> <SA_s_7> <FC_s_2> 
+WARNING:Xst:1293 - FF/Latch <FC_s_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FC_s_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <LE_s_0> in Unit <Profibus_Handler> is equivalent to the following FF/Latch, which will be removed : <LE_s_2> 
-INFO:Xst:2261 - The FF/Latch <DA_s_1> in Unit <Profibus_Handler> is equivalent to the following 4 FFs/Latches, which will be removed : <SA_s_0> <FC_s_0> <FC_s_3> <FC_s_6> 
+INFO:Xst:2261 - The FF/Latch <RAMin_2_3> in Unit <Profibus_Handler> is equivalent to the following 9 FFs/Latches, which will be removed : <RAMin_2_4> <RAMin_2_5> <RAMin_2_7> <RAMin_3_1> <RAMin_3_2> <RAMin_3_3> <RAMin_3_4> <RAMin_4_0> <RAMin_6_7> 
+INFO:Xst:2261 - The FF/Latch <RAMin_3_5> in Unit <Profibus_Handler> is equivalent to the following 3 FFs/Latches, which will be removed : <RAMin_4_5> <RAMin_5_4> <RAMin_6_4> 
+INFO:Xst:2261 - The FF/Latch <RAMin_0_2> in Unit <Profibus_Handler> is equivalent to the following 8 FFs/Latches, which will be removed : <RAMin_0_3> <RAMin_0_4> <RAMin_0_5> <RAMin_1_1> <RAMin_1_2> <RAMin_1_3> <RAMin_1_4> <RAMin_1_5> 
+INFO:Xst:2261 - The FF/Latch <type_s_0> in Unit <Profibus_Handler> is equivalent to the following 2 FFs/Latches, which will be removed : <DA_s_7> <SA_s_7> 
+INFO:Xst:2261 - The FF/Latch <DA_s_0> in Unit <Profibus_Handler> is equivalent to the following 4 FFs/Latches, which will be removed : <SA_s_1> <FC_s_0> <FC_s_3> <FC_s_6> 
 
 Optimizing unit <Profibus_Handler> ...
-WARNING:Xst:1293 - FF/Latch <PDU_count_s_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FSM_process.timer_23> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <type_s_0> in Unit <Profibus_Handler> is equivalent to the following FF/Latch, which will be removed : <FC_s_2> 
+WARNING:Xst:1293 - FF/Latch <FSM_process.timer_23> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FSM_process.timer_24> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FSM_process.timer_25> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FSM_process.timer_26> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
@@ -347,6 +931,8 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FSM_process.timer_2
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FSM_process.timer_29> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FSM_process.timer_30> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FSM_process.timer_31> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <RAMin_0_0> in Unit <Profibus_Handler> is equivalent to the following 2 FFs/Latches, which will be removed : <LE_s_5> <statereq_FSM_FFd1> 
+INFO:Xst:2261 - The FF/Latch <RAMin_0_1> in Unit <Profibus_Handler> is equivalent to the following FF/Latch, which will be removed : <LE_s_3> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -382,27 +968,27 @@ Top Level Output File Name         : Profibus_Handler.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 216
+# BELS                             : 258
 #      GND                         : 1
-#      INV                         : 3
+#      INV                         : 4
 #      LUT1                        : 23
 #      LUT2                        : 12
-#      LUT3                        : 21
-#      LUT4                        : 47
-#      LUT5                        : 16
-#      LUT6                        : 39
-#      MUXCY                       : 29
-#      MUXF7                       : 1
+#      LUT3                        : 24
+#      LUT4                        : 37
+#      LUT5                        : 21
+#      LUT6                        : 51
+#      MUXCY                       : 53
 #      VCC                         : 1
-#      XORCY                       : 23
+#      XORCY                       : 31
 # FlipFlops/Latches                : 146
-#      FDC                         : 47
+#      FD                          : 2
+#      FDC                         : 36
 #      FDCE                        : 64
-#      FDE                         : 35
+#      FDE                         : 44
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 150
-#      IBUF                        : 76
+# IO Buffers                       : 134
+#      IBUF                        : 60
 #      OBUF                        : 74
 
 Device utilization summary:
@@ -413,19 +999,19 @@ Selected Device : 6slx45csg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:             146  out of  54576     0%  
- Number of Slice LUTs:                  161  out of  27288     0%  
-    Number used as Logic:               161  out of  27288     0%  
+ Number of Slice LUTs:                  172  out of  27288     0%  
+    Number used as Logic:               172  out of  27288     0%  
 
 Slice Logic Distribution: 
  Number of LUT Flip Flop pairs used:    249
    Number with an unused Flip Flop:     103  out of    249    41%  
-   Number with an unused LUT:            88  out of    249    35%  
-   Number of fully used LUT-FF pairs:    58  out of    249    23%  
-   Number of unique control sets:        14
+   Number with an unused LUT:            77  out of    249    30%  
+   Number of fully used LUT-FF pairs:    69  out of    249    27%  
+   Number of unique control sets:        16
 
 IO Utilization: 
  Number of IOs:                         159
- Number of bonded IOBs:                 151  out of    218    69%  
+ Number of bonded IOBs:                 135  out of    218    61%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -462,8 +1048,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 5.286ns (Maximum Frequency: 189.166MHz)
-   Minimum input arrival time before clock: 7.005ns
+   Minimum period: 5.061ns (Maximum Frequency: 197.605MHz)
+   Minimum input arrival time before clock: 8.100ns
    Maximum output required time after clock: 3.732ns
    Maximum combinational path delay: No path found
 
@@ -473,70 +1059,71 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 5.286ns (frequency: 189.166MHz)
-  Total number of paths / destination ports: 2171 / 82
+  Clock period: 5.061ns (frequency: 197.605MHz)
+  Total number of paths / destination ports: 2588 / 106
 -------------------------------------------------------------------------
-Delay:               5.286ns (Levels of Logic = 5)
-  Source:            RAMout_3_7 (FF)
-  Destination:       state_FSM_FFd3 (FF)
+Delay:               5.061ns (Levels of Logic = 5)
+  Source:            RAM_in_p.counter_4 (FF)
+  Destination:       PDU_s_1 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: RAMout_3_7 to state_FSM_FFd3
+  Data Path: RAM_in_p.counter_4 to PDU_s_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             1   0.447   0.808  RAMout_3_7 (RAMout_3_7)
-     LUT3:I0->O            1   0.205   0.580  GND_4_o_RAMout[3][7]_equal_1111_o<7>_SW0 (N13)
-     LUT6:I5->O            2   0.205   0.961  GND_4_o_RAMout[3][7]_equal_1111_o<7> (GND_4_o_RAMout[3][7]_equal_1111_o)
-     LUT6:I1->O            4   0.203   0.684  state_FSM_FFd2-In33 (state_FSM_FFd2-In33)
-     LUT6:I5->O            1   0.205   0.684  state_FSM_FFd3-In5 (state_FSM_FFd3-In6)
-     LUT6:I4->O            1   0.203   0.000  state_FSM_FFd3-In6 (state_FSM_FFd3-In)
-     FDC:D                     0.102          state_FSM_FFd3
+     FDC:C->Q             17   0.447   1.132  RAM_in_p.counter_4 (RAM_in_p.counter_4)
+     LUT2:I0->O            1   0.203   0.580  RAM_in_p.counter[7]_RAMin[255][7]_wide_mux_1_OUT<1>2_SW1 (N21)
+     LUT6:I5->O            2   0.205   0.617  RAM_in_p.counter[7]_RAMin[255][7]_wide_mux_1_OUT<1>2 (RAM_in_p.counter[7]_RAMin[255][7]_wide_mux_1_OUT<1>_bdd1)
+     LUT6:I5->O            1   0.205   0.580  RAM_in_p.counter[7]_RAMin[255][7]_wide_mux_1_OUT<1>4 (RAM_in_p.counter[7]_RAMin[255][7]_wide_mux_1_OUT<1>3)
+     LUT6:I5->O            1   0.205   0.580  RAM_in_p.counter[7]_RAMin[255][7]_wide_mux_1_OUT<1>5 (RAM_in_p.counter[7]_RAMin[255][7]_wide_mux_1_OUT<1>)
+     LUT3:I2->O            1   0.205   0.000  PDU_s_1_dpot (PDU_s_1_dpot)
+     FDE:D                     0.102          PDU_s_1
     ----------------------------------------
-    Total                      5.286ns (1.570ns logic, 3.716ns route)
-                                       (29.7% logic, 70.3% route)
+    Total                      5.061ns (1.572ns logic, 3.489ns route)
+                                       (31.1% logic, 68.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 1126 / 319
+  Total number of paths / destination ports: 989 / 302
 -------------------------------------------------------------------------
-Offset:              7.005ns (Levels of Logic = 7)
-  Source:            SA_r<6> (PAD)
-  Destination:       state_FSM_FFd5 (FF)
+Offset:              8.100ns (Levels of Logic = 8)
+  Source:            FC_r<4> (PAD)
+  Destination:       state_FSM_FFd3 (FF)
   Destination Clock: clk rising
 
-  Data Path: SA_r<6> to state_FSM_FFd5
+  Data Path: FC_r<4> to state_FSM_FFd3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.924  SA_r_6_IBUF (SA_r_6_IBUF)
-     LUT5:I0->O            3   0.203   0.651  GND_4_o_SA_r[7]_equal_1047_o<7>11 (GND_4_o_SA_r[7]_equal_1047_o<7>1)
-     LUT4:I3->O            1   0.205   0.808  PWR_4_o_SA_r[7]_equal_1106_o<7>1 (PWR_4_o_SA_r[7]_equal_1106_o)
-     LUT4:I1->O            1   0.205   0.808  state_FSM_FFd5-In5 (state_FSM_FFd5-In8)
-     LUT6:I3->O            1   0.205   0.684  state_FSM_FFd5-In6 (state_FSM_FFd5-In9)
-     LUT5:I3->O            1   0.203   0.580  state_FSM_FFd5-In8 (state_FSM_FFd5-In11)
-     LUT6:I5->O            1   0.205   0.000  state_FSM_FFd5-In12 (state_FSM_FFd5-In)
-     FDC:D                     0.102          state_FSM_FFd5
+     IBUF:I->O             1   1.222   0.944  FC_r_4_IBUF (FC_r_4_IBUF)
+     LUT6:I0->O            1   0.203   0.944  state_FSM_FFd2-In291 (state_FSM_FFd2-In29)
+     LUT6:I0->O            1   0.203   0.580  state_FSM_FFd2-In295_SW0 (N27)
+     LUT6:I5->O            2   0.205   0.617  state_FSM_FFd2-In295 (state_FSM_FFd2-In_bdd54)
+     LUT4:I3->O            3   0.205   0.755  state_FSM_FFd3-In51 (state_FSM_FFd3-In_bdd8)
+     LUT6:I4->O            1   0.203   0.827  state_FSM_FFd3-In11_SW1 (N11)
+     LUT6:I2->O            1   0.203   0.684  state_FSM_FFd3-In12 (state_FSM_FFd3-In11)
+     LUT6:I4->O            1   0.203   0.000  state_FSM_FFd3-In14 (state_FSM_FFd3-In)
+     FDC:D                     0.102          state_FSM_FFd3
     ----------------------------------------
-    Total                      7.005ns (2.550ns logic, 4.455ns route)
-                                       (36.4% logic, 63.6% route)
+    Total                      8.100ns (2.749ns logic, 5.351ns route)
+                                       (33.9% logic, 66.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 42 / 42
+  Total number of paths / destination ports: 49 / 49
 -------------------------------------------------------------------------
 Offset:              3.732ns (Levels of Logic = 1)
-  Source:            DA_s_1 (FF)
-  Destination:       DA_s<1> (PAD)
+  Source:            DA_s_0 (FF)
+  Destination:       DA_s<0> (PAD)
   Source Clock:      clk rising
 
-  Data Path: DA_s_1 to DA_s<1>
+  Data Path: DA_s_0 to DA_s<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              5   0.447   0.714  DA_s_1 (DA_s_1)
-     OBUF:I->O                 2.571          DA_s_1_OBUF (DA_s<1>)
+     FDE:C->Q              5   0.447   0.714  DA_s_0 (DA_s_0)
+     OBUF:I->O                 2.571          DA_s_0_OBUF (DA_s<0>)
     ----------------------------------------
     Total                      3.732ns (3.018ns logic, 0.714ns route)
                                        (80.9% logic, 19.1% route)
@@ -551,20 +1138,20 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    5.286|         |         |         |
+clk            |    5.061|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.36 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.37 secs
  
 --> 
 
-Total memory usage is 4502000 kilobytes
+Total memory usage is 4502120 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   77 (   0 filtered)
-Number of infos    :    3 (   0 filtered)
+Number of warnings :  547 (   0 filtered)
+Number of infos    :   16 (   0 filtered)
 

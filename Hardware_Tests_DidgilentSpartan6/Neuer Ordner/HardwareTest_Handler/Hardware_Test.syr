@@ -3,13 +3,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.67 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.67 secs
  
 --> Reading design: Hardware_Test.prj
@@ -120,7 +120,7 @@ Parsing architecture <Behavioral> of entity <neg_flanke_puls>.
 Parsing VHDL file "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\Profibus_UART.vhd" into library work
 Parsing entity <Profibus_UART>.
 Parsing architecture <Behavioral> of entity <profibus_uart>.
-WARNING:HDLCompiler:946 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\Profibus_UART.vhd" Line 128: Actual for formal port reset_n is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\Profibus_UART.vhd" Line 129: Actual for formal port reset_n is neither a static name nor a globally static expression
 Parsing VHDL file "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\Profibus_Transmitter.vhd" into library work
 Parsing entity <Profibus_Transmitter>.
 Parsing architecture <Behavioral> of entity <profibus_transmitter>.
@@ -145,10 +145,10 @@ Parsing architecture <Behavioral> of entity <hardware_test>.
 =========================================================================
 
 Elaborating entity <Hardware_Test> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:871 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\Hardware_Test.vhd" Line 118: Using initial value "0000000000000000" for input_bus since it is never assigned
-WARNING:HDLCompiler:871 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\Hardware_Test.vhd" Line 144: Using initial value '0' for send_s since it is never assigned
+WARNING:HDLCompiler:871 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\Hardware_Test.vhd" Line 145: Using initial value '0' for send_s since it is never assigned
 
 Elaborating entity <Profibus_Handler> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:871 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\Profibus_Handler.vhd" Line 117: Using initial value '0' for timeout since it is never assigned
 WARNING:HDLCompiler:634 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\Profibus_Handler.vhd" Line 69: Net <RAMin[36][7]> does not have a driver.
 
 Elaborating entity <Profibus_Unit> (architecture <Behavioral>) from library <work>.
@@ -165,13 +165,15 @@ Elaborating entity <neg_flanke_puls> (architecture <Behavioral>) from library <w
 INFO:HDLCompiler:679 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\neg_flanke_puls.vhd" Line 55. Case statement is complete. others clause is never selected
 
 Elaborating entity <Read_Write> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\Read_Write.vhd" Line 60. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\Read_Write.vhd" Line 73. Case statement is complete. others clause is never selected
 
 Elaborating entity <uart> (architecture <logic>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\uart.vhd" Line 68: tx_state should be on the sensitivity list of the process
 WARNING:HDLCompiler:92 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\uart.vhd" Line 106: os_pulse should be on the sensitivity list of the process
 
 Elaborating entity <UART_TX_CTRL> (architecture <Behavioral>) from library <work>.
 INFO:HDLCompiler:679 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\UART_TX_CTRL.vhd" Line 97. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:634 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\Hardware_Test.vhd" Line 119: Net <input_bus[15]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -180,8 +182,10 @@ INFO:HDLCompiler:679 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardw
 Synthesizing Unit <Hardware_Test>.
     Related source file is "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\Hardware_Test.vhd".
 WARNING:Xst:647 - Input <in_B> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\Hardware_Test.vhd" line 180: Output port <Read_en> of the instance <Inst_Profibus_Unit> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\Hardware_Test.vhd" line 207: Output port <READY> of the instance <Inst_UART_TX_CTRL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\Hardware_Test.vhd" line 189: Output port <Read_en> of the instance <Inst_Profibus_Unit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\Hardware_Test.vhd" line 216: Output port <READY> of the instance <Inst_UART_TX_CTRL> is unconnected or connected to loadless signal.
+WARNING:Xst:2935 - Signal 'input_bus<15:12>', unconnected in block 'Hardware_Test', is tied to its initial value (0000).
+WARNING:Xst:2935 - Signal 'input_bus<7:4>', unconnected in block 'Hardware_Test', is tied to its initial value (0000).
 WARNING:Xst:2935 - Signal 'read_en', unconnected in block 'Hardware_Test', is tied to its initial value (1).
 WARNING:Xst:2935 - Signal 'test', unconnected in block 'Hardware_Test', is tied to its initial value (1).
     Summary:
@@ -196,7 +200,6 @@ Synthesizing Unit <Profibus_Handler>.
         slave_adress = "00000001"
         slave_PDU_size_in = 16
         slave_PDU_size_out = 16
-WARNING:Xst:647 - Input <input_bus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <FCS_r> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:2935 - Signal 'RAMin<36>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
 WARNING:Xst:2935 - Signal 'RAMin<37>', unconnected in block 'Profibus_Handler', is tied to its initial value (00000000).
@@ -429,12 +432,10 @@ WARNING:Xst:2935 - Signal 'PDU_RAM_en_s', unconnected in block 'Profibus_Handler
     Found 8-bit register for signal <RAMout<7>>.
     Found 8-bit register for signal <RAM_in_p.counter>.
     Found 5-bit register for signal <state>.
-    Found 32-bit register for signal <FSM_process.timer>.
     Found 1-bit register for signal <detect_old>.
     Found 8-bit register for signal <PDU_s>.
     Found 8-bit register for signal <PDU_count_s>.
     Found 16-bit register for signal <output_bus>.
-    Found 1-bit register for signal <FSM_process.timeout>.
     Found 8-bit register for signal <type_s>.
     Found 8-bit register for signal <DA_s>.
     Found 8-bit register for signal <SA_s>.
@@ -481,9 +482,9 @@ WARNING:Xst:2935 - Signal 'PDU_RAM_en_s', unconnected in block 'Profibus_Handler
     Found finite state machine <FSM_0> for signal <state>.
     -----------------------------------------------------------------------
     | States             | 18                                             |
-    | Transitions        | 85                                             |
-    | Inputs             | 23                                             |
-    | Outputs            | 52                                             |
+    | Transitions        | 70                                             |
+    | Inputs             | 21                                             |
+    | Outputs            | 41                                             |
     | Clock              | clk (rising_edge)                              |
     | Reset              | reset (positive)                               |
     | Reset type         | asynchronous                                   |
@@ -495,7 +496,7 @@ WARNING:Xst:2935 - Signal 'PDU_RAM_en_s', unconnected in block 'Profibus_Handler
     Found finite state machine <FSM_1> for signal <statereq>.
     -----------------------------------------------------------------------
     | States             | 3                                              |
-    | Transitions        | 32                                             |
+    | Transitions        | 34                                             |
     | Inputs             | 6                                              |
     | Outputs            | 6                                              |
     | Clock              | clk (rising_edge)                              |
@@ -503,15 +504,13 @@ WARNING:Xst:2935 - Signal 'PDU_RAM_en_s', unconnected in block 'Profibus_Handler
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 8-bit adder for signal <RAM_in_p.counter[7]_GND_5_o_add_2_OUT> created at line 90.
-    Found 32-bit adder for signal <FSM_process.timer[31]_GND_5_o_add_783_OUT> created at line 128.
-    Found 8-bit comparator greater for signal <RAM_in_p.counter[7]_PWR_5_o_LessThan_1_o> created at line 87
-    Found 32-bit comparator greater for signal <FSM_process.timer[31]_GND_5_o_LessThan_783_o> created at line 125
+    Found 8-bit adder for signal <RAM_in_p.counter[7]_GND_5_o_add_2_OUT> created at line 91.
+    Found 8-bit comparator greater for signal <RAM_in_p.counter[7]_PWR_5_o_LessThan_1_o> created at line 88
     Summary:
-	inferred   2 Adder/Subtractor(s).
-	inferred 331 D-type flip-flop(s).
-	inferred   2 Comparator(s).
-	inferred  45 Multiplexer(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred 298 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  28 Multiplexer(s).
 	inferred   2 Finite State Machine(s).
 Unit <Profibus_Handler> synthesized.
 
@@ -553,14 +552,14 @@ Synthesizing Unit <Profibus_Recieve>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 32-bit adder for signal <timer[31]_GND_24_o_add_0_OUT> created at line 1241.
-    Found 8-bit adder for signal <counter[7]_GND_24_o_add_51_OUT> created at line 1241.
+    Found 32-bit adder for signal <timer[31]_GND_8_o_add_0_OUT> created at line 1241.
+    Found 8-bit adder for signal <counter[7]_GND_8_o_add_51_OUT> created at line 1241.
     Found 8-bit adder for signal <fcs[7]_datain[7]_add_53_OUT> created at line 238.
-    Found 8-bit subtractor for signal <GND_24_o_GND_24_o_sub_34_OUT<7:0>> created at line 1308.
+    Found 8-bit subtractor for signal <GND_8_o_GND_8_o_sub_34_OUT<7:0>> created at line 1308.
     Found 32-bit comparator greater for signal <n0001> created at line 75
     Found 8-bit comparator equal for signal <le_s[7]_datain[7]_equal_24_o> created at line 149
-    Found 8-bit comparator greater for signal <counter[7]_GND_24_o_LessThan_35_o> created at line 190
-    Found 8-bit comparator greater for signal <counter[7]_GND_24_o_LessThan_53_o> created at line 237
+    Found 8-bit comparator greater for signal <counter[7]_GND_8_o_LessThan_35_o> created at line 190
+    Found 8-bit comparator greater for signal <counter[7]_GND_8_o_LessThan_53_o> created at line 237
     Found 8-bit comparator equal for signal <fcs[7]_datain[7]_equal_55_o> created at line 241
     Summary:
 	inferred   4 Adder/Subtractor(s).
@@ -855,20 +854,20 @@ Synthesizing Unit <Profibus_Transmitter>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 32-bit adder for signal <countold[31]_GND_26_o_add_0_OUT> created at line 81.
-    Found 32-bit adder for signal <sync_counter[31]_GND_26_o_add_5_OUT> created at line 108.
+    Found 32-bit adder for signal <countold[31]_GND_10_o_add_0_OUT> created at line 81.
+    Found 32-bit adder for signal <sync_counter[31]_GND_10_o_add_5_OUT> created at line 108.
     Found 8-bit adder for signal <fcs[7]_DA[7]_add_83_OUT> created at line 260.
     Found 8-bit adder for signal <fcs[7]_SA[7]_add_87_OUT> created at line 270.
     Found 8-bit adder for signal <fcs[7]_FC[7]_add_91_OUT> created at line 279.
-    Found 8-bit adder for signal <counter[7]_GND_26_o_add_103_OUT> created at line 1241.
+    Found 8-bit adder for signal <counter[7]_GND_10_o_add_103_OUT> created at line 1241.
     Found 8-bit adder for signal <fcs[7]_counter[7]_add_106_OUT> created at line 300.
-    Found 8-bit subtractor for signal <GND_26_o_GND_26_o_sub_69_OUT<7:0>> created at line 1308.
+    Found 8-bit subtractor for signal <GND_10_o_GND_10_o_sub_69_OUT<7:0>> created at line 1308.
 INFO:Xst:3019 - HDL ADVISOR - 2048 flip-flops were inferred for signal <RAM1>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
     Found 8-bit 256-to-1 multiplexer for signal <n2035> created at line 301.
-    Found 32-bit comparator greater for signal <countold[31]_GND_26_o_LessThan_3_o> created at line 99
+    Found 32-bit comparator greater for signal <countold[31]_GND_10_o_LessThan_3_o> created at line 99
     Found 32-bit comparator greater for signal <n0015> created at line 109
-    Found 8-bit comparator greater for signal <counter[7]_GND_26_o_LessThan_70_o> created at line 239
-    Found 8-bit comparator greater for signal <counter[7]_GND_26_o_LessThan_105_o> created at line 298
+    Found 8-bit comparator greater for signal <counter[7]_GND_10_o_LessThan_70_o> created at line 239
+    Found 8-bit comparator greater for signal <counter[7]_GND_10_o_LessThan_105_o> created at line 298
     Summary:
 	inferred   8 Adder/Subtractor(s).
 	inferred 2149 D-type flip-flop(s).
@@ -879,7 +878,7 @@ Unit <Profibus_Transmitter> synthesized.
 
 Synthesizing Unit <Profibus_UART>.
     Related source file is "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\Profibus_UART.vhd".
-INFO:Xst:3210 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\Profibus_UART.vhd" line 119: Output port <rx_error> of the instance <Inst_uart> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\Profibus_UART.vhd" line 120: Output port <rx_error> of the instance <Inst_uart> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <TX>.
     Found 1-bit register for signal <rx_s>.
     Summary:
@@ -899,11 +898,32 @@ Unit <neg_flanke_puls> synthesized.
 Synthesizing Unit <Read_Write>.
     Related source file is "C:\UserData\z003xazw\Documents\GitHub\ProfibusVhdl\Hardware_Tests_DidgilentSpartan6\Neuer Ordner\HardwareTest_Handler\Read_Write.vhd".
     Found 1-bit register for signal <Read_en>.
+    Found 2-bit register for signal <state>.
+    Found 32-bit register for signal <counter>.
     Found 1-bit register for signal <tx_busy_old>.
-    Found 1-bit register for signal <state>.
     Found 1-bit register for signal <Write_en>.
+    Found finite state machine <FSM_4> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 5                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | read_t                                         |
+    | Power Up State     | read_t                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <counter[31]_GND_14_o_add_2_OUT> created at line 66.
+    Found 32-bit comparator greater for signal <n0009> created at line 67
     Summary:
-	inferred   4 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  35 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
 Unit <Read_Write> synthesized.
 
 Synthesizing Unit <uart>.
@@ -914,38 +934,38 @@ Synthesizing Unit <uart>.
         d_width = 8
         parity = 1
         parity_eo = '0'
-    Found 13-bit register for signal <count_baud>.
-    Found 9-bit register for signal <count_os>.
     Found 4-bit register for signal <os_count>.
     Found 4-bit register for signal <rx_count>.
     Found 4-bit register for signal <tx_count>.
     Found 8-bit register for signal <rx_data>.
-    Found 1-bit register for signal <os_pulse>.
     Found 1-bit register for signal <rx_busy>.
     Found 1-bit register for signal <rx_error>.
     Found 1-bit register for signal <rx_state>.
     Found 1-bit register for signal <tx_state>.
-    Found 1-bit register for signal <baud_pulse>.
     Found 1-bit register for signal <tx_busy>.
     Found 1-bit register for signal <tx>.
+    Found 1-bit register for signal <os_pulse>.
+    Found 13-bit register for signal <count_baud>.
+    Found 9-bit register for signal <count_os>.
     Found 10-bit register for signal <rx_buffer>.
     Found 11-bit register for signal <tx_buffer>.
-    Found 13-bit adder for signal <count_baud[12]_GND_32_o_add_1_OUT> created at line 76.
-    Found 9-bit adder for signal <GND_32_o_GND_32_o_add_5_OUT> created at line 85.
-    Found 4-bit adder for signal <os_count[3]_GND_32_o_add_18_OUT> created at line 127.
-    Found 4-bit adder for signal <rx_count[3]_GND_32_o_add_20_OUT> created at line 131.
-    Found 4-bit adder for signal <tx_count[3]_GND_32_o_add_46_OUT> created at line 179.
+    Found 1-bit register for signal <baud_pulse>.
+    Found 13-bit adder for signal <count_baud[12]_GND_16_o_add_1_OUT> created at line 76.
+    Found 9-bit adder for signal <GND_16_o_GND_16_o_add_5_OUT> created at line 85.
+    Found 4-bit adder for signal <os_count[3]_GND_16_o_add_18_OUT> created at line 127.
+    Found 4-bit adder for signal <rx_count[3]_GND_16_o_add_20_OUT> created at line 131.
+    Found 4-bit adder for signal <tx_count[3]_GND_16_o_add_46_OUT> created at line 179.
     Found 13-bit comparator greater for signal <count_baud[12]_PWR_15_o_LessThan_1_o> created at line 75
-    Found 9-bit comparator greater for signal <GND_32_o_PWR_15_o_LessThan_5_o> created at line 84
+    Found 9-bit comparator greater for signal <GND_16_o_PWR_15_o_LessThan_5_o> created at line 84
     Found 4-bit comparator greater for signal <os_count[3]_PWR_15_o_LessThan_10_o> created at line 111
     Found 4-bit comparator greater for signal <os_count[3]_PWR_15_o_LessThan_18_o> created at line 126
     Found 4-bit comparator greater for signal <rx_count[3]_PWR_15_o_LessThan_20_o> created at line 129
-    Found 4-bit comparator greater for signal <tx_count[3]_PWR_15_o_LessThan_50_o> created at line 182
+    Found 4-bit comparator greater for signal <tx_count[3]_PWR_15_o_LessThan_50_o> created at line 183
     Summary:
 	inferred   5 Adder/Subtractor(s).
 	inferred  71 D-type flip-flop(s).
 	inferred   6 Comparator(s).
-	inferred  17 Multiplexer(s).
+	inferred  18 Multiplexer(s).
 Unit <uart> synthesized.
 
 Synthesizing Unit <UART_TX_CTRL>.
@@ -956,7 +976,7 @@ Synthesizing Unit <UART_TX_CTRL>.
     Found 2-bit register for signal <txState>.
 INFO:Xst:1799 - State load_bit is never reached in FSM <txState>.
 INFO:Xst:1799 - State send_bit is never reached in FSM <txState>.
-    Found finite state machine <FSM_4> for signal <txState>.
+    Found finite state machine <FSM_5> for signal <txState>.
     -----------------------------------------------------------------------
     | States             | 3                                              |
     | Transitions        | 1                                              |
@@ -967,7 +987,7 @@ INFO:Xst:1799 - State send_bit is never reached in FSM <txState>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 14-bit adder for signal <bitTmr[13]_GND_36_o_add_7_OUT> created at line 112.
+    Found 14-bit adder for signal <bitTmr[13]_GND_20_o_add_7_OUT> created at line 112.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  15 D-type flip-flop(s).
@@ -987,8 +1007,8 @@ Macro Statistics
  8-bit adder                                           : 8
  8-bit subtractor                                      : 2
  9-bit adder                                           : 1
-# Registers                                            : 349
- 1-bit register                                        : 29
+# Registers                                            : 347
+ 1-bit register                                        : 27
  10-bit register                                       : 1
  11-bit register                                       : 1
  13-bit register                                       : 1
@@ -1005,18 +1025,18 @@ Macro Statistics
  8-bit comparator equal                                : 2
  8-bit comparator greater                              : 5
  9-bit comparator greater                              : 1
-# Multiplexers                                         : 164
+# Multiplexers                                         : 151
  1-bit 2-to-1 multiplexer                              : 32
  10-bit 2-to-1 multiplexer                             : 1
  11-bit 2-to-1 multiplexer                             : 1
  13-bit 2-to-1 multiplexer                             : 1
  14-bit 2-to-1 multiplexer                             : 1
- 32-bit 2-to-1 multiplexer                             : 7
+ 32-bit 2-to-1 multiplexer                             : 6
  4-bit 2-to-1 multiplexer                              : 7
- 8-bit 2-to-1 multiplexer                              : 111
+ 8-bit 2-to-1 multiplexer                              : 99
  8-bit 256-to-1 multiplexer                            : 1
  9-bit 2-to-1 multiplexer                              : 2
-# FSMs                                                 : 5
+# FSMs                                                 : 6
 # Xors                                                 : 2
  1-bit xor10                                           : 1
  1-bit xor9                                            : 1
@@ -1027,12 +1047,12 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-INFO:Xst:2261 - The FF/Latch <LE_s_4> in Unit <uut> is equivalent to the following 2 FFs/Latches, which will be removed : <LE_s_6> <LE_s_7> 
 INFO:Xst:2261 - The FF/Latch <type_s_1> in Unit <uut> is equivalent to the following 18 FFs/Latches, which will be removed : <type_s_2> <type_s_3> <type_s_4> <type_s_5> <type_s_6> <type_s_7> <DA_s_1> <DA_s_2> <DA_s_3> <DA_s_4> <DA_s_5> <DA_s_6> <SA_s_0> <SA_s_2> <SA_s_3> <SA_s_4> <SA_s_5> <SA_s_6> 
-INFO:Xst:2261 - The FF/Latch <RAMin_2_0> in Unit <uut> is equivalent to the following 25 FFs/Latches, which will be removed : <RAMin_2_1> <RAMin_2_2> <RAMin_2_6> <RAMin_5_0> <RAMin_5_1> <RAMin_5_2> <RAMin_5_3> <RAMin_5_5> <RAMin_5_6> <RAMin_5_7> <RAMin_3_0> <RAMin_3_6> <RAMin_3_7> <RAMin_4_1> <RAMin_4_2> <RAMin_4_3> <RAMin_4_4> <RAMin_4_6> <RAMin_4_7> <RAMin_6_0> <RAMin_6_1> <RAMin_6_2> <RAMin_6_3> <RAMin_6_5> <RAMin_6_6> 
-INFO:Xst:2261 - The FF/Latch <RAMin_8_1> in Unit <uut> is equivalent to the following 74 FFs/Latches, which will be removed : <RAMin_8_2> <RAMin_8_3> <RAMin_8_4> <RAMin_8_5> <RAMin_8_6> <RAMin_8_7> <RAMin_7_0> <RAMin_7_2> <RAMin_7_4> <RAMin_7_7> <RAMin_12_1> <RAMin_12_2> <RAMin_12_3> <RAMin_12_5> <RAMin_12_6> <RAMin_12_7> <RAMin_9_0> <RAMin_9_1> <RAMin_9_2> <RAMin_9_3> <RAMin_9_4> <RAMin_9_5> <RAMin_9_7> <RAMin_10_1> <RAMin_10_2> <RAMin_10_3> <RAMin_10_4> <RAMin_10_5> <RAMin_10_6> <RAMin_10_7> <RAMin_13_1> <RAMin_13_2> <RAMin_13_3> <RAMin_13_4> <RAMin_13_6> <RAMin_13_7> <RAMin_29_0> <RAMin_29_1> <RAMin_29_2> <RAMin_29_3> <RAMin_29_4> <RAMin_29_6> <RAMin_29_7> <RAMin_33_0> <RAMin_33_2> <RAMin_33_3> <RAMin_33_5> <RAMin_33_6> <RAMin_33_7> <RAMin_30_1> <RAMin_30_2> <RAMin_30_3> <RAMin_30_4> <RAMin_30_5> <RAMin_30_6> <RAMin_30_7> <RAMin_32_0> <RAMin_32_2> <RAMin_32_3> <RAMin_32_5> <RAMin_32_6> <RAMin_32_7> <RAMin_34_0> <RAMin_34_1> <RAMin_34_2> <RAMin_34_5> <RAMin_34_6> <RAMin_34_7> <RAMin_35_0> <RAMin_35_1>
+INFO:Xst:2261 - The FF/Latch <LE_s_4> in Unit <uut> is equivalent to the following 2 FFs/Latches, which will be removed : <LE_s_6> <LE_s_7> 
+INFO:Xst:2261 - The FF/Latch <RAMin_7_0> in Unit <uut> is equivalent to the following 74 FFs/Latches, which will be removed : <RAMin_7_2> <RAMin_7_4> <RAMin_7_7> <RAMin_8_1> <RAMin_8_2> <RAMin_8_3> <RAMin_8_4> <RAMin_8_5> <RAMin_8_6> <RAMin_8_7> <RAMin_9_0> <RAMin_9_1> <RAMin_9_2> <RAMin_9_3> <RAMin_9_4> <RAMin_9_5> <RAMin_9_7> <RAMin_10_1> <RAMin_10_2> <RAMin_10_3> <RAMin_10_4> <RAMin_10_5> <RAMin_10_6> <RAMin_10_7> <RAMin_12_1> <RAMin_12_2> <RAMin_12_3> <RAMin_12_5> <RAMin_12_6> <RAMin_12_7> <RAMin_13_1> <RAMin_13_2> <RAMin_13_3> <RAMin_13_4> <RAMin_13_6> <RAMin_13_7> <RAMin_29_0> <RAMin_29_1> <RAMin_29_2> <RAMin_29_3> <RAMin_29_4> <RAMin_29_6> <RAMin_29_7> <RAMin_30_1> <RAMin_30_2> <RAMin_30_3> <RAMin_30_4> <RAMin_30_5> <RAMin_30_6> <RAMin_30_7> <RAMin_32_0> <RAMin_32_2> <RAMin_32_3> <RAMin_32_5> <RAMin_32_6> <RAMin_32_7> <RAMin_33_0> <RAMin_33_2> <RAMin_33_3> <RAMin_33_5> <RAMin_33_6> <RAMin_33_7> <RAMin_34_0> <RAMin_34_1> <RAMin_34_2> <RAMin_34_5> <RAMin_34_6> <RAMin_34_7> <RAMin_35_0> <RAMin_35_1>
    <RAMin_35_2> <RAMin_35_5> <RAMin_35_6> <RAMin_35_7> 
-INFO:Xst:2261 - The FF/Latch <RAMin_8_0> in Unit <uut> is equivalent to the following 20 FFs/Latches, which will be removed : <RAMin_7_1> <RAMin_7_3> <RAMin_7_5> <RAMin_7_6> <RAMin_12_0> <RAMin_12_4> <RAMin_9_6> <RAMin_10_0> <RAMin_13_0> <RAMin_13_5> <RAMin_29_5> <RAMin_33_1> <RAMin_33_4> <RAMin_30_0> <RAMin_32_1> <RAMin_32_4> <RAMin_34_3> <RAMin_34_4> <RAMin_35_3> <RAMin_35_4> 
+INFO:Xst:2261 - The FF/Latch <RAMin_2_0> in Unit <uut> is equivalent to the following 25 FFs/Latches, which will be removed : <RAMin_2_1> <RAMin_2_2> <RAMin_2_6> <RAMin_3_0> <RAMin_3_6> <RAMin_3_7> <RAMin_4_1> <RAMin_4_2> <RAMin_4_3> <RAMin_4_4> <RAMin_4_6> <RAMin_4_7> <RAMin_5_0> <RAMin_5_1> <RAMin_5_2> <RAMin_5_3> <RAMin_5_5> <RAMin_5_6> <RAMin_5_7> <RAMin_6_0> <RAMin_6_1> <RAMin_6_2> <RAMin_6_3> <RAMin_6_5> <RAMin_6_6> 
+INFO:Xst:2261 - The FF/Latch <RAMin_7_1> in Unit <uut> is equivalent to the following 20 FFs/Latches, which will be removed : <RAMin_7_3> <RAMin_7_5> <RAMin_7_6> <RAMin_8_0> <RAMin_9_6> <RAMin_10_0> <RAMin_12_0> <RAMin_12_4> <RAMin_13_0> <RAMin_13_5> <RAMin_29_5> <RAMin_30_0> <RAMin_32_1> <RAMin_32_4> <RAMin_33_1> <RAMin_33_4> <RAMin_34_3> <RAMin_34_4> <RAMin_35_3> <RAMin_35_4> 
 INFO:Xst:2261 - The FF/Latch <le_s_0> in Unit <Inst_Profibus_Recieve> is equivalent to the following FF/Latch, which will be removed : <LE_o_0> 
 INFO:Xst:2261 - The FF/Latch <le_s_1> in Unit <Inst_Profibus_Recieve> is equivalent to the following FF/Latch, which will be removed : <LE_o_1> 
 INFO:Xst:2261 - The FF/Latch <le_s_2> in Unit <Inst_Profibus_Recieve> is equivalent to the following FF/Latch, which will be removed : <LE_o_2> 
@@ -1041,10 +1061,9 @@ INFO:Xst:2261 - The FF/Latch <le_s_4> in Unit <Inst_Profibus_Recieve> is equival
 INFO:Xst:2261 - The FF/Latch <le_s_5> in Unit <Inst_Profibus_Recieve> is equivalent to the following FF/Latch, which will be removed : <LE_o_5> 
 INFO:Xst:2261 - The FF/Latch <le_s_6> in Unit <Inst_Profibus_Recieve> is equivalent to the following FF/Latch, which will be removed : <LE_o_6> 
 INFO:Xst:2261 - The FF/Latch <le_s_7> in Unit <Inst_Profibus_Recieve> is equivalent to the following FF/Latch, which will be removed : <LE_o_7> 
-INFO:Xst:2261 - The FF/Latch <Write_en> in Unit <Inst_Read_Write> is equivalent to the following FF/Latch, which will be removed : <state> 
-WARNING:Xst:1426 - The value init of the FF/Latch RAMin_8_0 hinder the constant cleaning in the block uut.
+WARNING:Xst:1426 - The value init of the FF/Latch RAMin_7_1 hinder the constant cleaning in the block uut.
    You should achieve better results by setting this init to 1.
-WARNING:Xst:1293 - FF/Latch <RAMin_8_1> has a constant value of 0 in block <uut>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <RAMin_7_0> has a constant value of 0 in block <uut>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <type_s_1> has a constant value of 0 in block <uut>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <LE_s_4> has a constant value of 0 in block <uut>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <RAMin_2_0> has a constant value of 0 in block <uut>. This FF/Latch will be trimmed during the optimization process.
@@ -1091,8 +1110,8 @@ Macro Statistics
  32-bit up counter                                     : 2
  4-bit up counter                                      : 1
  8-bit up counter                                      : 1
-# Registers                                            : 2595
- Flip-Flops                                            : 2595
+# Registers                                            : 2593
+ Flip-Flops                                            : 2593
 # Comparators                                          : 17
  13-bit comparator greater                             : 1
  32-bit comparator greater                             : 4
@@ -1100,16 +1119,16 @@ Macro Statistics
  8-bit comparator equal                                : 2
  8-bit comparator greater                              : 5
  9-bit comparator greater                              : 1
-# Multiplexers                                         : 161
+# Multiplexers                                         : 148
  1-bit 2-to-1 multiplexer                              : 35
  10-bit 2-to-1 multiplexer                             : 1
  11-bit 2-to-1 multiplexer                             : 1
- 32-bit 2-to-1 multiplexer                             : 6
+ 32-bit 2-to-1 multiplexer                             : 5
  4-bit 2-to-1 multiplexer                              : 5
- 8-bit 2-to-1 multiplexer                              : 110
+ 8-bit 2-to-1 multiplexer                              : 98
  8-bit 256-to-1 multiplexer                            : 1
  9-bit 2-to-1 multiplexer                              : 2
-# FSMs                                                 : 5
+# FSMs                                                 : 6
 # Xors                                                 : 2
  1-bit xor10                                           : 1
  1-bit xor9                                            : 1
@@ -1178,25 +1197,32 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_s_4> has a con
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_s_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_s_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_s_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_34_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_34_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_34_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_34_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_34_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_34_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_32_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_6_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_6_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_6_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_6_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_6_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_6_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_4_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_4_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_4_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
@@ -1206,13 +1232,6 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_4_1> has a co
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_3_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_3_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_3_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_5_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_2_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_2_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_2_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
@@ -1222,6 +1241,12 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <LE_s_6> has a const
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <LE_s_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SA_s_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SA_s_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_10_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_10_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_10_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
@@ -1236,16 +1261,6 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_9_3> has a co
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_9_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_9_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_9_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_12_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_7_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_7_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_7_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_7_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_8_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_8_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_8_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
@@ -1253,6 +1268,16 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_8_4> has a co
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_8_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_8_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_8_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_7_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_7_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_7_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_7_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_35_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_32_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_32_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_32_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_32_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
@@ -1265,12 +1290,6 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_30_4> has a c
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_30_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_30_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_30_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_5> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_3> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_33_0> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_29_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_29_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_29_4> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
@@ -1285,7 +1304,7 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_13_3> has a c
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_13_2> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_13_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <txBit> has a constant value of 1 in block <UART_TX_CTRL>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <RAMin_8_0> in Unit <Profibus_Handler> is equivalent to the following 20 FFs/Latches, which will be removed : <RAMin_7_1> <RAMin_7_3> <RAMin_7_5> <RAMin_7_6> <RAMin_12_0> <RAMin_12_4> <RAMin_9_6> <RAMin_10_0> <RAMin_13_0> <RAMin_13_5> <RAMin_29_5> <RAMin_33_1> <RAMin_33_4> <RAMin_30_0> <RAMin_32_1> <RAMin_32_4> <RAMin_34_3> <RAMin_34_4> <RAMin_35_3> <RAMin_35_4> 
+INFO:Xst:2261 - The FF/Latch <RAMin_7_1> in Unit <Profibus_Handler> is equivalent to the following 20 FFs/Latches, which will be removed : <RAMin_7_3> <RAMin_7_5> <RAMin_7_6> <RAMin_8_0> <RAMin_9_6> <RAMin_10_0> <RAMin_12_0> <RAMin_12_4> <RAMin_13_0> <RAMin_13_5> <RAMin_29_5> <RAMin_30_0> <RAMin_32_1> <RAMin_32_4> <RAMin_35_3> <RAMin_35_4> <RAMin_33_1> <RAMin_33_4> <RAMin_34_3> <RAMin_34_4> 
 INFO:Xst:2261 - The FF/Latch <le_s_0> in Unit <Profibus_Recieve> is equivalent to the following FF/Latch, which will be removed : <LE_o_0> 
 INFO:Xst:2261 - The FF/Latch <le_s_1> in Unit <Profibus_Recieve> is equivalent to the following FF/Latch, which will be removed : <LE_o_1> 
 INFO:Xst:2261 - The FF/Latch <le_s_2> in Unit <Profibus_Recieve> is equivalent to the following FF/Latch, which will be removed : <LE_o_2> 
@@ -1294,7 +1313,6 @@ INFO:Xst:2261 - The FF/Latch <le_s_4> in Unit <Profibus_Recieve> is equivalent t
 INFO:Xst:2261 - The FF/Latch <le_s_5> in Unit <Profibus_Recieve> is equivalent to the following FF/Latch, which will be removed : <LE_o_5> 
 INFO:Xst:2261 - The FF/Latch <le_s_6> in Unit <Profibus_Recieve> is equivalent to the following FF/Latch, which will be removed : <LE_o_6> 
 INFO:Xst:2261 - The FF/Latch <le_s_7> in Unit <Profibus_Recieve> is equivalent to the following FF/Latch, which will be removed : <LE_o_7> 
-INFO:Xst:2261 - The FF/Latch <state> in Unit <Read_Write> is equivalent to the following FF/Latch, which will be removed : <Write_en> 
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <uut/FSM_0> on signal <state[1:5]> with user encoding.
 ----------------------
@@ -1389,27 +1407,18 @@ Optimizing FSM <Inst_Profibus_Unit/Inst_Profibus_Recieve/FSM_2> on signal <state
  da4   | 10110
  sc    | 10111
 -------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Inst_Profibus_Unit/Inst_Profibus_UART/Inst_Read_Write/FSM_4> on signal <state[1:2]> with gray encoding.
+---------------------
+ State   | Encoding
+---------------------
+ read_t  | 00
+ write_t | 01
+ wait_t  | 11
+---------------------
 WARNING:Xst:1426 - The value init of the FF/Latch DA_s_0 hinder the constant cleaning in the block Profibus_Handler.
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1426 - The value init of the FF/Latch SA_s_1 hinder the constant cleaning in the block Profibus_Handler.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch RAMin_0_2 hinder the constant cleaning in the block Profibus_Handler.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch RAMin_0_3 hinder the constant cleaning in the block Profibus_Handler.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch RAMin_0_4 hinder the constant cleaning in the block Profibus_Handler.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch RAMin_0_5 hinder the constant cleaning in the block Profibus_Handler.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch RAMin_1_1 hinder the constant cleaning in the block Profibus_Handler.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch RAMin_1_2 hinder the constant cleaning in the block Profibus_Handler.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch RAMin_1_3 hinder the constant cleaning in the block Profibus_Handler.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch RAMin_1_4 hinder the constant cleaning in the block Profibus_Handler.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch RAMin_1_5 hinder the constant cleaning in the block Profibus_Handler.
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1426 - The value init of the FF/Latch FC_s_6 hinder the constant cleaning in the block Profibus_Handler.
    You should achieve better results by setting this init to 1.
@@ -1419,13 +1428,17 @@ WARNING:Xst:1426 - The value init of the FF/Latch FC_s_0 hinder the constant cle
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1293 - FF/Latch <FC_s_1> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FC_s_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <RAMin_2_3> in Unit <Profibus_Handler> is equivalent to the following 9 FFs/Latches, which will be removed : <RAMin_2_4> <RAMin_2_5> <RAMin_2_7> <RAMin_3_1> <RAMin_3_2> <RAMin_3_3> <RAMin_3_4> <RAMin_4_0> <RAMin_6_7> 
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_1_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_1_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_0_6> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RAMin_0_7> has a constant value of 0 in block <Profibus_Handler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tx_buffer_10> has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <DA_s_0> in Unit <Profibus_Handler> is equivalent to the following 4 FFs/Latches, which will be removed : <SA_s_1> <FC_s_0> <FC_s_3> <FC_s_6> 
+INFO:Xst:2261 - The FF/Latch <RAMin_2_3> in Unit <Profibus_Handler> is equivalent to the following 9 FFs/Latches, which will be removed : <RAMin_2_4> <RAMin_2_5> <RAMin_2_7> <RAMin_3_1> <RAMin_3_2> <RAMin_3_3> <RAMin_3_4> <RAMin_4_0> <RAMin_6_7> 
 INFO:Xst:2261 - The FF/Latch <DA_s_7> in Unit <Profibus_Handler> is equivalent to the following FF/Latch, which will be removed : <SA_s_7> 
-INFO:Xst:2261 - The FF/Latch <RAMin_0_2> in Unit <Profibus_Handler> is equivalent to the following 8 FFs/Latches, which will be removed : <RAMin_0_3> <RAMin_0_4> <RAMin_0_5> <RAMin_1_1> <RAMin_1_2> <RAMin_1_3> <RAMin_1_4> <RAMin_1_5> 
-INFO:Xst:2261 - The FF/Latch <RAMin_5_4> in Unit <Profibus_Handler> is equivalent to the following 3 FFs/Latches, which will be removed : <RAMin_3_5> <RAMin_4_5> <RAMin_6_4> 
+INFO:Xst:2261 - The FF/Latch <RAMin_1_4> in Unit <Profibus_Handler> is equivalent to the following 3 FFs/Latches, which will be removed : <RAMin_1_5> <RAMin_0_4> <RAMin_0_5> 
+INFO:Xst:2261 - The FF/Latch <RAMin_3_5> in Unit <Profibus_Handler> is equivalent to the following 3 FFs/Latches, which will be removed : <RAMin_4_5> <RAMin_5_4> <RAMin_6_4> 
 INFO:Xst:2261 - The FF/Latch <LE_s_0> in Unit <Profibus_Handler> is equivalent to the following FF/Latch, which will be removed : <LE_s_2> 
-INFO:Xst:2261 - The FF/Latch <RAMin_0_6> in Unit <Profibus_Handler> is equivalent to the following 4 FFs/Latches, which will be removed : <RAMin_0_7> <RAMin_1_0> <RAMin_1_6> <RAMin_1_7> 
 
 Optimizing unit <Hardware_Test> ...
 
@@ -1449,6 +1462,8 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <type_o_7> has a con
 Optimizing unit <Profibus_UART> ...
 
 Optimizing unit <uart> ...
+
+Optimizing unit <Read_Write> ...
 WARNING:Xst:1293 - FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/le_s_7> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/le_s_6> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/le_s_4> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
@@ -1476,32 +1491,22 @@ WARNING:Xst:2677 - Node <Inst_Profibus_Unit/Inst_Profibus_Recieve/FCS_o_3> of se
 WARNING:Xst:2677 - Node <Inst_Profibus_Unit/Inst_Profibus_Recieve/FCS_o_2> of sequential type is unconnected in block <Hardware_Test>.
 WARNING:Xst:2677 - Node <Inst_Profibus_Unit/Inst_Profibus_Recieve/FCS_o_1> of sequential type is unconnected in block <Hardware_Test>.
 WARNING:Xst:2677 - Node <Inst_Profibus_Unit/Inst_Profibus_Recieve/FCS_o_0> of sequential type is unconnected in block <Hardware_Test>.
-WARNING:Xst:2677 - Node <Inst_Profibus_Unit/Inst_Profibus_UART/Inst_Read_Write/Read_en> of sequential type is unconnected in block <Hardware_Test>.
 WARNING:Xst:2677 - Node <Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/rx_buffer_0> of sequential type is unconnected in block <Hardware_Test>.
 WARNING:Xst:2677 - Node <Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/rx_error> of sequential type is unconnected in block <Hardware_Test>.
-WARNING:Xst:1293 - FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_18> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_19> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_20> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_21> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_22> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_23> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_24> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_25> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_26> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_27> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_28> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_29> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Inst_Profibus_Unit/Inst_Profibus_UART/Inst_Read_Write/Read_en> of sequential type is unconnected in block <Hardware_Test>.
+WARNING:Xst:1293 - FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_31> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_30> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_31> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <uut/FSM_process.timer_23> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <uut/FSM_process.timer_24> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <uut/FSM_process.timer_25> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <uut/FSM_process.timer_26> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <uut/FSM_process.timer_27> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <uut/FSM_process.timer_28> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <uut/FSM_process.timer_29> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <uut/FSM_process.timer_30> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <uut/FSM_process.timer_31> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_29> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_28> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_27> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_26> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_25> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_24> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_23> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_22> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_21> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_20> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/sync_counter_19> has a constant value of 0 in block <Hardware_Test>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <Inst_Profibus_Unit/Inst_Profibus_UART/Inst_neg_flanke_puls/out_o> in Unit <Hardware_Test> is equivalent to the following FF/Latch, which will be removed : <Inst_Profibus_Unit/Inst_Profibus_UART/Inst_neg_flanke_puls/state> 
 INFO:Xst:2261 - The FF/Latch <Inst_Profibus_Unit/Inst_Profibus_Transmitter/le_s_2> in Unit <Hardware_Test> is equivalent to the following FF/Latch, which will be removed : <Inst_Profibus_Unit/Inst_Profibus_Transmitter/le_s_0> 
 INFO:Xst:2261 - The FF/Latch <Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/rx_busy> in Unit <Hardware_Test> is equivalent to the following FF/Latch, which will be removed : <Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/rx_state> 
@@ -1510,12 +1515,15 @@ Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block Hardware_Test, actual ratio is 16.
 FlipFlop Inst_Profibus_Unit/Inst_Profibus_Transmitter/counter_0 has been replicated 24 time(s)
-FlipFlop Inst_Profibus_Unit/Inst_Profibus_Transmitter/counter_1 has been replicated 26 time(s)
-FlipFlop Inst_Profibus_Unit/Inst_Profibus_Transmitter/counter_2 has been replicated 11 time(s)
-FlipFlop Inst_Profibus_Unit/Inst_Profibus_Transmitter/counter_3 has been replicated 1 time(s)
+FlipFlop Inst_Profibus_Unit/Inst_Profibus_Transmitter/counter_1 has been replicated 25 time(s)
+FlipFlop Inst_Profibus_Unit/Inst_Profibus_Transmitter/counter_2 has been replicated 10 time(s)
+FlipFlop Inst_Profibus_Unit/Inst_Profibus_Transmitter/counter_3 has been replicated 6 time(s)
 FlipFlop Inst_Profibus_Unit/Inst_Profibus_Transmitter/counter_4 has been replicated 1 time(s)
+FlipFlop Inst_Profibus_Unit/Inst_Profibus_Transmitter/counter_5 has been replicated 1 time(s)
+FlipFlop Inst_Profibus_Unit/Inst_Profibus_Transmitter/counter_6 has been replicated 1 time(s)
 FlipFlop Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd1 has been replicated 1 time(s)
 FlipFlop Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd3 has been replicated 1 time(s)
 FlipFlop Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd4 has been replicated 1 time(s)
 FlipFlop Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd5 has been replicated 1 time(s)
 
@@ -1525,8 +1533,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2520
- Flip-Flops                                            : 2520
+# Registers                                            : 2541
+ Flip-Flops                                            : 2541
 
 =========================================================================
 
@@ -1549,31 +1557,31 @@ Top Level Output File Name         : Hardware_Test.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2299
+# BELS                             : 2370
 #      GND                         : 1
 #      INV                         : 7
-#      LUT1                        : 86
-#      LUT2                        : 74
-#      LUT3                        : 138
-#      LUT4                        : 53
-#      LUT5                        : 139
-#      LUT6                        : 1027
-#      MUXCY                       : 185
+#      LUT1                        : 95
+#      LUT2                        : 70
+#      LUT3                        : 151
+#      LUT4                        : 95
+#      LUT5                        : 125
+#      LUT6                        : 1031
+#      MUXCY                       : 196
 #      MUXF7                       : 286
 #      MUXF8                       : 136
 #      VCC                         : 1
-#      XORCY                       : 166
-# FlipFlops/Latches                : 2520
+#      XORCY                       : 176
+# FlipFlops/Latches                : 2541
 #      FD                          : 7
-#      FDC                         : 114
-#      FDCE                        : 2245
-#      FDE                         : 118
+#      FDC                         : 94
+#      FDCE                        : 2283
+#      FDE                         : 121
 #      FDP                         : 4
 #      FDRE                        : 32
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 7
-#      IBUF                        : 2
+# IO Buffers                       : 15
+#      IBUF                        : 10
 #      OBUF                        : 5
 
 Device utilization summary:
@@ -1583,20 +1591,20 @@ Selected Device : 6slx45csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            2520  out of  54576     4%  
- Number of Slice LUTs:                 1524  out of  27288     5%  
-    Number used as Logic:              1524  out of  27288     5%  
+ Number of Slice Registers:            2541  out of  54576     4%  
+ Number of Slice LUTs:                 1574  out of  27288     5%  
+    Number used as Logic:              1574  out of  27288     5%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3258
-   Number with an unused Flip Flop:     738  out of   3258    22%  
-   Number with an unused LUT:          1734  out of   3258    53%  
-   Number of fully used LUT-FF pairs:   786  out of   3258    24%  
-   Number of unique control sets:       293
+ Number of LUT Flip Flop pairs used:   3298
+   Number with an unused Flip Flop:     757  out of   3298    22%  
+   Number with an unused LUT:          1724  out of   3298    52%  
+   Number of fully used LUT-FF pairs:   817  out of   3298    24%  
+   Number of unique control sets:       294
 
 IO Utilization: 
- Number of IOs:                           9
- Number of bonded IOBs:                   8  out of    218     3%  
+ Number of IOs:                          17
+ Number of bonded IOBs:                  16  out of    218     7%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -1622,7 +1630,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 2520  |
+clk                                | BUFGP                  | 2541  |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -1633,8 +1641,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 6.363ns (Maximum Frequency: 157.168MHz)
-   Minimum input arrival time before clock: 6.239ns
+   Minimum period: 5.858ns (Maximum Frequency: 170.720MHz)
+   Minimum input arrival time before clock: 6.528ns
    Maximum output required time after clock: 3.634ns
    Maximum combinational path delay: No path found
 
@@ -1644,49 +1652,51 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 6.363ns (frequency: 157.168MHz)
-  Total number of paths / destination ports: 61275 / 4910
+  Clock period: 5.858ns (frequency: 170.720MHz)
+  Total number of paths / destination ports: 95787 / 4998
 -------------------------------------------------------------------------
-Delay:               6.363ns (Levels of Logic = 4)
-  Source:            Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd3 (FF)
-  Destination:       Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_7 (FF)
+Delay:               5.858ns (Levels of Logic = 6)
+  Source:            Inst_Profibus_Unit/Inst_Profibus_Recieve/le_s_3 (FF)
+  Destination:       Inst_Profibus_Unit/Inst_Profibus_Recieve/PDU_o_7 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd3 to Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_7
+  Data Path: Inst_Profibus_Unit/Inst_Profibus_Recieve/le_s_3 to Inst_Profibus_Unit/Inst_Profibus_Recieve/PDU_o_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             29   0.447   1.250  Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd3 (Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_FSM_FFd3)
-     LUT5:I4->O           35   0.205   1.563  Inst_Profibus_Unit/Inst_Profibus_Transmitter/state_state<3>1 (Inst_Profibus_Unit/Inst_Profibus_Transmitter/state<3>)
-     LUT6:I3->O            1   0.205   0.580  Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2258_inv4 (Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2258_inv4)
-     LUT6:I5->O            1   0.205   0.580  Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2258_inv5 (Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2258_inv5)
-     LUT6:I5->O            8   0.205   0.802  Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2258_inv6 (Inst_Profibus_Unit/Inst_Profibus_Transmitter/_n2258_inv)
-     FDCE:CE                   0.322          Inst_Profibus_Unit/Inst_Profibus_Transmitter/fcs_0
+     FDE:C->Q              9   0.447   1.058  Inst_Profibus_Unit/Inst_Profibus_Recieve/le_s_3 (Inst_Profibus_Unit/Inst_Profibus_Recieve/le_s_3)
+     LUT4:I1->O            1   0.205   0.808  Inst_Profibus_Unit/Inst_Profibus_Recieve/Msub_GND_8_o_GND_8_o_sub_34_OUT<7:0>_xor<3>11 (Inst_Profibus_Unit/Inst_Profibus_Recieve/GND_8_o_GND_8_o_sub_34_OUT<3>)
+     LUT6:I3->O            1   0.205   0.684  Inst_Profibus_Unit/Inst_Profibus_Recieve/counter[7]_GND_8_o_LessThan_35_o21 (Inst_Profibus_Unit/Inst_Profibus_Recieve/counter[7]_GND_8_o_LessThan_35_o2)
+     LUT6:I4->O            8   0.203   0.803  Inst_Profibus_Unit/Inst_Profibus_Recieve/counter[7]_GND_8_o_LessThan_35_o25 (Inst_Profibus_Unit/Inst_Profibus_Recieve/counter[7]_GND_8_o_LessThan_35_o)
+     LUT4:I3->O            1   0.205   0.000  Inst_Profibus_Unit/Inst_Profibus_Recieve/_n0712_inv5_rstpot_F (N201)
+     MUXF7:I0->O           8   0.131   0.803  Inst_Profibus_Unit/Inst_Profibus_Recieve/_n0712_inv5_rstpot (Inst_Profibus_Unit/Inst_Profibus_Recieve/_n0712_inv5_rstpot)
+     LUT3:I2->O            1   0.205   0.000  Inst_Profibus_Unit/Inst_Profibus_Recieve/PDU_o_0_dpot (Inst_Profibus_Unit/Inst_Profibus_Recieve/PDU_o_0_dpot)
+     FDE:D                     0.102          Inst_Profibus_Unit/Inst_Profibus_Recieve/PDU_o_0
     ----------------------------------------
-    Total                      6.363ns (1.589ns logic, 4.774ns route)
-                                       (25.0% logic, 75.0% route)
+    Total                      5.858ns (1.703ns logic, 4.155ns route)
+                                       (29.1% logic, 70.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 2569 / 2552
+  Total number of paths / destination ports: 2597 / 2581
 -------------------------------------------------------------------------
-Offset:              6.239ns (Levels of Logic = 3)
+Offset:              6.528ns (Levels of Logic = 3)
   Source:            reset (PAD)
-  Destination:       uut/RAMin_0_6 (FF)
+  Destination:       uut/FC_s_5 (FF)
   Destination Clock: clk rising
 
-  Data Path: reset to uut/RAMin_0_6
+  Data Path: reset to uut/FC_s_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O          2390   1.222   2.645  reset_IBUF (Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/reset_n_inv)
-     LUT3:I1->O            2   0.203   0.961  uut/_n2805_inv11 (uut/_n2805_inv1)
-     LUT5:I0->O            4   0.203   0.683  uut/_n2727_inv1 (uut/_n2727_inv)
-     FDE:CE                    0.322          uut/RAMin_0_0
+     IBUF:I->O          2384   1.222   2.904  reset_IBUF (Inst_Profibus_Unit/Inst_Profibus_UART/Inst_uart/reset_n_inv)
+     LUT6:I0->O           14   0.203   0.958  uut/_n2664_inv1 (uut/_n2664_inv)
+     LUT5:I4->O            5   0.205   0.714  uut/_n2404_inv2 (uut/_n2404_inv)
+     FDE:CE                    0.322          uut/type_s_0
     ----------------------------------------
-    Total                      6.239ns (1.950ns logic, 4.289ns route)
-                                       (31.3% logic, 68.7% route)
+    Total                      6.528ns (1.952ns logic, 4.576ns route)
+                                       (29.9% logic, 70.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -1717,20 +1727,20 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    6.363|         |         |         |
+clk            |    5.858|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 28.00 secs
-Total CPU time to Xst completion: 28.81 secs
+Total REAL time to Xst completion: 27.00 secs
+Total CPU time to Xst completion: 26.66 secs
  
 --> 
 
-Total memory usage is 4555352 kilobytes
+Total memory usage is 4555496 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  465 (   0 filtered)
-Number of infos    :   41 (   0 filtered)
+Number of warnings :  454 (   0 filtered)
+Number of infos    :   38 (   0 filtered)
 

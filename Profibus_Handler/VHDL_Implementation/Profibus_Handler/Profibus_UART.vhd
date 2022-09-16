@@ -37,6 +37,7 @@ entity Profibus_UART is
            datain : in  STD_LOGIC_VECTOR (7 downto 0);
            dataout : out  STD_LOGIC_VECTOR (7 downto 0);
            send : in  STD_LOGIC;
+			  send_telegram : in STD_LOGIC;
            recieve : out  STD_LOGIC;
            RX : in  STD_LOGIC:='1';
            TX : out  STD_LOGIC;
@@ -51,15 +52,14 @@ signal tx_busy_s:std_logic;
 signal rx_s:std_logic;
 signal tx_s:std_logic;
 COMPONENT Read_Write
-	PORT(
-		idle : IN std_logic;
-		clk : IN std_logic;
-		send : IN std_logic;
-		tx_busy : IN std_logic;
-		reset : IN std_logic;          
-		Write_en : OUT std_logic;
-		Read_en : OUT std_logic
-		);
+	Port ( idle : in  STD_LOGIC;
+           clk : in  STD_LOGIC;
+           send : in  STD_LOGIC;
+			  send_telegram : in STD_LOGIC;
+           tx_busy : in  STD_LOGIC;
+			  reset: in STD_LOGIC;
+           Write_en : out  STD_LOGIC:='0';
+           Read_en : out  STD_LOGIC:='1');
 	END COMPONENT;
 
 	
@@ -109,6 +109,7 @@ Inst_Read_Write: Read_Write PORT MAP(
 		idle => Reciever_idle,
 		clk => clk,
 		send => send,
+		send_telegram => send_telegram,
 		tx_busy => tx_busy_s,
 		reset => reset,
 		Write_en => Write_en,
@@ -140,8 +141,8 @@ Inst_uart: uart GENERIC map(
 process(clk,reset)
 	begin
 		if reset='1' then
-		rx_s<=rx;		
-		tx<=tx_s;
+		--rx_s<=rx;		
+		--tx<=tx_s;
 		elsif rising_edge(clk) then
 			if tx_busy_s='1' then				
 				rx_s<='1';

@@ -58,8 +58,7 @@ type PDU_RAM is array(0 to 255)of std_logic_vector(7 downto 0);
 signal RAM1:PDU_RAM:=(others=>x"00");
 signal tx_busy_old,tx_busy_old2:std_logic:='0';
 signal sync_counter:integer:=0;
---constant syncVal:integer:=((33*(5209)));--depends on baud_rate
-constant syncVal:integer:=171875;
+constant syncVal:integer:=2*171875;--depends on baud_rate
 signal countold:integer:=0;
 begin
 	
